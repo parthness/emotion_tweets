@@ -1,0 +1,10 @@
+happy: joy, happy, proud, satisfied, optimistic, calm, awesome, ecstatic, blissful, awe-filled, please, pleasure, delighted, glad
+fun: fun, laugh, joke, funny, cool, enjoy, amuse, cheer, rediculous, entertain
+excitement: excited, excitement, interest, enthusiasm, curiosity, thrilled, enthrall
+love: love, like, attraction, adore, affection, rapture, passion, cherish
+hope: hope, desire, hopeful
+sad: sad, sadness, pain, sorrow, grief, unhappy, pessimistic, crushed, rejected, disappointed, dissatisfied, hurt
+anger: anger, angry, aggressive, furious, irritated, offensive, aggressive, provoke, shameful
+disgust: disgust, terrible, fuck, ass, asshole, insult, revulsion, loathing, nausea, detestation, antipathy, degrade, humiliate, disgrace, shameful
+fear: fear, afraid, terrified, scared, panic, nervous, worried, threatened, frightened, coward, quaking
+surprise: surprise, confused, shocked, amazed, speechless, astonished, astounded, thunderstruck, staggered, miracle, wonder, unexpected
