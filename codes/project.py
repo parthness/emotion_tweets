@@ -13,7 +13,7 @@ from pywsd import disambiguate
 from preprocessTweet import preprocess
 
 def calculateSimilarity(senses):
-    emotions=['happy','fun','excitement','love','hope','sad','anger','disgust','fear','surprise']
+    emotions=['happy','sad','anger','disgust','fear','surprise']
     sense=senses['sense']
     print(sense)
     for emotion in emotions:
