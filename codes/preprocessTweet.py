@@ -1,5 +1,5 @@
 import re, time, enchant, nltk, string
-from nltk.tag import StanfordNERTagger
+#from nltk.tag import StanfordNERTagger
 from nltk.tokenize import word_tokenize
 from collections import Counter
 from nltk.corpus import wordnet as wn
@@ -103,11 +103,28 @@ def spellCorrect(spell,dictionary):
     if len(suggestions)==0:
         return ' ' #incorrect spelling - to be removed
     probabilities={prob(suggestion):suggestion for suggestion in suggestions}
-    return probabilities[max(probabilities)]
+    correctSpell=probabilities[max(probabilities)]
+    if(len(spell)<=4):
+        return correctSpell
+    setCorrectSpell=set(correctSpell)
+    setSpell=set(spell)
 
+    if(len(setSpell.intersection(setCorrectSpell))>=0.7*len(setCorrectSpell)):
+        return correctSpell
+    else:
+        return ' '
+
+notSentence=re.compile("^[\?\.\!' ]+$")  #to eliminate sentences having only punctuations
+punctuations=['.','?','!']
+pronouns=["I","We","You","They","He","She","It"]
+apostrophes=["n't","'d","'ll","'s","'m","'ve","'re","na"]
+digit=re.compile("[0-9]")
+repeatedLetters=re.compile(r"(.)\1{2,}")
+abbreviations=re.compile("^[A-Z\.]+$")
+dictionary=enchant.Dict("en_US")
 
 def preprocess(tweet): #dict - dictionary of slangs
-    tweet=tweet.strip()
+    tweet=tweet.replace('USER','').strip()
     # hashtag split
     tokens=[token if token[0]!='#' else splitHashtag(token[1:]) for token in tweet.split()]
     if '#' in tokens:
@@ -115,21 +132,11 @@ def preprocess(tweet): #dict - dictionary of slangs
     tweet=' '.join(tokens)
         
     sentences=re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?|\!)\s', tweet)    
-    sentences=[sentence.strip() for sentence in sentences]
-
-    notSentence=re.compile("^[\?\.\!' ]+$") #to eliminate sentences having only punctuations
+    sentences=[sentence.strip() for sentence in sentences]   
     sentenceType=[] 
-    filteredSentences=[] 
-    punctuations=['.','?','!']
-    pronouns=["I","We","You","They","He","She","It"]
-    apostrophes=["n't","'d","'ll","'s","'m","'ve","'re","na"]
+    filteredSentences=[]   
     namedEntities=named_entities(tweet)
-    print(namedEntities)
-    digit=re.compile("[0-9]")
-    repeatedLetters=re.compile(r"(.)\1{2,}")
-    abbreviations=re.compile("^[A-Z\.]+$")
-    dictionary=enchant.Dict("en_US")
- 
+    
     for sentence in sentences:
         if notSentence.match(sentence)==None and len(sentence)>0:
             #detect type of sentence
@@ -184,13 +191,17 @@ def preprocess(tweet): #dict - dictionary of slangs
                                             if dictionary.check(subtoken):
                                                 correctedTokens.append(subtoken)
                                             else:
-                                                correctedTokens.append(spellCorrect(subtoken,dictionary))
-                                                numOfCorrected+=1
+                                                correctSpell=spellCorrect(subtoken,dictionary)
+                                                if correctSpell!=' ':
+                                                    correctedTokens.append(correctSpell)
+                                                    numOfCorrected+=1
                                 else:
-                                    correctedTokens.append(spellCorrect(token,dictionary))
-                                    numOfCorrected+=1
+                                    correctSpell=spellCorrect(token,dictionary)
+                                    if correctSpell!=' ':
+                                        correctedTokens.append(correctSpell)
+                                        numOfCorrected+=1
                 if ' ' in correctedTokens:
-                    correctedTokens.remove(' ') 
+                    correctedTokens=list(filter(lambda a: a != ' ', correctedTokens)) 
                 if numOfCorrected<=(0.5*len(correctedTokens)):
                     filteredSentences.append(' '.join(correctedTokens))
                     sentenceType.append(punctuation)
