@@ -23,7 +23,6 @@ annoy.v.01
 offense.n.05
 aggressive.a.01
 harass.v.01
-black.s.12
 -happy
 joy.n.01
 happy.a.01

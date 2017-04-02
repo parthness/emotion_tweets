@@ -93,7 +93,7 @@ def splitHashtag(hashtag):
                 splittedHashtag=splittedHashtag[:-1]+' '+splittedHashtag[-1]+char
             else:
                 splittedHashtag+=char
-
+               
     return ' '.join(splittedHashtag.split())
 
 
@@ -161,7 +161,7 @@ def preprocess(tweet): #dict - dictionary of slangs
                     else:
                         if (token not in pronouns+namedEntities) and abbreviations.match(token)==None and dictionary.check(token)!=True:
                             token=token.lower()
-                        if dictionary.check(token) or ((index+1)<len(sentenceTokens) and sentenceTokens[index+1] in apostrophes):
+                        if (len(token)!=1 and dictionary.check(token)) or ((index+1)<len(sentenceTokens) and sentenceTokens[index+1] in apostrophes):
                             correctedTokens.append(token)
                         elif token in apostrophes and len(correctedTokens)>0:
                             key=(correctedTokens[-1]+token).lower()

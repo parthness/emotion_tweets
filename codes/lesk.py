@@ -16,8 +16,7 @@ from pywsd.utils import lemmatize, porter, synset_properties
 
 EN_STOPWORDS = stopwords.words('english')
 
-def compare_overlaps(context, synsets_signatures, \
-                     nbest=False, keepscore=False, normalizescore=False):
+def compare_overlaps(context, synsets_signatures):
     """
     Calculates overlaps between the context sentence and the synset_signture
     and returns a ranked list of synsets from highest overlap to lowest.
@@ -30,19 +29,10 @@ def compare_overlaps(context, synsets_signatures, \
     # Rank synsets from highest to lowest overlap.
     ranked_synsets = sorted(overlaplen_synsets, reverse=True)
 
-    # Normalize scores such that it's between 0 to 1.
-    if normalizescore:
-        total = float(sum(i[0] for i in ranked_synsets))
-        ranked_synsets = [(i/total,j) for i,j in ranked_synsets]
-
-    if not keepscore: # Returns a list of ranked synsets without scores
-        ranked_synsets = [i[1] for i in sorted(overlaplen_synsets, \
+    ranked_synsets = [i[1] for i in sorted(overlaplen_synsets, \
                                                reverse=True)]
 
-    if nbest: # Returns a ranked list of synsets.
-        return ranked_synsets
-    else: # Returns only the best sense.
-        return ranked_synsets[0]
+    return ranked_synsets[0]
 
 def simple_signature(ss, stem=False):
     """
@@ -96,73 +86,137 @@ def simple_signature(ss, stem=False):
     # Lemmatized context is preferred over stemmed context.
     signature = [lemmatize(i) for i in signature]
     # Matching exact words may cause sparsity, so optional matching for stems.
-    if stem == True:
-        signature = [porter.stem(i) for i in signature]
+    signature = [porter.stem(i) for i in signature]
+    
+    ss_sign=set(signature)
+    
+    sim=[]
+    for ss in ss_sign:
+        synsets=wn.synsets(ss)
+        if len(synsets)>0:
+            if synsets[0] not in sim:
+                synset=synsets[0]   
+                pos=synsets_scores[synset.name()]['pos']
+                neg=synsets_scores[synset.name()]['neg']
+                if(pos>0.125 or neg>0.125):     
+                    sim.append(synset)
+    return [signature,sim]
+    '''
+    sim=[]
+    for ss in ss_sign:
+        synsets=wn.synsets(ss)
+        if len(synsets)>0:
+            if synsets[0] not in sim:
+                synset=synsets[0]   
+                pos=synsets_scores[synset.name()]['pos']
+                neg=synsets_scores[synset.name()]['neg']
+                if(pos>neg or neg>pos):     
+                    sim.append(synset)
+    
+    return set(signature+sim)
+    '''
 
-    return signature
-
-
-def similarity_lesk(sense1, sense2, \
-                stem=False):
+def similarity_lesk(ss_sign1, ss_sign2):
     """
     This function is the implementation of the Adapted Lesk algorithm,
     described in Banerjee and Pederson (2002). It makes use of the lexical
     items from semantically related senses within the wordnet
     hierarchies and to generate more lexical items for each sense.
     see www.d.umn.edu/~tpederse/Pubs/cicling2002-b.pdf‎
-    """
+    
 
     # Get the signatures for each synset.
     ss_sign1 = simple_signature(sense1,stem)
     ss_sign2 = simple_signature(sense2,stem)
     #print(ss_sign1)
     #print(ss_sign2)
-    overlap=set(ss_sign1).intersection(ss_sign2)
-    #print(overlap)
-    score = len(overlap)
-    sim1=[]
-    sim2=[]
-    for ss in ss_sign1:
-        synsets=wn.synsets(ss,pos='n')
-        if len(synsets)>0:
-            if synsets[0] not in sim1:
-                synset=synsets[0] 
-                '''
-                pos=synsets_scores[synset.name()]['pos']
-                neg=synsets_scores[synset.name()]['neg']
-                if(pos>neg or neg>pos): 
-                '''
-                sim1.append(synset)
-    for ss in ss_sign2:
-        synsets=wn.synsets(ss,pos='n')
-        if len(synsets)>0:
-            if synsets[0] not in sim2:
-                synset=synsets[0] 
-                '''
-                pos=synsets_scores[synset.name()]['pos']
-                neg=synsets_scores[synset.name()]['neg']
-                if(pos>neg or neg>pos): 
-                '''
-                sim2.append(synset)
+    """
+    score=0
+    overlap=(set(ss_sign1[0])).intersection(ss_sign2[0])
+    overlapped=list(filter(lambda a: a in overlap, ss_sign1[0]))
+    score=len(overlapped)
+    
     sim_score=0
-    for ss1 in sim1:
-      #  pos1=ss1.name().split('.')[1]
-      #  if pos1=='v' or pos1=='n':
-            for ss2 in sim2:
-       #         pos2=ss2.name().split('.')[1]
-        #        if pos1=='v':
+    
+    for ss1 in ss_sign1[1]:
+        pos1=ss1.name().split('.')[1]
+        if pos1=='v' or pos1=='n':
+            for ss2 in ss_sign2[1]:
+                pos2=ss2.name().split('.')[1]
+                if pos1=='v':
                     path_score=ss1.path_similarity(ss2)
                     if path_score>=0.4:
                         #print(ss1.name(),ss2.name(),path_score)
                         sim_score+=path_score
-         #       elif pos2=='v' or pos2=='n':
+                elif pos2=='n':
+                    
                     path_score=ss2.path_similarity(ss1)
                     if path_score>=0.4:
                         #print(ss1.name(),ss2.name(),path_score)
                         sim_score+=path_score
+                    
             
-    #print(score,sim_score)         
+    #print(score,sim_score) 
+            
     return score+math.ceil(sim_score)
+    
+    #return len(ss_sign1.intersection(ss_sign2))
 
+emoDict={}
+emotion=''
+synsets=[]
+
+
+with open('../data/emotion_dict_synsets.txt','r') as f:
+        for line in f:
+            line=line.strip()
+            if line[0]=='-':
+               if len(synsets)>0:
+                   emoDict[emotion]=synsets
+               synsets=[]
+               emotion=line[1:]
+            else:
+                synsets.append(simple_signature(wn.synset(line)))
+         
+if len(synsets)>0:
+    emoDict[emotion]=synsets
+
+positive=['happy']
+negative=['sad','anger','disgust','fear']
+emotions=positive+negative+['surprise']
+
+def calculateSimilarity(senses,pos,neg): 
+    sense=simple_signature(senses['sense'])
+    maxEmotionScore=0
+    for emotion in emotions:
+        score=0
+        max=0
+        for synset in emoDict[emotion]:
+            score=similarity_lesk(synset,sense)
+            if(score>max):
+                max=score
+        max=round(max,2)
+        if(max>maxEmotionScore):
+            maxEmotionScore=max
+        senses[emotion]=max
+    
+    #normalizing score between 0 and 1
+    #polarity correction
+    print("before RMS : " , senses)
+    if(maxEmotionScore!=0):
+        meanSquare=0
+        for emotion in emotions:
+            senses[emotion]=round(senses[emotion]/maxEmotionScore,2)
+            if(senses[emotion]>0.5 and pos>neg and emotion in negative) or (senses[emotion]>0.5 and neg>pos and emotion in positive):
+                senses[emotion]=1-senses[emotion]
+            meanSquare+=(senses[emotion]**2)
+
+        rootMeanSquare=math.sqrt(meanSquare)
+        rootMeanSquare+=(0.25*rootMeanSquare)
+        if(rootMeanSquare!=0):
+            for emotion in emotions:
+                senses[emotion]=round(senses[emotion]/rootMeanSquare,2)
+
+    return senses
 #to find similarity between two wordnet senses    
 #print(similarity_lesk(wn.synset('anger.n.01'),wn.synset('angry.a.01')))
