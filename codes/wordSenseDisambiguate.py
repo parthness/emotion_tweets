@@ -4,12 +4,28 @@ from itertools import chain
 from nltk.corpus import wordnet as wn
 from nltk.corpus import stopwords
 from nltk import word_tokenize, pos_tag
-from pywsd.utils import lemmatize, lemmatize_sentence, synset_properties
+from pywsd.utils import lemmatize, synset_properties
+from pywsd.utils import lemmatize_sentence
 from senti_classifier.senti_classifier import synsets_scores
 from nltk.stem.porter import *
+from positive_negative_lexicon import lexiconDict
+from nltk.tag.stanford import StanfordPOSTagger
+
+path_to_model = '/Users/Parth/Desktop/emotion_tweet/codes/stanford-postagger-full-2016-10-31/models/english-bidirectional-distsim.tagger'
+path_to_jar='/Users/Parth/Desktop/emotion_tweet/codes/stanford-postagger-full-2016-10-31/stanford-postagger-3.7.0.jar'
+posTagger=StanfordPOSTagger(path_to_model, path_to_jar)
 
 porter=PorterStemmer()
 EN_STOPWORDS = stopwords.words('english')
+disgustingWords=["fucked-up", "fucking", "disgusting", "ridiculous", "awful", "awkward", \
+                     "gross", "shitty", "bullshit", "vulgar", "unforgivable", "intolerable", "hated", "disgust", \
+                     "terrible", "fuck", "ass", "asshole", "revulsion", "loathing", "nausea", "detestation", \
+                     "antipathy", "degrade", "humiliate", "disgrace", "shameful"]
+nouns=['NN','NNP','NNS','NNPS']
+verbs=['VB','VBD','VBG','VBN','VBP','VBZ']
+adjectives=['JJ','JJR','JJS']
+adverbs=['RB','RBR','RBS']
+posToConsider=nouns+verbs+adjectives+adverbs
 
 def compare_overlaps(context, synsets_signatures):
     """
@@ -90,19 +106,39 @@ def simple_lesk(emotionalPart, ambiguous_word, pos):
 apostrophes=["n't","'d","'ll","'s","'m","'ve","'re","na"]
 stopwords = stopwords.words('english') + list(string.punctuation) + apostrophes
 
-def notNeutral(word,sense):
-    disgustingWords=["fucked-up", "fucking", "disgusting", "ridiculous", "awful", "awkward", \
-                     "gross", "shitty", "bullshit", "vulgar", "unforgivable", "intolerable", "hated", "disgust", \
-                     "terrible", "fuck", "ass", "asshole", "revulsion", "loathing", "nausea", "detestation", \
-                     "antipathy", "degrade", "humiliate", "disgrace", "shameful"]
-    if word in disgustingWords:
+def notNeutral(word,sense,pos):
+    '''
+    wordsIncorrectInSentiWordNet=["glad","thank"]
+    if word in disgustingWords+wordsIncorrectInSentiWordNet:
+        print(word)
         return True
     pos=sense['pos']
     neg=sense['neg']
-    if(pos>0.125 or neg>0.125):
+    if(pos>0.125 or neg>0.125) and pos!=neg:
         return True
     else:
         return False
+    '''
+    morphy=wn.morphy(word,pos)
+    if morphy is not None:
+        if (morphy,pos) in lexiconDict or (morphy,'z') in lexiconDict:
+            return True
+            
+    if (word,pos) in lexiconDict or (word,'z') in lexiconDict or word in disgustingWords:
+        return True
+    else:
+        return False
+
+def correctSense(synsetsList,lemma):    
+    '''
+    for synset in synsetsList:
+        if synset.name().split('.')[0]==lemma:
+            return synset
+    '''
+    #print(lemma, synsetsList)
+    if len(synsetsList)>0:
+        return synsetsList[0]
+    return None
 
 def disambiguate(emotionalPart, namedEntities):
     '''
@@ -156,26 +192,65 @@ def disambiguate(emotionalPart, namedEntities):
     sentence=[]
     formed_sentences=[]
     formed_sentence=' '
-
+    '''
+    print(lemmatize_sentence)
     words, lemmas, pos = lemmatize_sentence(emotionalPart, keepWordPOS=True)
-    print(words,lemmas,pos)
+    print(words,lemmas,pos,lemmatize_sentence(emotionalPart))
     for index,lemma in enumerate(lemmas):
         if pos[index]!=None:
-            if lemma not in stopwords:
-                #print(lemma,morphy_poss[index])
-                sense=wn.synsets(lemma,pos=pos[index])
-                if len(sense)>0:
-                    sense=sense[0]
-                    if notNeutral(lemma,dict(synsets_scores[sense.name()])):
-                        sentence.append((words[index],sense))
-                    formed_sentence+=words[index]+ ' '
-            else:
-                formed_sentence+=words[index]+' '
+            if words[index] not in namedEntities:
+                if lemma not in stopwords:
+                    print(lemma,pos[index])
+                    sense=correctSense(wn.synsets(lemma,pos=pos[index]),lemma)
+                    if type(sense)==type(None):
+                        sense=correctSense(wn.synsets(lemma),lemma)
+                    if type(sense)!=type(None):
+                        #sense=sense[0]
+                        if notNeutral(lemma,dict(synsets_scores[sense.name()]),pos[index]):
+                            sentence.append((words[index],sense))
+                        formed_sentence+=words[index]+ ' '
+                else:
+                    formed_sentence+=words[index]+' '
         elif lemma in ['.','!','?']:
             if len(sentence)>0:
                 sentences.append(sentence)
                 sentence=[]
                 formed_sentences.append(formed_sentence)
             formed_sentence=' '
+        else:
+            formed_sentence+=words[index]+' '
+    '''
+    pronouns=["I","We","You","They","He","She","It","i","we","you","they","he","she","it"]
+    posTags=posTagger.tag(word_tokenize(emotionalPart))
+    for word,pos in posTags:
+        if pos in posToConsider:
+            pos=pos[0].lower()
+            if pos=='j':
+                pos='a'
+            if word not in namedEntities:
+                if word not in stopwords:
+                    print(word,pos)
+                    sense=correctSense(wn.synsets(word,pos=pos),word)
+                    if type(sense)==type(None):
+                        sense=correctSense(wn.synsets(word),word)
+                    if type(sense)!=type(None):
+                        #sense=sense[0]
+                        if word.lower() in ['like','likes','liked']:
+                            if(len(sentence)>0):
+                                if sentence[-1][0] in (pronouns+namedEntities):
+                                    sentence.append((word.lower(),wn.synset('like.v.03')))
+                        elif notNeutral(word.lower(),dict(synsets_scores[sense.name()]),pos):
+                            sentence.append((word.lower(),sense))
+                        formed_sentence+=word.lower()+ ' '
+                else:
+                    formed_sentence+=word.lower()+' '
+        elif word in ['.','!','?']:
+            if len(sentence)>0:
+                sentences.append(sentence)
+                sentence=[]
+                formed_sentences.append(formed_sentence)
+            formed_sentence=' '
+        else:
+            formed_sentence+=word+' '
     
     return sentences, formed_sentences

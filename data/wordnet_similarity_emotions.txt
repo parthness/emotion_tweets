@@ -1,6 +1,6 @@
-happy: joy, happy, proud, satisfied, optimistic, calm, awesome, blissful, pleasure, delighted, glad, fun, laugh, joke, funny, cool, enjoy, entertain, excitement, interest, enthusiasm, curiosity, thrilled, love, like, attraction, adore, hope, desire, hopeful
-sad: sad, sadness, pain, sorrow, grief, unhappy, pessimistic, crushed, rejected, disappointed, dissatisfied, hurt
+happy: joy, happy, proud, satisfied, optimistic, calm, awesome, blissful, pleasure, delighted, glad, fun, laugh, joke, funny, cool, enjoy, entertain, excitement, interest, enthusiasm, curiosity, thrilled, love, like, attraction, adore, hope, desire, hopeful, wonderful, thanks
+sad: sad, sadness, pain, sorrow, grief, unhappy, pessimistic, crushed, rejected, disappointed, dissatisfied, hurt, grim
 anger: anger, angry, aggressive, furious, irritated, offensive, aggressive, provoke
 disgust: disgust, terrible, fuck, ass, asshole, insult, revulsion, loathing, nausea, detestation, antipathy, degrade, humiliate, disgrace, shameful
 fear: fear, afraid, terrified, scared, panic, nervous, worried, threatened, frightened, coward, quaking
-surprise: surprise, confused, shocked, amazed, speechless, astonished, astounded, thunderstruck, staggered, miracle, wonder, unexpected
+surprise: surprise, confused, shocked, amazed, speechless, astonished, astounded, thunderstruck, staggered, miracle, wonder, unexpected, stun

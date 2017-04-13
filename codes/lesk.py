@@ -7,34 +7,28 @@
 # For license information, see LICENSE.md
 import math
 from itertools import chain
-
+import string
 from nltk.corpus import wordnet as wn
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from senti_classifier.senti_classifier import synsets_scores
 from pywsd.utils import lemmatize, porter, synset_properties
+from positive_negative_lexicon import lexiconDict
+from wordSenseDisambiguate import disgustingWords
 
-EN_STOPWORDS = stopwords.words('english')
+EN_STOPWORDS = stopwords.words('english')+list(string.punctuation)
 
-def compare_overlaps(context, synsets_signatures):
-    """
-    Calculates overlaps between the context sentence and the synset_signture
-    and returns a ranked list of synsets from highest overlap to lowest.
-    """
-    overlaplen_synsets = [] # a tuple of (len(overlap), synset).
-    for ss in synsets_signatures:
-        overlaps = set(synsets_signatures[ss]).intersection(context)
-        overlaplen_synsets.append((len(overlaps), ss))
+def findRelatedForms(ss):
+    drfList=[]
+    lemmas=ss.lemmas()
+    for lemma in lemmas:
+        drfs=lemma.derivationally_related_forms()
+        for drf in drfs:
+            drfList.append(drf.synset().name().split('.')[0])
 
-    # Rank synsets from highest to lowest overlap.
-    ranked_synsets = sorted(overlaplen_synsets, reverse=True)
+    return list(set(drfList))
 
-    ranked_synsets = [i[1] for i in sorted(overlaplen_synsets, \
-                                               reverse=True)]
-
-    return ranked_synsets[0]
-
-def simple_signature(ss, stem=False):
+def simple_signature(word,ss, stem=False):
     """
     Returns a synsets_signatures dictionary that includes signature words of a
     sense from its:
@@ -42,25 +36,25 @@ def simple_signature(ss, stem=False):
     (ii)  example sentences
     (iii) hypernyms and hyponyms
     """
-    signature=[]
+    signature=[wn.morphy(word),word,ss.name().split('.')[0]]+findRelatedForms(ss)
    # print("ss: ",ss)
     # Includes definition.
     ss_definition = synset_properties(ss, 'definition')
     signature+=word_tokenize(ss_definition)
     # Includes examples
-    ss_examples = synset_properties(ss, 'examples')
-    signature+=list(chain(*[i.split() for i in ss_examples]))
+    #ss_examples = synset_properties(ss, 'examples')
+    #signature+=list(chain(*[i.split() for i in ss_examples]))
     # Includes lemma_names.
     ss_lemma_names = synset_properties(ss, 'lemma_names')
     signature+= ss_lemma_names
     # Optional: includes lemma_names of hypernyms and hyponyms.
     
     ss_hyponyms = synset_properties(ss, 'hyponyms')
-    ss_hypernyms = synset_properties(ss, 'hypernyms')
-    ss_hypohypernyms = ss_hypernyms+ss_hyponyms
+    #ss_hypernyms = synset_properties(ss, 'hypernyms')
+    ss_hypohypernyms = ss_hyponyms#+ss_hypernyms
     signature += list(chain(*[i.lemma_names() for i in ss_hypohypernyms]))
   #  print(signature)
-    '''
+    
     # Includes holonyms.
     ss_mem_holonyms = synset_properties(ss, 'member_holonyms')
     ss_part_holonyms = synset_properties(ss, 'part_holonyms')
@@ -70,23 +64,23 @@ def simple_signature(ss, stem=False):
     ss_part_meronyms = synset_properties(ss, 'part_meronyms')
     ss_sub_meronyms = synset_properties(ss, 'substance_meronyms')
     # Includes similar_tos
-    ss_simto = synset_properties(ss, 'similar_tos')
+    #ss_simto = synset_properties(ss, 'similar_tos')
     
     related_senses = list(set(ss_mem_holonyms+ss_part_holonyms+
                               ss_sub_holonyms+ss_mem_meronyms+
-                              ss_part_meronyms+ss_sub_meronyms+ ss_simto))
+                              ss_part_meronyms+ss_sub_meronyms))
 
     signature += list([j for j in chain(*[synset_properties(i, 'lemma_names')
                                          for i in related_senses])
                       if j not in EN_STOPWORDS])
   #  print(signature)
     # Optional: removes stopwords.
-    '''
+    signature = [i for i in signature if type(i)==str]
     signature = [i for i in signature if i.lower() not in EN_STOPWORDS]
     # Lemmatized context is preferred over stemmed context.
     signature = [lemmatize(i) for i in signature]
     # Matching exact words may cause sparsity, so optional matching for stems.
-    signature = [porter.stem(i) for i in signature]
+    #signature = [porter.stem(i) for i in signature]
     
     ss_sign=set(signature)
     
@@ -96,10 +90,24 @@ def simple_signature(ss, stem=False):
         if len(synsets)>0:
             if synsets[0] not in sim:
                 synset=synsets[0]   
+                '''
                 pos=synsets_scores[synset.name()]['pos']
                 neg=synsets_scores[synset.name()]['neg']
                 if(pos>0.125 or neg>0.125):     
                     sim.append(synset)
+                else:
+                    signature.remove(ss)
+                '''
+                pos=synset.pos()
+                morphy=wn.morphy(ss,pos)
+                if (ss,pos) in lexiconDict or (ss,'z') in lexiconDict or ss in disgustingWords:
+                    sim.append(synset)
+                elif (morphy is not None) and ((morphy,'z') in lexiconDict or (morphy,pos) in lexiconDict):
+                    sim.append(synset)
+                else:
+                    signature.remove(ss)
+        else:
+            signature.remove(ss)
     return [signature,sim]
     '''
     sim=[]
@@ -133,23 +141,24 @@ def similarity_lesk(ss_sign1, ss_sign2):
     """
     score=0
     overlap=(set(ss_sign1[0])).intersection(ss_sign2[0])
-    overlapped=list(filter(lambda a: a in overlap, ss_sign1[0]))
+    overlapped=list(filter(lambda a: (a in overlap) and (a not in list(string.punctuation)), ss_sign1[0]))
     score=len(overlapped)
-    
+    #print(set(ss_sign1[0]),set(ss_sign2[0]))
+    if score!=0:
+        print(set(ss_sign1[0]),overlapped,score)
     sim_score=0
     
     for ss1 in ss_sign1[1]:
-        pos1=ss1.name().split('.')[1]
+        pos1=ss1.pos()
         if pos1=='v' or pos1=='n':
             for ss2 in ss_sign2[1]:
-                pos2=ss2.name().split('.')[1]
+                pos2=ss2.pos()
                 if pos1=='v':
                     path_score=ss1.path_similarity(ss2)
                     if path_score>=0.4:
                         #print(ss1.name(),ss2.name(),path_score)
                         sim_score+=path_score
-                elif pos2=='n':
-                    
+                elif pos2=='n':                    
                     path_score=ss2.path_similarity(ss1)
                     if path_score>=0.4:
                         #print(ss1.name(),ss2.name(),path_score)
@@ -158,7 +167,7 @@ def similarity_lesk(ss_sign1, ss_sign2):
             
     #print(score,sim_score) 
             
-    return score+math.ceil(sim_score)
+    return score+sim_score
     
     #return len(ss_sign1.intersection(ss_sign2))
 
@@ -176,34 +185,71 @@ with open('../data/emotion_dict_synsets.txt','r') as f:
                synsets=[]
                emotion=line[1:]
             else:
-                synsets.append(simple_signature(wn.synset(line)))
+                synsets.append(simple_signature(line,wn.synset(line)))
          
 if len(synsets)>0:
     emoDict[emotion]=synsets
 
 positive=['happy']
 negative=['sad','anger','disgust','fear']
-emotions=positive+negative+['surprise']
+surprise=['surprise']
+emotions=positive+negative+surprise
 
-def calculateSimilarity(senses,pos,neg): 
-    sense=simple_signature(senses['sense'])
+
+def calculateSimilarity(word,senses,pos,neg): 
+    sense=simple_signature(word,senses['sense'])
     maxEmotionScore=0
-    for emotion in emotions:
+    morphy=wn.morphy(word,senses['sense'].pos())
+    if (word,'z') not in lexiconDict and (morphy is not None):
+        word=morphy
+    if lexiconDict[(word,'z')]=='+':
+        emotionsToMatch=positive+surprise
+        for emotion in negative:
+            senses[emotion]=0
+    else:
+        emotionsToMatch=negative+surprise
+        for emotion in positive:
+            senses[emotion]=0
+
+    for emotion in emotionsToMatch:
         score=0
         max=0
+        print(emotion)
         for synset in emoDict[emotion]:
-            score=similarity_lesk(synset,sense)
-            if(score>max):
-                max=score
+            score+=similarity_lesk(synset,sense)
+        if(score>max):
+            max=score
         max=round(max,2)
         if(max>maxEmotionScore):
             maxEmotionScore=max
         senses[emotion]=max
     
+    sense=senses['sense']
+    #word=sense.name().split('.')[0]
+    posTag=sense.pos()
+    if posTag=='s':
+        posTag='a'
+    if (word,posTag) in lexiconDict:
+        polarity=lexiconDict[(word,posTag)]
+        if(polarity=='+'):
+            pos=1
+            neg=0
+        else:
+            pos=0
+            neg=1
+    elif (word,'z') in lexiconDict:
+        polarity=lexiconDict[(word,'z')]
+        if(polarity=='+'):
+            pos=1
+            neg=0
+        else:
+            pos=0
+            neg=1
     #normalizing score between 0 and 1
     #polarity correction
-    print("before RMS : " , senses)
+    print("before RMS : " , senses,maxEmotionScore)
     if(maxEmotionScore!=0):
+        maxEmotionScore+=1
         meanSquare=0
         for emotion in emotions:
             senses[emotion]=round(senses[emotion]/maxEmotionScore,2)
@@ -213,7 +259,8 @@ def calculateSimilarity(senses,pos,neg):
 
         rootMeanSquare=math.sqrt(meanSquare)
         rootMeanSquare+=(0.25*rootMeanSquare)
-        if(rootMeanSquare!=0):
+        print("after polarity correction : ",senses,rootMeanSquare)
+        if(rootMeanSquare>1):
             for emotion in emotions:
                 senses[emotion]=round(senses[emotion]/rootMeanSquare,2)
 

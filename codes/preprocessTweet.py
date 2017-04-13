@@ -1,5 +1,5 @@
 import re, time, enchant, nltk, string
-#from nltk.tag import StanfordNERTagger
+from nltk.tag import StanfordNERTagger
 from nltk.tokenize import word_tokenize
 from collections import Counter
 from nltk.corpus import wordnet as wn
@@ -47,7 +47,7 @@ def named_entities(sentence):
 
     for tree in chunked_sentences:
         entity_names.extend(extract_entity_names(tree))
-    '''
+    
     st = StanfordNERTagger('/Users/Parth/Desktop/project_docs/codes/stanford-ner-2016-10-31/classifiers/english.muc.7class.distsim.crf.ser.gz',
                            '/Users/Parth/Desktop/project_docs/codes/stanford-ner-2016-10-31/stanford-ner.jar',
                            encoding='utf-8')
@@ -73,7 +73,7 @@ def named_entities(sentence):
         else:
             entities_list.append(entity)
     return list(set(entities_list))
-
+    '''
 
 def splitHashtag(hashtag):
     uppercase=re.compile("[A-Z]")
@@ -83,7 +83,7 @@ def splitHashtag(hashtag):
     if len(hashtag)==0:
         return '#'
     if '_' in hashtag:
-        return ' '.join(hashtag.split('_'))
+        return ' '.join(['#'+token for token in hashtag.split('_')])
     else:
         splittedHashtag=hashtag[0]
         for char in hashtag[1:]:
@@ -93,12 +93,12 @@ def splitHashtag(hashtag):
                 splittedHashtag=splittedHashtag[:-1]+' '+splittedHashtag[-1]+char
             else:
                 splittedHashtag+=char
-               
-    return ' '.join(splittedHashtag.split())
+
+    return ' '.join(['#'+token for token in splittedHashtag.split()])
 
 
 def spellCorrect(spell,dictionary):
-    
+    print(spell)
     suggestions=dictionary.suggest(spell)
     if len(suggestions)==0:
         return ' ' #incorrect spelling - to be removed
@@ -117,20 +117,30 @@ def spellCorrect(spell,dictionary):
 notSentence=re.compile("^[\?\.\!' ]+$")  #to eliminate sentences having only punctuations
 punctuations=['.','?','!']
 pronouns=["I","We","You","They","He","She","It"]
-apostrophes=["n't","'d","'ll","'s","'m","'ve","'re","na"]
+apostrophes=["n't","'d","'ll","'s","'m","'ve","'re","na","ta"]
 digit=re.compile("[0-9]")
 repeatedLetters=re.compile(r"(.)\1{2,}")
 abbreviations=re.compile("^[A-Z\.]+$")
 dictionary=enchant.Dict("en_US")
-
+allowedTokens=re.compile("('?[A-Za-z0-9]+)+")
+sentenceSeparators=[('and',' . '),('but',' . '),('because',' . '),('therefore',' . '),('yet',' . '),\
+                    ('then',' . '),('although',' . '),('still',' . '),('untill',' . '),('really?','surprise'),('really ?','surprise')]
+interjections=[ ('Ooh la la','happy'), ('oh shit','fear'), ('oh my god','surprise'), ('oh my gosh','surprise'), ('wow great','happy'),\
+                ('oh my goodness','surprise'), ('wo-hoo','happy'),('can not wait to','excited'),('fucking','anger'),('fuck off','anger'),\
+                ('what the fuck','anger'),('what the hell','anger'),('pissed','annoyed'),('fuck up','anger'),('fucked up','disgust'),\
+                ('very odd','surprise'),('shut up','anger')]
 def preprocess(tweet): #dict - dictionary of slangs
     tweet=tweet.replace('USER','').strip()
+    for k,v in sentenceSeparators:
+        replace=re.compile(k, re.IGNORECASE)
+        tweet=replace.sub(v,tweet)
+
     # hashtag split
     tokens=[token if token[0]!='#' else splitHashtag(token[1:]) for token in tweet.split()]
     if '#' in tokens:
         tokens.remove('#')
     tweet=' '.join(tokens)
-        
+    
     sentences=re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?|\!)\s', tweet)    
     sentences=[sentence.strip() for sentence in sentences]   
     sentenceType=[] 
@@ -153,27 +163,32 @@ def preprocess(tweet): #dict - dictionary of slangs
                     sentenceTokens.append(token.strip())
             numOfCorrected=0
             correctedTokens=[]
+
             if punctuation!='?':
                 for index,token in enumerate(sentenceTokens):
-                    #  print(token)
+                    if allowedTokens.match(token)==None:
+                        continue
+                    hashWord=False
+                    if (index-1)>=0 and sentenceTokens[index-1]=='#':
+                        hashWord=True
+
                     if (token in (list(string.punctuation))) or digit.search(token)!=None:
                         correctedTokens.append(token)
                     else:
                         if (token not in pronouns+namedEntities) and abbreviations.match(token)==None and dictionary.check(token)!=True:
                             token=token.lower()
-                        if (len(token)!=1 and dictionary.check(token)) or ((index+1)<len(sentenceTokens) and sentenceTokens[index+1] in apostrophes):
+                        if (len(token)!=1 and len(wn.synsets(token))!=0) or ((index+1)<len(sentenceTokens) and sentenceTokens[index+1] in apostrophes):                                
                             correctedTokens.append(token)
-                        elif token in apostrophes and len(correctedTokens)>0:
+                        elif token in apostrophes and len(correctedTokens)>0 and (correctedTokens[-1]+token).lower() in dictSlang:
                             key=(correctedTokens[-1]+token).lower()
-                            if key in dictSlang:
-                                correctedTokens[-1]=dictSlang[key]
-                            else:
-                                correctedTokens[-1]=correctedTokens[-1]+token
+                            correctedTokens[-1]=dictSlang[key]
                         elif token in dictSlang:
                             correctedTokens.append(dictSlang[token])
                         elif token.lower() in dictSlang and token in namedEntities:
                             correctedTokens.append(dictSlang[token.lower()])
                             namedEntities.remove(token)
+                        elif abbreviations.match(token)!=None or hashWord or token in namedEntities:
+                            correctedTokens.append(token)
                         else:
                             repeatedLettersMatch=repeatedLetters.search(token)
                             while repeatedLettersMatch!=None:
@@ -181,9 +196,10 @@ def preprocess(tweet): #dict - dictionary of slangs
                                 replaceWith=toBeReplaced[0]+toBeReplaced[0]
                                 token=re.sub(toBeReplaced,replaceWith,token)
                                 repeatedLettersMatch=repeatedLetters.search(token)
-                            if dictionary.check(token) or token in namedEntities or abbreviations.match(token)!=None:
+                            if dictionary.check(token):
                                 correctedTokens.append(token)
                             else:
+                                token=token.lower()
                                 if '-' in token:
                                     subtokens=token.split('-')
                                     for subtoken in subtokens:
@@ -202,11 +218,18 @@ def preprocess(tweet): #dict - dictionary of slangs
                                         numOfCorrected+=1
                 if ' ' in correctedTokens:
                     correctedTokens=list(filter(lambda a: a != ' ', correctedTokens)) 
-                if numOfCorrected<=(0.5*len(correctedTokens)):
-                    filteredSentences.append(' '.join(correctedTokens))
-                    sentenceType.append(punctuation)
+                
+                #if numOfCorrected<=(0.5*len(correctedTokens)):
+                filteredSentences.append(' '.join(correctedTokens))
+                sentenceType.append(punctuation)
             else:
                 filteredSentences.append(sentence)
                 sentenceType.append(punctuation)
+
+    for index, sentence in enumerate(filteredSentences):
+        for k,v in interjections:
+            replace=re.compile(k, re.IGNORECASE)
+            sentence=replace.sub(v,sentence)
+        filteredSentences[index]=sentence
 
     return filteredSentences,sentenceType,namedEntities

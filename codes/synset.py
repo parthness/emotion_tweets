@@ -2,7 +2,7 @@ from nltk.corpus import wordnet as wn
 dict={}
 w=open("../data/synsets.txt",'w')
 
-with open("../data/wordnet_similarity_emotions.txt",'r') as f:
+with open("../data/wordnet_similarity_emotions2.txt",'r') as f:
 	for entry in f:
 		inputs=[]
 		entry=entry.split(':')
@@ -15,13 +15,11 @@ with open("../data/wordnet_similarity_emotions.txt",'r') as f:
 			if len(wn_synsets)>0:
 				print("***"+synset+"***")
 				for syn in wn_synsets:
-					print(syn.definition())
+					print(syn.name(), syn.definition())
 				index=input("required synset : ")
-				synsets.append(wn_synsets[int(index)])
-				inputs.append(index)
-		dict[entry[0]]=synsets
+				sense=wn_synsets[int(index)]
+				synsets.append(sense)
+				w.write(sense.name()+'\n')
+		dict[entry[0]]=list(set(synsets))
 		
-		for inp in inputs:
-			w.write(inp+'\n')
-
 w.close()
