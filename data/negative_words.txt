@@ -217,6 +217,9 @@ arcane
 archaic
 arduous
 arduously
+argument
+arguing
+argued
 argumentative
 arrogance
 arrogant
@@ -832,9 +835,6 @@ cumbersome
 cunt
 cunts
 cuplrit
-curse
-cursed
-curses
 curt
 cuss
 cussed
@@ -1437,9 +1437,7 @@ dropout
 dropouts
 drought
 drowning
-drunk
 drunkard
-drunken
 dubious
 dubiously
 dubitable
@@ -1828,6 +1826,8 @@ frustratingly
 frustration
 frustrations
 fuck
+fuckers
+fucker
 fucking
 fudge
 fugitive
@@ -1837,9 +1837,6 @@ fumble
 fume
 fumes
 fundamentalism
-funky
-funnily
-funny
 furious
 furiously
 furor
@@ -3860,6 +3857,7 @@ sickness
 sidetrack
 sidetracked
 siege
+sigh
 sillily
 silly
 simplistic
@@ -4501,6 +4499,7 @@ unimaginable
 unimaginably
 unimportant
 uninformed
+uninspiring
 uninsured
 unintelligible
 unintelligile
@@ -4812,6 +4811,9 @@ wrongful
 wrongly
 wrought
 yawn
+yell
+yelling
+yelled
 zap
 zapped
 zaps
@@ -4897,3 +4899,13 @@ miracle
 wonder
 unexpected
 weirdest
+tears
+slam
+slams
+slammed
+honking
+shudder
+shudders
+shuddered
+shuddering
+horribly

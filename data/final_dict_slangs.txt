@@ -11,7 +11,7 @@ cbi:can not believe it
 bos:boss over shoulder
 gfl:grounded for life
 gafi:get away from it
-bh:bloody hell
+bh:anger
 pssy:pussy
 ff:friendly fire
 npc:non-playable character
@@ -25,7 +25,7 @@ aaaaa:american assosciation against acronym abuse
 gai:gay
 itzk:it is ok
 gng2:going to
-ayfs:are you fucking serious
+ayfs:are you anger serious
 lttpot:laughing to the point of tears
 tiss:this is some slut
 ttyitm:talk to you in the morning
@@ -38,24 +38,24 @@ csl:can not stop laughing
 tfti:thanks for the information
 avvie:avatar
 fyp:fixed your post
-fuckin:fucking
-fuckin'm:fucking
+fuckin:anger
+fuckin'm:anger
 nevar:never
 n199312:african american
 cuzz:because
 ij:indide joke
 rme:rolling my eyes
 crs:can not remember slut
-fuxing:fucking
+fuxing:anger
 2gethr:together
 l8tr:later
 imoo:in my own opinion
 plzthx:please? thanks
-gth:go to hell
+gth:go to anger
 msm:main stream media
 hvnt:have not
 bbiaf:be back in a few
-isfly:i so fucking love you
+isfly:i love you
 bbiab:be back in a bit
 peeps:people
 mkay:ok
@@ -69,13 +69,13 @@ ltm:listen to me
 tl; dr:to long; did not read
 soafb:son of a fucking bitch
 tht:that
-mtrfkr:motherfucker
+mtrfkr:anger
 s2us:speak to you soon
 2tm:to the max
 afair:as far as i recall
 ygm:you got mail
 mfah:motherfucking asshole
-wthaydwmgf:what the hell are you doing with my girlfriend
+wthaydwmgf:what the anger are you doing with my girlfriend
 nmnhnlm:no money, no honey, nobody loves me
 bts:be there soon
 sx:sex
@@ -103,8 +103,8 @@ tfic:tongue firmly in cheek
 orpg:online role playing game
 sn:screen name
 w8t4me:wait for me
-wthyi:what the hell you idiot
-fpos:fucking piece of slut
+wthyi:what the anger you idiot
+fpos:anger piece of slut
 tnc:totally not cool
 xlnt:excellent
 dk:do not know
@@ -140,10 +140,10 @@ bf's:boyfriend's
 nmu:nothing much, you
 tl;dr:too long; did not read
 wha:what?
-qfmft:quoted for motherfucking truth
+qfmft:quoted for mother anger truth
 hiybbprqag:copying somebody else's search results
 j2c:just too cute
-tisfu:that is so fucked up
+tisfu:that is so disgust up
 llap:live long and prosper
 hoas:hang on a second
 hait:hate
@@ -165,13 +165,13 @@ dc:do not care
 iydmma:if you do not mind me asking
 ctpos:can not talk parent over sholder
 sh:slut happens
-smfpos:stupid mother fucking piece of slut
+smfpos:stupid mother anger piece of slut
 w.b.s.:write back soon
 sux0rz:sucks
 omfwtg:oh my fuck what the god?
 ltb:looking to buy
 omdz:oh my days
-omfl:oh my fucking internet connection is slow
+omfl:oh my anger internet connection is slow
 srzly:seriously
 tif:this is fun
 lqtm:laugh quietly to myself
@@ -210,7 +210,7 @@ iwg:it was good
 wutb:what are you talking about
 sydim:stick your dick in me
 boffum:both of them
-fcking:fucking
+fcking:anger
 uhems:you hardly ever make sense
 wu:what is up?
 h3y:hey
@@ -228,7 +228,7 @@ pimpl:pissing in my pants laughing
 gws:get well soon
 aysm:are you shitting me?
 eob:end of business
-zomfg:oh my fucking god
+zomfg:oh my anger god
 nwtf:now what the fuck
 n/t:no text
 dctnry:dictionary
@@ -239,10 +239,10 @@ swp:sorry wrong person
 lub:laugh under breath
 they'd:They would
 ccna:cisco certified network associate
-yvfw:you are very fucking welcome
+yvfw:you are very welcome
 eq2:everquest2
 ilywamh:i love you with all my heart
-wthhyb:where the hell have you been?
+wthhyb:where the anger have you been?
 tinla:this is not legal advice
 iduwym:i do not understand what you mean.
 asaik:as soon as i know
@@ -265,7 +265,7 @@ vgn:video game nerd
 wdut:what do you think?
 bbfn:bye bye for now
 ilk2fku:i would like to fuck you
-mf:motherfucker
+mf:anger
 bb4h:bros before hoes
 wdys:what did you say
 wutcha:what are you
@@ -276,14 +276,14 @@ pvp:player versus player
 wafn:what a fucken noob
 imh:i am here
 ty:thank you
-rtfp:read the fucking post
-rtfmm:read the fucking manual moron
+rtfp:read the anger post
+rtfmm:read the anger manual moron
 luzar:loser
 kmao:kick my ass off
-gsfg:go search fucking google
+gsfg:go search anger google
 jtyltk:just thought you would like to know
 h8s:hates
-jfwy:just fucking with you
+jfwy:just anger with you
 pww:parents were watching
 wfhw:what is for homework
 wdhlm:why doesnt he love me?
@@ -293,13 +293,13 @@ gtgn:got to go now
 jst:just
 wdywtd:what do you want to do
 cd9:code 9 (other people nearby)
-stufu:stupid fucker
+stufu:stupid anger
 iyd:in your dreams
 *eg*:evil grin
 pir:parents in room
-fkin:fucking
+fkin:anger
 khitbash:kick her in the box and shove her
-igkymfa:i am gonna kick your mother fucking ass
+igkymfa:i am gonna kick your mother anger ass
 iws:i want sex
 convo:conversation
 dmba*:dumbass
@@ -309,7 +309,7 @@ cilf:child i would like to fuck
 tlgo:the list goes on
 km:kiss me
 nade:grenade
-hai:hello
+hai:angero
 avtr:avatar
 ttyas:talk to you at school
 prnoscrn:porn on screen
@@ -326,7 +326,7 @@ vweg:very wicked evil grin
 nb:not bad
 oaw:on a website
 lold:laughed out loud
-fubh:fucked up beyond hope
+fubh:disgust beyond hope
 ihy:i hate you
 upmo:you piss me off
 jtbs:just to be sure
@@ -334,14 +334,14 @@ moss:member of same sex
 spk:speak
 tilf:teenager i would like to fuck
 ftlt:for the last time
-oyfe:open your fucking eyes
+oyfe:open your anger eyes
 gtp:got to pee
 cmon:come on
 2trd:too tired
 rbty:right back to you
 gg:good game
 mai:my
-tfh:thread from hell
+tfh:thread from anger
 iwfybo:i will fuck your brains out
 igg:i gotta go
 w8am:wait a minute
@@ -368,22 +368,22 @@ bstfu:bitch shut the fuck up
 fiic:fucked if i care
 udc:you do not care
 idkt:i do not know that
-rtffp:read the fucking front page
+rtffp:read the anger front page
 sho'nuff:sure enough
 d/c:disconnected
-sfs:so fucking stupid
+sfs:so anger stupid
 natm:not at the minute
 biach:bitch
 mlc:mid life crisis
 kss:kiss
 sgtm:slightly gigling to myself
-woot:woohoo
+woot:curious
 sm:social media
 stpd:stupid
 omgz:oh my god
 ttfn:ta ta for now
-dillifc:do i look like i fucking care
-dfc:do not fucking care
+dillifc:do i look like i anger care
+dfc:do not anger care
 shrn:so hot right now
 ytmnd:you are the man now, dog!
 304:hoe
@@ -401,7 +401,7 @@ tml:tell me later
 rotflmfaopimp:rolling on the floor laughing my fucking ass off peeing in my pants
 mos:mom over shoulder
 lshifabmh:laughing so hard i fell and broke my hip
-fuxor:fucker
+fuxor:anger
 kyfc:keep your fingers crossed
 tnxz:thanks
 fmao:freezing my ass of
@@ -450,7 +450,7 @@ rotfflmao:rolling on the fucking floor laughing my ass off
 avy:avatar
 liek:like
 witwct:what is the world coming too
-ya:yeah
+ya:yes
 j/c:just curious
 yduwtk:why do you want to know
 n/a/s/l:name, age, sex location
@@ -463,7 +463,7 @@ cyl:see you later
 w***e:whore
 rumf:are you male or female
 l8:late
-ohy:oh hell yeah
+ohy:oh anger yeah
 she'll:She will
 lzer:laser
 awsic:and why should i care
@@ -474,7 +474,7 @@ becuz:because
 legit:legitimate
 yn:why not
 rofflmfao:rolling on the floor laughing my fucking ass
-g2hb:go to hell bitch
+g2hb:go to anger bitch
 aqap:as quick as possible
 rotflmmfao:rolling on the floor laughing my mother fucking ass off
 5h17:slut
@@ -496,7 +496,7 @@ noub:none of your business
 nifoc:naked in front of computer
 bbt:be back tomorrow
 oed:oxford english dictionary
-vff:verry fucking funny
+vff:verry funny
 tifs:this is funny slut
 smdb:suck my dick bitch
 tyfyc:thank you for your comment
@@ -514,8 +514,8 @@ neva:never
 dgac:do not give a crap
 4umb:for you maybe
 2gether:together
-heyy:hello
-wyas:wow you are stupid
+heyy:angero
+wyas:you are stupid
 ttyo:talk to you online
 idop:it depends on price
 oic:oh, i see
@@ -529,7 +529,7 @@ ggnore:good game no rematch
 rlz:rules
 c2c:care to chat?
 tlkin:talking
-hfsbm:holy fucking slut batman
+hfsbm:holy anger slut batman
 yysw:yeah, yeah, sure, whatever
 kwtsds:kiss where the sun do not shine
 31ee7:elite
@@ -586,7 +586,7 @@ ffxi:final fantasy 11
 eot:end of transmission
 sexx0rz:sex
 diku:do i know you
-ayk:are you kidding
+ayk:are you happy
 jwas:just wait a second
 smh:shaking my head
 b2u:back to you
@@ -605,7 +605,7 @@ rowyco:rock out with your cock out
 prfct:perfect
 shut^:shut up
 yty:why thank you
-yaafm:you are a fucking moron
+yaafm:you are a anger moron
 wai:what an idiot
 rotfwlmao:rolling on the floor while laughing my ass off
 wgasa:who gives a slut anyway
@@ -642,7 +642,7 @@ joo:you
 eejit:idiot
 kpc:keeping parents clueless
 h/mo:homo
-idgafs:i do not give a fucking slut
+idgafs:i do not give a anger slut
 byoc:bring our own computer
 idc:i do not care
 roffle out loud:rolling on the floor laughing out loud
@@ -668,17 +668,17 @@ str8up:straight up
 msg:message
 yng:young
 b&:banned
-rtfms:read the fucking manual stupid
+rtfms:read the anger manual stupid
 s.i.t.:stay in touch
 ygp:you got punked!
-nff:not fucking fair
+nff:not anger fair
 np:no problem
 p.o.b.:parent over back
 roflastc:rolling on floor laughing and scaring the cat
 ifthtb:i find that hard to belive
 iyq:i like you
 besos:kisses
-ayfkm:are you fucking kidding me
+ayfkm:are you happy me
 shite:slut
 plars:party like a rock star
 obtw:oh, by the way
@@ -687,11 +687,11 @@ lezzzie:lesbian
 ymgtc:your mom goes to college
 wwe:world wrestling entertainment
 funner:more fun
-hll:hell
+hll:anger
 tmtt:tell me the truth
 cud:could
 tuvm:thank you very much
-dfwmt:do not fucking waste my time
+dfwmt:do not waste my time
 wht^:what up
 g2k:good to know
 ilyvm:i love you very much
@@ -710,7 +710,7 @@ plocks:please
 ttms:talking to myself
 amiigaf:ask me if i give a fuck
 n00bs:newbies
-12b:wannabe
+12b:want to be
 ferr:for
 ywapom:you want a piece of me?
 foia:freedom of information act
@@ -723,8 +723,8 @@ vfe:virgins 4 ever
 bzzy:busy
 4head:forehead
 byes:bye bye
-h&k:hugs and kisses
-hi2u:hello
+h&k:love and kisses
+hi2u:angero
 na:not applicable
 prd:period
 g2t2s:got to talk to someone
@@ -749,20 +749,20 @@ roflcopters:rolling on the floor laughing, very funny.
 cg:congratulations
 0noe:oh no
 f.b.:facebook
-ypmo:you piss me off
+ypmo:you anger me off
 xl:extra large
 jyfihp:jam your finger in her pussy
 c 2 c:cam to cam (webcams)
 fubah:fucked up beyond all hope
 pdq:pretty damn quick
 fuk:fuck
-bytabm:beat you to a bloody mess
+bytabm:beat you to a angry mess
 bruh:brother
 wyhi:would you hit it?
 ggg:go, go, go!
 nc:not cool
 ownt:made to look bad
-tff:that is fucking funny
+tff:that is funny
 wtfdum:what the fuck do you mean
 rotflmaostc:rolling on the floor laughing my ass off scaring the cat
 hmu:hit me up
@@ -791,7 +791,7 @@ lbo:laughing butt off
 afaiaa:as far as i am aware
 rino:republican in name only
 ftfy:fixed that for you
-fukin:fucking
+fukin:anger
 bol:barking out loud
 2mmrw:tomorrow
 hppy:happy
@@ -815,7 +815,7 @@ some1:someone
 pwcb:parents watching close by
 nmjcu:nothing much, just chilling, you?
 kos:kid over shoulder
-ttrf:that is the rules, fucker
+ttrf:that is the rules, anger
 dttriaa:do not tell the riaa
 n/a:not applicable
 4fs:for fuck's sake
@@ -830,7 +830,7 @@ gl hf:good luck, have fun
 4q:fuck you
 rp:roleplay
 m2:me too
-p/oed:pissed off
+p/oed:angry off
 lgo:life goes on
 bbk:be back, ok?
 r.i.p.:rest in peace
@@ -885,7 +885,7 @@ s/b:should be
 roj:affirmative
 ure:you are
 brh:be right here
-dnrtfa:did not read the fucking article
+dnrtfa:did not read the anger article
 luvv:love
 meatspace:the real world
 bbq:be back quick
@@ -897,7 +897,7 @@ hags:have a great summer
 asic:application specific integrated circuit
 roger:affirmative
 obo:or best offer
-blh:bored like hell
+blh:bored like anger
 bi:bye
 gaalma:go away and leave me alone
 cwm:come with me
@@ -935,14 +935,14 @@ proxie:proxy
 miw:mom is watching
 tbd:to be decided
 fc:fruit cake
-xox:hugs and kisses
+xox:love and kisses
 d2:diablo 2
 faq:frequently asked question
 g2bg:got to be going
 ftf:face to face
 skb:should know better
 istg:i swear to god
-fuctard:fucking retard
+fuctard:anger retard
 cis:computer information science
 wwudtm:what would you do to me
 cmeo:crying my eyes out
@@ -962,7 +962,7 @@ fny:funny
 f&e:forever and ever
 wyw:what you want
 ?^:what is up?
-rpo:royally pissed off
+rpo:royally annoyed off
 fmsh:fuck me so hard
 smho:screaming my head off
 sk8er:skater
@@ -1003,11 +1003,11 @@ hmwrk:homework
 lmfao:laughing my fucking ass off
 lawd:lord
 imwtk:inquiring minds want to know
-idrfk:i do not really fucking know
+idrfk:i do not really know
 tgft:thank god for that
 aight:alright
 tnlnsl:took nothing left nothing signed log
-jklol:just kidding laughing out loud
+jklol:just happy laughing out loud
 dmi:do not mention it
 ijit:idiot
 flames:angry comments
@@ -1026,7 +1026,7 @@ atst:at the same time
 ictrn:i can not talk right now
 nookie:sex
 a/s/l/p:age/sex/location/picture
-fomofo:fuck off mother fucker
+fomofo:fuck off anger
 rawks:rocks
 lolrotf:laughing out loud rolling on the floor
 fyb:fuck you bitch
@@ -1073,10 +1073,10 @@ ftio:fun time is over
 10q:thank you
 hrud:how are you doing
 otfcu:on the floor cracking up
-ydufc:why do fucking care?
+ydufc:why do anger care?
 bzns:buisness
 bck:back
-wthay:who the hell are you
+wthay:who the anger are you
 tfb:time for bed
 iym:i am your man
 gemo:gay emo
@@ -1117,7 +1117,7 @@ foyb:fuck off you bitch
 cyntott:see you next time on tech today
 foss:free, open source software
 yt:you there?
-tbpfh:to be perfectly fucking honest
+tbpfh:to be perfectly anger honest
 iiwii:it is what it is
 nd:and
 wdya:why do you ask
@@ -1133,7 +1133,7 @@ wio:without
 fao:for attention of
 4us:for us
 srsly:seriously
-aufsm:are you fucking shiting me
+aufsm:are you anger shiting me
 ilcul8r:i will see you later
 tmz:tomorrow
 sthing:something
@@ -1155,7 +1155,7 @@ bmfe:best mates forever
 p@w:parents are watching
 cmt:comment
 tq:thank you
-yk:you kidding
+yk:you happy
 ibbl:i will be back later
 suk:suck
 hav:have
@@ -1164,7 +1164,7 @@ mmmkay:okay
 dwn:down
 jlt:just like that
 ttul8r:talk to you later
-ygtbkm:you got to be kidding me
+ygtbkm:you got to be happy me
 gr8t:great
 2night:tonight
 eedyat:idiot
@@ -1174,7 +1174,7 @@ dqydj:do not quit your day job
 rta:read the article
 otoh:on the other hand
 g2g:got to go
-4ker:fucker
+4ker:anger
 smthin:something
 ccl:could not care less
 kutgw:keep up the good work
@@ -1241,7 +1241,7 @@ ft:fuck that
 ppppppp:prior proper planning prevents piss poor performance
 nifok:naked in front of keyboard
 witcha:with you
-omhg:oh my hell god
+omhg:oh my anger god
 nv:envy
 jfn:just for now
 gaw:grandparents are watching
@@ -1261,13 +1261,13 @@ slos:someone looking over shoulder
 fragged:killed
 seo:search engine optimization
 ijpmp:i just peed my pants
-lobl:laugh out bloody loud
+lobl:laugh out loud
 ursg:you are so gay
 wrd:word
 dmy:do not mess yourself
 aiui:as i understand it
 wsf:we should fuck
-ftmfw:for the mother fucking win
+ftmfw:for the anger happy
 dnw:do not want
 w/eva:whatever
 iwuwh:i wish you were here
@@ -1281,7 +1281,7 @@ pwnage:ownage
 lwih:look what i have
 fuu:fuck you up
 yo:year old
-fmfl:fuck my fucking life
+fmfl:fuck my anger life
 idw2n:i do not want to know
 fyf:fuck your face
 sofas:stepping out for a smoke
@@ -1293,14 +1293,14 @@ beyatch:bitch
 onyd:oh no you did not
 ams:ask me something
 sut:see you tomorrow
-hy:hell yeah
+hy:anger yeah
 wl:will
 www:world wide web
 lezbo:lesbian
 cfm:come fuck me
 msibo:my side is busting open
 tp:toilet paper
-dwai:do not worry about it
+dwai:do not fear about it
 iuno:i dunno
 catwot:complete and total waste of time
 ttiwwp:this thread is worthless without pics
@@ -1317,7 +1317,7 @@ tau:thinking about you
 wazzup:what is up
 bohica:bend over, here it comes again
 rotfpm:rolling on the floor pissing myself
-yfb:you fucking bitched
+yfb:you fucking bitch
 nuffin:nothing
 plz:please
 shup:shut up
@@ -1325,9 +1325,9 @@ lyaab:love you as a brother
 sos:same old slut
 wtfayt:why the fuck are you talking
 uradrk:you are a dork
-omgicfbi:oh my god i can not fucking believe it
+omgicfbi:oh my god i can not believe it
 yhbt:you have been trolled
-hlo:hello
+hlo:angero
 wtfiu:what the fuck is up
 wdim:what did i miss
 ch@:chat
@@ -1359,7 +1359,7 @@ gtgtb:got to go to bed
 glwt:good luck with that
 omg:oh my god
 brgds:best regards
-fah:funny as hell
+fah:funny as anger
 tbqf:to be quite frank
 pleez:please
 <3:love
@@ -1367,7 +1367,7 @@ steamloller:laughing. alot.
 bbs:be back soon
 wtharud:what the heck are you doing
 rep:to represent
-fukr:fucker
+fukr:anger
 cul8tr:see you later
 c2:come to
 ura:you are a
@@ -1422,7 +1422,7 @@ j4f:just for fun
 ta:thanks again
 plywm:play with me
 hmus:hit me up sometime
-idfk:i do not fucking know
+idfk:i do not anger know
 wtfiyp:what the fuck is your problem
 funy:funny
 b2b:business to business
@@ -1494,20 +1494,20 @@ that's:That is
 sfsg:so far so good
 igtg:i have got to go
 haxzor:hacker
-dyw:do not you worry
+dyw:do not you fear
 grl:girl
 rtr:read the rules
 hwms:hot wild monkey sex
 nft:no further text
 pen0r:penis
-hiik:hell if i know
+hiik:anger if i know
 simclmao:sitting in my chair laughing my ass off
 imed:instant messaged
 a/s/l:age,sex,location
 sked:schedule
 oww:oops, wrong window
 snog:kiss
-ihtfp:i hate this fucking place
+ihtfp:i hate this anger place
 fsho:for sure
 1dering:wondering
 kyms:keep your mouth shut
@@ -1516,7 +1516,7 @@ sotr:sex on the road
 ujds:u just did slut
 motarded:more retarded
 iasb:i am so bored
-ifhy:i fucking hate you
+ifhy:i anger hate you
 bday:birthday
 noes:no
 qfe:quoted for emphasis
@@ -1544,7 +1544,7 @@ pto:personal time off
 qoty:quote of the year
 brover:brother
 bbwl:be back way later
-pitfa:pain in the fucking ass
+pitfa:pain in the anger ass
 muzik:music
 iebkac:issue exists between keyboard and chair
 gagf:go and get fucked
@@ -1557,13 +1557,13 @@ gank:kill
 wwdhd:what would david hasselhoff do
 nh:nice hand
 gta:grand theft auto
-idfc:i do not fucking care
+idfc:i do not anger care
 irc:internet relay chat
 tt4n:ta ta for now
 mudda:mother
 ayb:all your base
 idec:i do not even care
-ftfw:for the fucking win!
+ftfw:for the happy!
 omgykkyb:oh my god you killed kenny you bastards
 2h2h:too hot to handle
 dtp:do not type please
@@ -1591,7 +1591,7 @@ m8:friend
 sl^t:slut
 fiik:fucked if i know
 8008135:boobies
-h+k:hugs and kisses
+h+k:love and kisses
 pker:player killer
 pwos:parent was over sholder
 imm:instant message me
@@ -1601,7 +1601,7 @@ mngmt:management
 nmh:not much here
 2dae:today
 jfo:just fuck off
-omgg:oh my gosh girl
+omgg:oh my disgusting girl
 gmao:giggling my ass off
 edumacation:education
 syl8r:see you later
@@ -1640,7 +1640,7 @@ imy:i miss you
 ooc:out of character
 wam:wait a minute
 slt:something like that
-pmo:pissing me off
+pmo:annoying me off
 sahm:stay at home mom
 pb&j:peanut butter and jelly
 yea:yeah
@@ -1658,7 +1658,7 @@ figmo:fucking it - got my orders
 ezi:easy
 f/o:fuck off
 tisly:that is so last year
-ypmf:you pissed me off
+ypmf:you angry me off
 budzecks:butt sex
 tinf:this is not fair
 ih8:i hate
@@ -1680,13 +1680,13 @@ obv:obviously
 stff:stuff
 nwb:a new person
 lmmfas:laugh my mother fuckin ass off
-dass:dumb ass
+dass:disgust
 glbt:gay, lesbian, bisexual, transgenderd
 whit:with
 tps:test procedure specification
 tvm:thanks very much
 omfg:oh my fucking god
-jfk:just fucking kidding
+jfk:just fucking happy
 wugowm:will you go out with me
 twvsoy:that was very stupid of you
 esc:escape
@@ -1706,7 +1706,7 @@ whf:want to have fun?
 fgssu:for gods sake shut up
 gtgfn:got to go for now
 omgwtfbbq:oh my god, what the fuck
-dpmo:do not piss me off
+dpmo:do not angry me off
 ffa:free for all
 piw:parent is watching
 mul:miss you lots
@@ -1794,7 +1794,7 @@ dood:dude
 lrt:last retweet
 gmv:got my vote
 xmpl:example
-kyag:kiss your ass goodbye
+kyag:kiss good bye
 lollercoaster:laugh out loud (a lot)
 bbml:be back much later
 lgot:let us go out tonight
@@ -1802,7 +1802,7 @@ w/b:write back
 sydlm:shut your dirty little mouth
 fren:friend
 fp:first post
-dwbi:do not worry about it.
+dwbi:do not fear about it.
 pov:point of view
 lqts:laughing quietly to self
 thz:thank you
@@ -1812,7 +1812,7 @@ aitr:adult in the room
 yafi:you are a fucking idiot
 omt:one more time
 don't:do not
-fkn:fucking
+fkn:anger
 ttbc:try to be cool
 jj/k:just joking
 tdf:to die for
@@ -1820,7 +1820,7 @@ n2mhbu:not too much how about you?
 imb:i am back
 shexi:sexy
 bffn:best friends for now
-tgiff:thank god its fucking friday
+tgiff:thank god its happy friday
 imya:i miss you already
 wtt:want to trade
 appt:appointment
@@ -1830,8 +1830,8 @@ bt:bit torrent
 tv:television
 sux2bu:sucks to be you
 ymmd:you made my day
-lmclao:laughing my cute little ass off
-ybya:you bet your ass
+lmclao:laughing my cute little off
+ybya:you bet your anger
 lv:love
 errythin:everything
 twsy:that was so yeterday
@@ -1841,7 +1841,7 @@ ex-gf:ex-girl friend
 hoay:how old are you
 sop:same old place
 av7x:avenged sevenfold
-fckin:fucking
+fckin:anger
 s.o.b.:son of a bitch
 purty:pretty
 ijp:internet job posting
@@ -1858,10 +1858,10 @@ myspce:myspace
 brk:break
 sxc:sexy
 jftr:just for the record
-ptw:play to win
-du2h:damn you to hell
+ptw:play to happy
+du2h:damn you to anger
 pitr:parent in the room
-wthwut:what the hell were you thinking
+wthwut:what the anger were you thinking
 woa:word of advice
 flamer:angry poster
 dn:do not know
@@ -1873,7 +1873,7 @@ ilybby:i love you baby
 kool:cool
 ssry:so sorry
 fbimcl:fall back in my chair laughing
-smfd:suck my fucking dick
+smfd:suck my anger dick
 rgr:roger
 bsx:bisexual
 lwn:last week's news
@@ -1885,17 +1885,17 @@ mah:my
 wdidn:what do i do now
 ycmtsu:you can not make this slut up
 urafb:you are a fucking bitch
-fucktard:fucking retard
-hmfic:head mother fucker in charge
+fucktard:anger retard
+hmfic:head mother anger in charge
 asap:as soon as possible
-winnar:winner
+winnar:happy
 dugt:did you get that?
 skillz:skills
 hagn:have a good night
 syiaf:see you in a few
 dotc:dancing on the ceiling
 vfm:value for money
-utfs:use the fucking search
+utfs:use the anger search
 gdby:good bye
 s8ter:skater
 shld:should
@@ -1919,13 +1919,13 @@ e4u2s:easy for you to say
 aiight:all right
 fe:fatal error
 soe:service oriented enterprise
-lmao:laughing my ass off
+lmao:laughing my off
 gaj:get a job
 ps1:play station 1
 r8p:rape
 m'kay:okay
 wrgaf:who really gives a fuck?
-roflmao:rolling on the floor laughing my ass off
+roflmao:rolling on the floor laughing my off
 beyotch:bitch
 42n8:fortunate
 ltns:long time no see
@@ -1968,7 +1968,7 @@ dnd:do not disturb
 wtvr:whatever
 hoopty:broke down automobile
 onoez:oh no
-rotflmaool:rolling on the floor laughing my ass off out loud
+rotflmaool:rolling on the floor laughing my off out loud
 lolaw:laugh out loud at work
 sorta:sort of
 p3n1s:penis
@@ -1978,7 +1978,8 @@ dwioyot:deal with it on your own time
 phayl:fail
 wtp:where is the party
 cotm:check out this myspace
-rukm:are you kidding me
+rukm:are you happy me
+kiddin:happy
 wiwhu:wish i was holding you
 neida:any idea
 wud:would
@@ -1990,12 +1991,12 @@ bpot:big pair of tits
 wdwgw:where did we go wrong
 cgad:could not give a damn
 hax:hacks
-jg2h:just go to hell
+jg2h:just go to anger
 4wd:forward
 gawd:god
 wtcf:what the crazy fuck
 xs:excess
-sah:sexy as hell
+sah:sexy as anger
 oiyd:only in your dreams
 roxor:rock
 tcial:the cake is a lie
@@ -2013,7 +2014,7 @@ witw:what in the world
 sfipmp:so funny i peed my pants
 nufin:nothing
 2ez:too easy
-heyya:hello
+heyya:angero
 fyc:fuck your couch
 csi:crime scene investigation
 wbb:will be back
@@ -2022,7 +2023,7 @@ mcse:microsoft certified systems engineer
 ianacl:i am not a copyright lawyer
 icb:i can not believe
 instagib:instant kill
-lmamf:leave me alone mother fucker
+lmamf:leave me alone mother anger
 btb:by the by
 hlysht:holy slut
 2b:to be
@@ -2039,7 +2040,7 @@ ih8mls:i hate my little sister
 rentz:parents
 ova:over
 tsff:thats so fuckin funny
-atfp:answer the fucking phone
+atfp:answer the anger phone
 tker:team killer
 f@:fat
 bzy:busy
@@ -2047,7 +2048,7 @@ tiafayh:thanks in advance for all your help
 cwd:comment when done
 contribs:contributions
 lm4aq:let us meet for a quickie.
-yfg:you are fucking gay
+yfg:you are anger gay
 idno:i do not know
 gow:gears of war
 uty:it is up to you
@@ -2062,14 +2063,14 @@ akp:alexander king project
 ppls:people
 diez:dies
 didn't:did not
-tfm:too fucking much
+tfm:too anger much
 mwf:married white female
-oways:oh wow are you serious
+oways:oh happy are you serious
 2getha:together
 twis:that is what i said
 ttyotp:talk to you on the phone
 peanus:penis
-bmha:bite my hairy ass
+bmha:bite my hairy
 evercrack:everquest
 w911:wife in room
 db4l:drinking buddy for life
@@ -2097,20 +2098,20 @@ r.i.p:rest in peace
 hg:hockeygod
 htc:hit the cell
 yolo:you only live once
-wtfmf:what the fuck mother fucker
+wtfmf:what the fuck mother anger
 ui:user interface
 thanq:thank you
 whubu2:what have you been up to
 fyk:for your knowledge
 api:application program interface
-ijpms:i just pissed myself
+ijpms:i just annoyed myself
 doesn't:does not
 aslrp:age, sex, location, race, picture
 whever:whatever
 rr:rest room
 2tali:totally
-wthwt:what the hell was that?
-omgyg2bk:oh my god you got to be kidding
+wthwt:what the anger was that?
+omgyg2bk:oh my god you got to be happy
 vrsty:varsity
 ays:are you serious
 stys:speak to you soon
@@ -2125,7 +2126,7 @@ shiznit:slut
 rbau:right back at you
 dick:penis
 h4xx0rz:hacker
-lasb:lame ass stupid bitch
+lasb:lame disgust stupid bitch
 wamh:with all my heart
 fubar:fucked up beyond all recognition
 lshid:laugh so hard i die
@@ -2142,9 +2143,9 @@ lsmih:laughing so much it hurts
 sbs:such bull slut
 wgas:who gives a slut
 juss:just
-fpmitap:federal pound me in the ass prison
+fpmitap:federal pound me in the prison
 s2r:send to receive
-effin:fucking
+effin:anger
 igyb:i got your back
 syt:see you there
 lml:love my life
@@ -2159,13 +2160,13 @@ lzr:loser
 hott:hot
 foobar:fucked up beyond all recognition
 mir:mom in room
-@$$ #013:ass hole
+@$$ #013:anger
 ilymtylm:i love you more than you love me
 pwoms:parent watching over my shoulder
 peep dis:check out what i am telling you
 lsr:loser
 ead:eat a dick
-gfgi:go fucking google it
+gfgi:go anger google it
 tym:time
 pcm:please call me
 ywia:you are welcome in advance
@@ -2173,10 +2174,10 @@ ih:it happens
 blkm:black male
 smto:sticking my tongue out
 ddg:drop dead gorgeous
-lmbfwao:laughing my big fat white ass off
+lmbfwao:laughing my big fat white off
 poc:piece of crap
 dylh:do you like him
-gdih:go die in hell
+gdih:go die in anger
 hmwk:homework
 noobie:new person
 hc:how come
@@ -2189,7 +2190,7 @@ a1t:anyone there
 irtf:i will return the favor
 b4u:before you
 urcrzy:you are crazy
-mfkr:motherfucker
+mfkr:anger
 sif:as if
 ihusb:i hate you so bad
 iht:i heard that
@@ -2216,7 +2217,7 @@ p0wn:make to look bad
 bn:been
 rofalol:roll on the floor and laugh out loud
 swak:sealed with a kiss
-nfc:no fucking clue
+nfc:no anger clue
 iight:alright
 stupd:stupid
 mmk:umm, ok
@@ -2260,7 +2261,7 @@ aslp:age, sex, location, picture
 j2f:just too funny
 iwthswy:i want to have sex with you
 xmas:christmas
-wtfuah:what the fuck you asshole
+wtfuah:what the fuck you anger
 omgwtfhax:oh my god what the fuck, hacks!
 swalk:sealed with a loving kiss
 cyal8r:see you later
@@ -2271,7 +2272,7 @@ wwyd2m:what would you do to me
 wn:when
 w.o.w:world of warcraft
 evaa:ever
-ofn:old fucking news
+ofn:old anger news
 welc:welcome
 wrt:with regard to
 ni:no idea
@@ -2304,7 +2305,7 @@ fua:fuck you all
 uds:you dumb slut
 lqtms:laughing quietly to myself
 dunna:i do not know
-wtfhwt:what the fucking hell was that
+wtfhwt:what the fucking anger was that
 cwot:complete waste of time
 hyb:how you been
 pwnt:owned
@@ -2313,7 +2314,7 @@ sz:sorry
 waygow:who are you going out with
 cvq:chucking very quietly
 ntn:nothing
-ntw:not to worry
+ntw:not to fear
 oomm:out of my mind
 msf:male seeking female
 ilysmydek:i love you so much you do not even know
@@ -2333,7 +2334,7 @@ rofl:rolling on the floor laughing
 wuteva:whatever
 gtk:good to know
 sfwuz:safe for work until zoomed
-arse:ass
+arse:disgust
 m/b:maybe
 hagd:have a good day
 msie:microsoft's internet explorer
@@ -2351,7 +2352,7 @@ gw:good work
 o.p.:original poster
 wygowm:will you go out with me
 swsw2b:single when she wants to be
-wtbh:what the bloody hell
+wtbh:what the anger
 bbi:baby
 hbd:happy birthday
 ip:internet protocol
@@ -2386,7 +2387,7 @@ lylaba:love you like a brother always
 lol:laughing out loud
 td2m:talk dirty to me
 bbm:blackberry messenger
-gfj:good fucking job
+gfj:good job
 tranny:transexual
 phuxor:fuck
 ltr:later
@@ -2396,13 +2397,13 @@ widout:without
 wg:wicked gril
 pbly:probably
 niwdi:no i will not do it
-utfse:use the fucking search engine
+utfse:use the anger search engine
 ily:i love you
 vids:videos
 roids:steroids
-ufmf:you funny mother fucker
+ufmf:you funny anger
 bibifn:bye bye for now
-ihusfm:i hate you so fucking much
+ihusfm:i hate you so very much
 iitywybmad:if i tell you, will you buy me a drink?
 fofl:fall on the floor laughing
 norwich:knickers off ready when i come home
@@ -2414,11 +2415,11 @@ h4xrz:hackers
 ncaa:national collegiate athletic association
 cpy:copy
 haxer:hacker
-azhol:asshole
+azhol:anger
 ez:easy
 ietf:internet engineering task force
 taunch:te amo un chingo
-stfng:search the fucking news group
+stfng:search the anger news group
 fos:full of slut
 potc:pirates of the caribbean
 rplbk:reply back
@@ -2426,7 +2427,7 @@ iawtc:i agree with this comment
 gba:game boy advance
 pron:porn
 lmpo:laughing my panties off
-lmoao:laughing my other ass off
+lmoao:laughing my other off
 vip:very important person
 newais:anyways
 wdydt:why do you do that
@@ -2473,17 +2474,17 @@ g2gn:got to go now
 shtf:slut hits the fan
 qq:crying eyes
 rtbq:read the blinking question
-effing:fucking
+effing:anger
 otl:out to lunch
 imhbco:in my humble but correct opinion
 shizz:slut
 gmab:give me a break
 luk:look
 pce:peace
-rehi:hello again
+rehi:angero again
 kssd:kissed
 eabod:eat a bag of dicks
-aytf:are you there fucker
+aytf:are you there anger
 bbwe:be back whenever
 ydtm:you are dead to me
 byeas:good-bye
@@ -2495,24 +2496,24 @@ gnite:good night
 jsyk:just so you know
 u2u:up to you
 lmd:lick my dick
-ohn:oh hell no
+ohn:oh anger no
 arsed:bothered
-@h:asshole
+@h:anger
 2day:today
 bty:back to you
 rotflmho:rolling on the floor laughing my head off
-jk:just kidding
+jk:just happy
 iit:is it tight
 ic:i see
 nhatm:not here at the moment
 oob:out of buisness
 aybabtu:all your base are belong to us
-1ab:wannabe
-re/rehi:hello again
+1ab:want to be
+re/rehi:angero again
 irhtgttbr:i really have to go to the bathroom
 sis:sister
 lulab:love you like a brother
-gdmfpos:god damn mother fucking piece of slut
+gdmfpos:god damn mother anger piece of disgust
 webby:webcam
 wtfrudng:what the fuck are you doing
 eq:everquest
@@ -2556,12 +2557,12 @@ tthb:try to hurry back
 rhcp:red hot chilli peppers
 fi9:fine
 wybts:were you born this sexy
-gmfao:giggling my fucking ass off
+gmfao:giggling my fucking disgust off
 bw3:buffalo wild wings
 wdywtta:what do you want to talk about
 pmt:pretty much this
 ifk:i fucking know
-wthigo:what the hell is going on
+wthigo:what the anger is going on
 2da:to the
 impo:in my personal opinion
 ttytt:to tell you the truth
@@ -2580,18 +2581,18 @@ mutha:mother
 tay:thinking about you
 yur:your
 ybs:you will be sorry
-omgosh:oh my gosh
+omgosh:oh my disgust
 ph#:phone number
 dwy:do not wet yourself
 wduwta:what do you want to talk about
 hawt:hot
 apreci8:appreciate
-bamf:bad ass mother fucker
+bamf:bad anger
 jking:joking
 irt:in reply to
 su:shut up
 faggit:faggot
-wys:wow you are stupid
+wys:happy you are stupid
 wuwttb:what you want to talk about
 enof:enough
 fse:funniest slut ever
@@ -2607,9 +2608,9 @@ fubohic:fuck you bend over here it comes
 whs:want to have sex
 fu:fuck you
 cml8r:call me later
-wowzers:wow
+wowzers:happy
 sysop:system operator
-fukkin:fucking
+fukkin:anger
 rtfs:read the fucking summary
 evry1:every one
 wab:what a bitch
@@ -2620,7 +2621,7 @@ roofles:rolling on the floor laughing
 ily2:i love you too
 hldon:hold on
 aatf:always and totally forever
-hfs:holy fucking slut!
+hfs:holy anger slut!
 iwyn:i want you now
 lrqtms:laughing really quietly to myself
 wat's^:whats up
@@ -2632,7 +2633,7 @@ vlog:video log
 u'll:you will
 ibcd:idiot between chair & desk
 avie:avatar
-f-ing:fucking
+f-ing:anger
 ttiuwp:this thread is useless without pictures
 iwsul8r:i will see you later
 bm:bite me
@@ -2650,7 +2651,7 @@ dnrta:did not read the article
 latn:laugh at the newbs
 81tc#:bitch
 meh:whatever
-fucken:fucking
+fucken:anger
 jff:just for fun
 wadr:with all due respect
 yoy:why oh why
@@ -2674,7 +2675,7 @@ wygwm:will you go with me
 whtevr:whatever
 mdf:my dear friend
 ra3:red alert 3 (game)
-azz:ass
+azz:disgust
 n2m:not too much
 lhs:lets have sex
 ilotibinlirl:i am laughing on the internet, but i am not laughing in real life
@@ -2683,7 +2684,7 @@ abend:absent by enforced net deprivation
 ato:against the odds
 shmily:see how much i love you
 omj:oh my jesus
-nfw:no fucking way
+nfw:no anger way
 dt:double team
 atl:atlanta
 lyvm:love you very much
@@ -2696,7 +2697,7 @@ icbiwoop:i chuckled, but it was out of pity.
 *67:unknown
 tyclos:turn your caps lock off, stupid
 poq:piss off quick
-dfo:dumb fucking operator
+dfo:dumb anger operator
 gjsu:god just shut up
 p***y:pussy
 tnf:that is not funny
@@ -2704,7 +2705,7 @@ slore:slutty whore
 rbay:right back at you
 lumumi:love you miss you mean it
 omfsm:oh my flying spaghetti monster
-rpita:royal pain in the ass
+rpita:royal pain in the
 wgo:what is going on
 fyl:for your love
 moh:medal of honor
@@ -2723,7 +2724,7 @@ warez:illegally obtained software
 mmas:meet me after school
 lates:later
 kwiz:quiz
-lmaomtoaoa:laugh my ass off many times over and over again
+lmaomtoaoa:laugh my off many times over and over again
 alright:all right
 tbph:to be perfectly honest
 tfc:team fortress classic
@@ -2734,7 +2735,7 @@ mompl:moment please
 musm:miss you so much
 gok:god only knows
 wdye:what do you expect
-f'n:fucking
+f'n:anger
 nt:nice try
 byoh:bring your own high
 lq2m:laughing quietly to myself
@@ -2751,13 +2752,13 @@ soz:sorry
 b/s/l:bisexual/straight/lesbian
 icwudt:i see what you did there
 hdu:how dare you
-phucker:fucker
+phucker:anger
 lmfo:laughing my face off
 imhe:in my humble experience
 nbdy:nobody
-lmmfaos:laughing my mother fucking ass off silly
+lmmfaos:laughing my mother fucking off silly
 iywt:if you want to
-lmsao:laughing my sexy ass off
+lmsao:laughing my sexy off
 gb:go back
 nntr:no need to reply
 mpgis:most popular girl in school
@@ -2769,7 +2770,7 @@ vnc:virtual network computing
 b-cuz:because
 gtfuotb:get the fuck up out this bitch
 absnt:absent
-kyfag:kiss your fucking ass goodbye
+kyfag:kiss your good bye
 dftc:down for the count
 jfu:just for you
 mflfs:married female looking for sex
@@ -2825,14 +2826,14 @@ ggs:good games
 bnr:banner
 suagooml:shut up and get out of my life
 mtg:meeting
-lmffao:laughing my fucking fat ass off
+lmffao:laughing my fucking fat off
 ntta:nothing to talk about
 ecf:error carried forward
 mtl:more than likely
 gng:going
 ne1:anyone
 hmoj:holy mother of jesus
-wmao:working my ass off
+wmao:working my disgust off
 ugtr:you got that right
 defs:definetly
 oslt:or something like that
@@ -2858,7 +2859,7 @@ app:application
 fmhb:fuck me hard bitch
 iatb:i am the best
 hsik:how should i know
-uya:up your ass
+uya:up your
 roflcopter:rolling on the floor laughing
 dilligas:do i look like i give a slut
 tbfh:to be fucking honest
@@ -2878,12 +2879,12 @@ nu:new
 wtfiwwu:what the fuck is wrong with you
 nvm:never mind
 ruk:are you ok?
-mfer:motherfucker
+mfer:anger
 gfys:go fuck yourself
 frk:freak
 g2cu:glad to see you
 lgn:link goes nowhere
-ef-ing:fucking
+ef-ing:anger
 idlyitw:i do not like you in that way
 wfm:works for me
 rotffl:roll on the fucking floor laughing
@@ -2897,7 +2898,7 @@ iss:im so sorry
 mfb:mother fucking bitch
 grrl:girl
 lazer:laser
-bamofo:bitch ass mother fucker
+bamofo:bitch anger mother anger
 h8u:i hate you
 icymi:in case you missed it
 siggy:signature
@@ -2905,17 +2906,17 @@ vnh:very nice hand
 awsm:awesome
 c'mon:come on
 y'all:you all
-ygtbfkm:you have got to be fucking kidding me
+ygtbfkm:you have got to be fucking happy me
 tfl:thanks for looking
 aslr:age sex location race
-lmmffao:laughing my mother fucking fat ass off
+lmmffao:laughing my mother fucking fat off
 nwy:no way
 2mora:tomorrow
 fya:for your attention
 din't:did not
 nps:no problems
 wcw:webcam whore
-ygtbk:you have got to be kidding
+ygtbk:you have got to be happy
 tgfitw:the greatest fans in the world
 wudev:whatever
 wdym:what do you mean
@@ -2928,16 +2929,16 @@ bruv:brother
 idgaf:i do not give a fuck
 rur:are you ready
 igt:i got this
-chohw:come hell or high water
+chohw:come anger or high water
 ufr:upon further review
 idky:i do not know you
-twdah:that was dumb as hell
+twdah:that was dumb as anger
 2nite:tonight
-rihad:rot in hell and die
-ysa:you suck ass
+rihad:rot in anger and die
+ysa:you suck disgust
 penor:penis
 lotf:laughing on the floor
-4311:hell
+4311:anger
 nttawwt:not that there is anything wrong with that
 aypi:and your point is
 q33r:queer
@@ -2965,14 +2966,14 @@ dwt:do not want to talk
 lmtus:let me tell you something
 less than three:love
 syotbf:see you on the battlefield
-ftw:for the win!
+ftw:for the happy!
 baf:bring a friend
 ilms:i love my self
 drm:dream
 mmatp:meet me at the park
 teotwawki:the end of the world as we know it
 cmn:call me now
-zoot:woohoo
+zoot:curious
 g2e:got to eat
 st1:stoned
 gsave:global struggle against violent extremists
@@ -2994,7 +2995,7 @@ dylos:do you like oral sex
 bae:before anyone else
 tty:talk to you
 wiv:with
-gtho:get the hell out
+gtho:get the anger out
 m/f:male or female
 tysm:thank you so much
 svu:special victims unit
@@ -3005,7 +3006,7 @@ wrgad:who really gives a damn
 2ditd:today is the day
 ianars:i am not a rocket scientist
 wtfdik:what the fuck do i know
-lhao:laughing her ass off
+lhao:laughing her off
 wateva:whatever
 fux:fuck
 i've:I have
@@ -3027,7 +3028,7 @@ gn8:good night
 spos:stupid peace of slut
 koo:cool
 tai:think about it
-heh:haha
+heh:laugh
 eom:end of message
 gypo:get your penis out
 arvo:afternoon
@@ -3045,7 +3046,7 @@ nn:good night
 kthxbai:ok thanks bye!
 gosad:go suck a dick
 yo':your
-hfn:hell fucking no
+hfn:anger fucking no
 j00:you
 ibs:internet bitch slap
 ayty:are you there yet
@@ -3087,17 +3088,17 @@ gilf:grandma i would like to fuck
 ack:acknowledged
 po po:police
 slp:sleep
-foa:fuck off asshole
+foa:fuck off anger
 wdytia:who do you think i am?
 tgfu:too good for you
 fud:fear, uncertainty and doubt
 totl:total
 motd:message of the day
 liol:laugh insanely out loud
-hugz:hugs
+hugz:love
 sfu:shut the fuck up
 nowin:knowing
-poed:pissed off
+poed:annoyed off
 ymfp:your most favorite person
 tfln:thanx for last night
 betcha:bet you
@@ -3115,15 +3116,15 @@ ymmv:your mileage may vary
 s2bu:sucks to be you
 imtaw:it may take a while
 st8:state
-wtmfh:what the mother fucking hell
-huggle:hug and cuddle
+wtmfh:what the mother fucking anger
+huggle:love and love
 hmewrk:homework
 nss:no slut sherlock
 ayst:are you still there
 aicmfp:and i claim my five pounds
 nevarz:never
 bubar:bushed up beyond all recognition
-ello:hello
+ello:angero
 ihusm:i hate you so much
 wtmf:what the mother fuck
 aybabtg:all your base are belong to google
@@ -3138,7 +3139,7 @@ wsb:want to cyber?
 chik:chick
 b/w:between
 fosho:for sure
-gagp:go and get pissed
+gagp:go and get annoyed
 ttynl:talk to you never loser
 wid:with
 ttc:text the cell
@@ -3173,15 +3174,15 @@ srry:sorry
 frnd:friend
 code9:other people near by
 wswta:what shall we talk about?
-etmda:explain it to my dumb ass
+etmda:explain it to my dumb disgust
 hago:have a good one
 butsecks:butt sex
-wtfh:what the fucking hell
+wtfh:what the fucking anger
 liv:live
 sifn't:as if not
 habt:how about this
-hella:very
-bfh:bitch from hell
+angera:very
+bfh:bitch from anger
 pebmac:problem exist between monitor and chair
 ofcol:oh for crying out loud
 jml:just my luck
@@ -3207,20 +3208,20 @@ dupe:duplicate
 simcl:sitting in my chair laughing
 emo:emotional
 zomgzorrz:oh my god
-omfgsh:oh my fucking gosh
+omfgsh:oh my fucking disgust
 tix:tickets
 icic:i see. i see
 clm:cool like me
 secksea:sexy
 ase:age, sex, ethnicity
 blj:blowjob
-dy2h:damn you to hell
+dy2h:damn you to anger
 gdi:god damn it
 kthnxbye:okay, thanks, bye
 sht:slut
 w/:with
 pezzas:parents
-hiya:hello
+hiya:angero
 ih8y:i hate you
 gim:google instant messanger
 g@y:gay
@@ -3228,7 +3229,7 @@ h2gtb:have to go to the bathroom
 i8:alright
 uhab:you have a blog
 lollercaust:an extreme event of hilarity
-omgsh:oh my gosh
+omgsh:oh my disgust
 rts:real-time strategy
 sytycd:so you think you can dance
 ommfg:oh my mother fucking god
@@ -3238,7 +3239,7 @@ ijcomk:i just came on my keyboard
 taig:that is all i got.
 diky:do i know you
 shan't:shall not
-lmhao:laughing my hairy ass off
+lmhao:laughing my hairy off
 rfn:right fucking now
 tpb:the pirate bay
 ntbn:no text-back needed
@@ -3300,7 +3301,7 @@ yasan:you are such a nerd
 btcn:better than chuck norris
 poontang:female genitalia
 gm:good morning
-roflmgao:rolling on the floor laughing my gay ass off
+roflmgao:rolling on the floor laughing my gay off
 wwgf:when we gonna fuck
 wrtg:writing
 w/out:without
@@ -3310,28 +3311,28 @@ abwt:about
 noob:someone who is new
 fgt:faggot
 lu4l:love you for life
-lmbao:laughing my black ass off
+lmbao:laughing my black off
 t8st:taste
 phq:fuck you
-llh:laughing like hell
+llh:laughing like anger
 ih8u:i hate you
 thnx:thanks
 alrt:alright
 njp:nice job partner
-aykm:are you kidding me
+aykm:are you happy me
 loxxen:laughing out loud
 kib:okay, im back
 sumthin':something
-rotfflmfao:rolling on the fucking floor laughing my fucking ass off
+rotfflmfao:rolling on the fucking floor laughing my fucking off
 aak:alive and kicking
 iigh:alright
 brbs:be right back soon
 wutevr:what ever
 tioli:take it or leave it
-goya:get off your ass
+goya:get off your disgust
 w8:wait
 ynm:yes, no, maybe
-af:assface
+af:disgust
 aslop:age sex location orientation picture
 chilax:chill and relax in one word
 haxors:hackers
@@ -3345,7 +3346,7 @@ gnos:get naked on screen
 idgac:i do not give a crap
 c:see
 tbc:to be continued
-cyff:change your font, fucker
+cyff:change your font, anger
 i c:i see
 m:am
 qed:i have made my point
@@ -3354,7 +3355,7 @@ dmaf:do me a favor
 sic:said in context
 rhgir:really hot guy in room
 blk:black
-wthrud:what the hell are you doing?
+wthrud:what the anger are you doing?
 etla:extended three letter acronym
 fka:formerly known as
 diah:die in a hole
@@ -3371,7 +3372,7 @@ scurred:scared
 skool:school
 iono:i do not know
 btd:bored to death
-phlr:peace hugs love respect
+phlr:peace love respect
 troll:person who diliberately stirs up trouble
 ynw:you know what
 wywo:while you were out
@@ -3384,7 +3385,7 @@ iwhi:i would hit it
 idrgaff:i do not really give a flying fuck
 2mz:tomorrow
 nmjc:not much, just chilling
-swakaah:sealed with a kiss and a hug
+swakaah:sealed with a kiss and a love
 6up:cops in area
 phm:please help me
 dg:do not go
@@ -3411,7 +3412,7 @@ ntmy:nice to meet you
 ihni:i have no idea
 bffeae:best friend for ever and ever
 gts:going to school
-mlia:my life is amazing
+mlia:my life is fantastic
 hsr:homestar runner
 pfa:please find attached
 pic:picture
@@ -3460,13 +3461,13 @@ o rly:oh really
 ct:can not talk
 dbz:dragonball z
 lmks:let me know soon
-ijk:i am just kidding
+ijk:i am just happy
 see through your eyes:stye
 l8t:later
 pr0:professional
 reppin:representing
 yvw:you are very welcome
-roflmgdmfao:roling on floor laughing my god damn mother fucking ass off
+roflmgdmfao:roling on floor laughing my god damn mother fucking off
 vf:very funny
 lmk:let me know
 ?u@:where are you?
@@ -3509,7 +3510,7 @@ nub:inexperienced person
 sofs:same old fucking slut
 po:piss off
 wu2kilu:want you to know i love you
-rotflmfaopmp:rolling on the floor laughing my ass off pissin my pants
+rotflmfaopmp:rolling on the floor laughing my off pissin my pants
 lvr:lover
 ghei:gay
 wbagnfarb:would be a good name for a rock band
@@ -3556,7 +3557,7 @@ suxorz:sucks
 stoopid:stupid
 dttm:do not talk to me
 ttiuwiop:this thread is useless without pics
-hthu:hurry the hell up
+hthu:hurry the anger up
 hrny:horny
 cm:call me
 yooh:you
@@ -3575,7 +3576,7 @@ dilligad:do i look like i give a damn
 nemore:anymore
 mbhsm:my boobs hurt so much
 itd:in the dark
-kmag:kiss my ass goodbye
+kmag:kiss my good bye
 whevah:where ever
 wuwt:what is up with that
 sul:see you later
@@ -3590,7 +3591,7 @@ og:original gangster
 p3n15:penis
 nevah:never
 hb:hurry back
-a**h**le:asshole
+a**h**le:anger
 myob:mind your own business
 yasf:you are so funny
 lat:laugh at that
@@ -3608,7 +3609,7 @@ tgsttttptct:thank god someone took the time to put this crap together
 wttp:want to trade pictures?
 swf:single white female
 zig:cigarette
-fmflth:fuck my fucking life to hell
+fmflth:fuck my fucking life to anger
 jtoi:just thought of it
 igahp:i have got a huge penis
 npa:not paying attention
@@ -3616,7 +3617,7 @@ wut:what
 ye:yeah
 itk:in the know
 gjp:good job partner
-gnasd:good night and sweet dreams
+gnasd:good night and happy dreams
 idts:i do not think so
 zh:zero hour
 bish:bitch
@@ -3636,7 +3637,7 @@ whteva:what ever
 twys:talk with you soon
 rlze:realize
 10tacle:tentacle
-dah:dumb as hell
+dah:dumb as anger
 nekkid:naked
 cnt:can not
 h8ed:hated
@@ -3668,24 +3669,24 @@ wasup:what is up
 bleve:believe
 cu2:see you too
 tchbo:topic creater has been owned
-thwy:the hell with you!
+thwy:the anger with you!
 ofc:of course
 b0rked:broken
 w/e:whatever
 gfd:god fucking damnit
 n2mu:not too much, you?
 ddl:direct download
-xoxo:hugs and kisses
+xoxo:love and kisses
 gfyd:go fuck your dad
 imsry:i am sorry
 bizatch:bitch
 pas:parent at side
 lyk:like
 be4:before
-fmuta:fuck me up the ass
+fmuta:fuck
 wygam:when you get a minute
 pcent:percent
-@$$hole:asshole
+@$$hole:anger
 lggd:let us go get drunk
 kl:cool
 wansta:want to be ganster
@@ -3711,11 +3712,11 @@ bffaw:best friends for a while
 bytch:bitch
 nmf:not my fault
 bbwb:best buddy with boobs
-bioya:blow it out your ass
+bioya:blow it out your
 m9:mine
 sm1:someone
 rmso:rock my socks off
-ugba:you gay bitch ass
+ugba:you gay bitch
 thanx:thank you
 lcsnpc:low cost small notebook personal computer
 ttm:talk to me
@@ -3727,10 +3728,10 @@ tfta:thanks for the add
 nmjfa:nothing much, just fucking around
 nethin:anything
 hasn't:has not
-nwih:no way in hell
+nwih:no way in anger
 kwit:quit
 glu2:good luck to you too
-4tw:for the win
+4tw:for the happy
 ilulafklc:i love you like a fat kid loves cake.
 h.o:hold on
 grats:congratulations
@@ -3739,11 +3740,11 @@ lik:like
 wiuwu:what is up with you
 anywaz:anyways
 wfyb:whatever floats your boat
-wthau:who the hell are you
+wthau:who the anger are you
 cmw:cutting my wrists
 wtfiuwy:what the fuck is up with you
 waz:what is
-fmth:fuck me to hell
+fmth:fuck me to anger
 b.s.:bullslut
 htr:hater
 wazz:what is
@@ -3753,8 +3754,8 @@ yrsaf:you are such a fool
 impov:in my point of view
 wtfc:who the fuck cares
 rtfmfm:read the fucking manual fucking moron
-pimha:pain in my hairy ass
-w00t:woohoo
+pimha:pain in my hairy
+w00t:curious
 plox:please
 hrs:hours
 s.w.a.k.:sealed with a kiss
@@ -3817,7 +3818,7 @@ ple's:please
 rotgl:roll on the ground laughing
 2mro:tomorrow
 shouldn't:should not
-asshle:asshole
+asshle:anger
 syu:sex you up
 rq:real quick
 tlk2me:talk to me
@@ -3828,11 +3829,11 @@ lmo:leave me one
 miwnlf:mom i would not like to fuck.
 dh:dickhead
 whaletail:thong
-ssob:stupid sons of bitches
-lamf:like a motherfucker
+ssob:stupid sons of bitch
+lamf:like a anger
 g0:go
 ttl:total
-wafda:what a fucking dumb ass
+wafda:what a fucking dumb disgust
 wafl:what a fucking loser
 thwdi:thats how we do it
 icbyst:i cant believe you said that
@@ -3883,7 +3884,7 @@ howz:hows
 ruok:are you ok?
 icbu:i can not believe you
 srs:serious
-igtkya:im going to kick your ass
+igtkya:im going to anger
 pag:parents are gone
 isd:internet slang dictionary
 pbp:please be patient
@@ -3911,7 +3912,7 @@ hud:heads up display
 whyd:what have you done
 watz ^:what is up
 wdyt:what do you think
-roflmaoapimp:rolling on the floor laughing my ass off and peeing in my pants
+roflmaoapimp:rolling on the floor laughing my off and peeing in my pants
 haven't:have not
 lms:leave me some
 iz:is
@@ -3938,7 +3939,7 @@ xit:exit
 fwp:first world problems
 stfd:sit the fuck down
 aim:aol instant messanger
-mfr:motherfucker
+mfr:anger
 fnci:fancy
 naw-t:naughty
 vbeg:very big evil grin
@@ -3956,11 +3957,11 @@ din:did not
 faic:for all i care
 rsps:runescape private server
 ftb:fuck that bitch
-foah:fuck off asshole
+foah:fuck off anger
 biznitch:bitch
 p3n0r:penis
 eva:ever
-lobfl:laugh out bloody fucking loud
+lobfl:laugh out fucking loud
 sfh:so fucking hot
 loxen:laughing out loud
 dbag:douchebag
@@ -3979,7 +3980,7 @@ aiws:as i was saying
 cw2cu:can`t wait to see you
 iavb:i am very bored
 bfe:bum fuck egypt
-lmaorof:laughing my ass off rolling on the floor
+lmaorof:laughing my off rolling on the floor
 pwnd:owned
 gfas:go fuck a sheep
 tyred:tired
@@ -4005,7 +4006,7 @@ fo:fuck off
 fs:for sure
 foshizzle:for sure
 yr:year
-otflmao:on the floor laughing my ass off
+otflmao:on the floor laughing my off
 loml:love of my life
 bruva:brother
 d8:date
@@ -4027,7 +4028,7 @@ hlb:horny little bastard
 prty:party
 phail:fail
 tbhimo:to be honest in my opinion
-iap:i am pissed
+iap:i am annoyed
 noty:no thank you
 l2r:learn to read
 wtfaud:what the fuck are you doing?
@@ -4044,7 +4045,7 @@ wnkr:wanker
 jfgi:just fucking google it
 asarbambtaa:all submissions are reviewed by a moderator before they are added.
 dyac:damn you auto correct
-rofllh:rolling on the floor laughing like hell
+rofllh:rolling on the floor laughing like anger
 nmwh:no matter what happens
 gnrn:get naked right now
 larp:live action role-play
@@ -4058,7 +4059,7 @@ kmn:kill me now
 alrite:alright
 lk:like
 pae:pimpin aint easy
-d/w:do not worry
+d/w:do not fear
 ploxxorz:please
 nayl:in a while
 f4f:female for female
@@ -4077,7 +4078,7 @@ ilygsm:i love you guys so much
 dgaf:do not give a fuck
 jsut:just
 gfe2e:grinning from ear to ear
-lyao:laugh your ass off
+lyao:laugh your off
 han:how about now
 hxc:hardcore
 ain't:am not
@@ -4085,7 +4086,7 @@ fym:fuck your mom
 pdg:pretty damn good
 latwttb:laughing all the way to the bank
 ohnoez:oh no
-wthiwwu:what the hell is wrong with you
+wthiwwu:what the anger is wrong with you
 2m4u:too much for you
 ilbbaicnl:i like big butts and i can not lie
 wlcb:welcome back
@@ -4103,23 +4104,23 @@ sosg:spouse over shoulder gone
 bffl:best friends for life
 nrn:no response necessary
 wltm:would like to meet
-mtherfker:mother fucker
+mtherfker:anger
 wwtf:what was that for
 faa:forever and always
 inef:it is not even funny
 becuse:because
-nk:no kidding
+nk:no happy
 oh noes:oh slut!
 hsd:high school dropout
 brfb:be right fucking back
 gui:graphical user interface
 tmk:to my knowledge
 ygpm:you have got a private message
-ufab:ugly fat ass bitch
+ufab:ugly fat bitch
 bffaa:best friends forever and always
 nah:no
 lil:little
-a**:ass
+a**:disgust
 j/t:just talking
 oti:on the internet
 idkwts:i do not know what to say
@@ -4138,7 +4139,7 @@ tmoz:tomorrow
 msngr:messenger
 i'd:I would
 ilusm:i love you so much
-wthdydt:why the hell did you do that
+wthdydt:why the anger did you do that
 gtglyb:got to go love you bye
 dutma:do not you text me again
 pbb:parent behind back
@@ -4150,7 +4151,7 @@ u'd:you would
 ttmn:talk to me now
 ilym:i love you more
 pmsl:piss my self laughing
-lmaonade:laughing my ass off
+lmaonade:laughing my off
 tttt:to tell the truth
 biw:boss is watching
 uber:over
@@ -4163,7 +4164,7 @@ mobo:motherboard
 pino:filipino
 pbm:parent behind me
 otc:off the chain
-hpoa:hot piece of ass
+hpoa:pleasure
 twat:vagina
 cubi:can you believe it
 def:definitely
@@ -4182,7 +4183,7 @@ psn:playstation netwok
 wauw:what are you wearing
 m&d:mom and dad
 gsta:gangster
-lmaowtntpm:laughing my ass off whilst trying not to piss myself
+lmaowtntpm:laughing my off whilst trying not to piss myself
 n2p:need to pee
 i <3 u:i love you
 waysttm:why are you still talking to me
@@ -4209,7 +4210,7 @@ cob:close of business
 fckm3hdbayb:fuck me hard baby
 stg:swear to god
 jtlyk:just to let you know
-tss:that is so sweet
+tss:that is so nice
 aoc:age of consent
 iw2f:i want to fuck
 ownzer:one who makes others look bad
@@ -4227,7 +4228,7 @@ ooym:out of your mind
 wayd:what are you doing
 jas:just a second
 iwy:i want you
-fumfer:fuck you mother fucker
+fumfer:fuck you anger
 btfl:beautiful
 luf:love
 tisw:that is so wrong
@@ -4275,7 +4276,7 @@ they're:They are
 mb:my bad
 wysitwirl:what you see is totally worthless in real life
 iiok:is it okay
-mthrfkr:mother fucker
+mthrfkr:anger
 wnt:want
 fn:first name
 fmbo:fuck my brains out
@@ -4285,7 +4286,7 @@ agn:again
 l8er:later
 tru:true
 dmu:do not mess up
-ahole:asshole
+ahole:anger
 4n:phone
 wtc:what the crap
 ukwim:you know what i mean
@@ -4319,12 +4320,12 @@ trnsltr:translator
 btdtgtts:been there, done that, got the t-shirt
 fashizzle:for sure
 53x:sex
-syoa:save your own ass
+syoa:save your own disgust
 yaagf:you are a good friend
 ygtsr:you got that slut right
 eos:end of story
 te:team effort
-rotflmaofaktd:rolling on the floor laughing my ass off farted and killed the dog
+rotflmaofaktd:rolling on the floor laughing my off farted and killed the dog
 stby:sucks to be you
 l2ms:laughing to myself
 glnhf:good luck and have fun
@@ -4342,13 +4343,13 @@ gurlz:girls
 xbl:xbox live
 imnshmfo:in my not so humble mother fucking opinion
 fwd:forward
-loflmao:laying on floor laughing my ass off
+loflmao:laying on floor laughing my off
 kute:cute
 nbd:no big deal
 4give:forgive
 probly:probably
 rtf:return the favor
-lmmfao:laughing my mother fucking ass off
+lmmfao:laughing my mother fucking off
 tolol:thinking of laughing out loud
 imu:i miss you
 bmvp:be my valentine please
@@ -4385,7 +4386,7 @@ copyvio:copyright violation
 tuh:to
 ft2t:from time to time
 for sheeze:for sure
-brbmf:be right back mother fucker
+brbmf:be right back anger
 tcp/ip:transmission control protocol/internet protocol
 wutup:what is up
 rtfa:read the fucking article
@@ -4407,9 +4408,9 @@ iwu:i want you
 mmbocmb:message me back or comment me back
 kwis:know what i am saying?
 tisc:that is so cool
-g2h:go to hell
+g2h:go to anger
 bch:bitch
-sthu:shut the hell up
+sthu:shut the anger up
 chk:check
 wdywd:what do you want to do?
 fmn:fuck me now
@@ -4427,7 +4428,7 @@ tmoro:tomorrow
 lollam:laughing out loud like a maniac
 oicwydt:oh, i see what you did there
 wtgds:way to go dumb slut
-pmitap:pound me in the ass prison
+pmitap:pound me in the prison
 wtfiwwy:what the fuck is wrong with you
 jtfo:joke the fuck out
 celly:cell phone
@@ -4440,7 +4441,7 @@ rodger:affirmative
 sg:so good
 dno:do not know
 whtever:whatever
-uyab:up your ass bitch
+uyab:up your disgust bitch
 mabby:maybe
 ihtutbr:i have to use the bathroom
 mmatc:meet me around the corner
@@ -4451,7 +4452,7 @@ rua:are you alone
 wanking:masturbating
 srly:seriously
 uraqt:you are a cutie
-gah:gay ass homo
+gah:gay homo
 iflu:i fucking love you
 ctt:change the topic
 rsn:real soon now
@@ -4496,17 +4497,17 @@ tia:thanks in advance
 ytf:why the fuck
 dob:date of birth
 naft:not a fucking thing
-dw:do not worry
+dw:do not fear
 bilf:brother i would like to fuck
 lorl:laugh out real loud
 gmafb:give me a fucking break
-kmhba:kiss my hairy big ass
+kmhba:kiss my hairy big
 rotflmbo:rolling on the floor laughing my butt off
 aon:all or nothing
 lbh:let us be honest
 2u2:to you too
 tmo:take me out
-ah:ass hole
+ah:anger
 bbilfm:be back in like five minutes
 lmgtfy:let me google that for you
 sfr:so fucking random
@@ -4527,10 +4528,10 @@ sploits:exploits
 biatch:bitch
 h8t3r:hater
 ight:alright
-ilyb:i love you bitch
-omgd:oh my gosh dude
+ilyb:i love you
+omgd:oh my disgusting dude
 bilu:baby i love you
-d.w:do not worry
+d.w:do not fear
 fukn:fucking
 sbt:sorry bout that
 vgg:very good game
@@ -4545,8 +4546,8 @@ gfad:go fuck a duck
 omfj:oh my fucking jesus
 f*cking:fucking
 ysitm:your shirt is too small
-hi2u2:hello to you too
-raoflmao:rolling around on floor laughing my ass off
+hi2u2:angero to you too
+raoflmao:rolling around on floor laughing my off
 fft:food for thought
 secks:sex
 lorrl:laugh out really really loud
@@ -4587,7 +4588,7 @@ sssd:same slut same day
 bf+gf:boyfriend and girlfriend
 kay:okay
 adhd:attention deficit hyperactivity disorder
-kaw:kick ass work
+kaw:anger work
 dygtp:did you get the picture
 hwk:homework
 tgfuap:thank god for unanswered prayers
@@ -4610,12 +4611,12 @@ r:are
 iwtfy:i want to fuck you
 sk8:skate
 owned:made to look bad
-elo:hello
+elo:angero
 lvya:love you
 msmd:monkey see - monkey do
 iwk:i would not know
 aufm:are you fucking mental
-mao:my ass off
+mao:my off
 ihysmrn:i hate you so much right now
 w2d:what to do
 fyeo:for your eyes only
@@ -4631,7 +4632,7 @@ iyflg:if you are feeling less generous
 str8:straight
 urms:you rock my socks
 iab:i am bored
-kah:kisses and hugs
+kah:kisses and love
 jizz:semen
 eotw:end of the world
 oidia:oops i did it again
@@ -4651,7 +4652,7 @@ hmb:hold me back
 wduc:what do you care
 fmnkml:fuck me now kiss me later
 pnus:penis
-jka:just kidding around
+jka:just happy around
 gudd:good
 wen:when
 l@u:laughing at you
@@ -4659,8 +4660,8 @@ w8ing:waiting
 lvn:loving
 ftlog:for the love of god
 obgjfioyo:old but good job finding it on your own
-wtfhb:what the fucking hell bitch
-ythwudt:why the hell would you do that
+wtfhb:what the fucking anger bitch
+ythwudt:why the anger would you do that
 nei:not enough information
 c/t:can not talk
 glu:girl like us
@@ -4678,7 +4679,6 @@ cylor:check your local orhtodox rabbi
 gbioua:go blow it out your ass
 uayor:use at your own risk
 ijf:i just farted
-bah:i do not really care
 tffw:too funny for words
 fiv:five
 lgds:let us go do something
@@ -4691,7 +4691,7 @@ wntd:what not to do
 iiuc:if i understand correctly
 ttr:time to run
 jtumltk:just thought you might like to know
-roflmfaopmp:rolling on flor laughing my fucking ass of peeing my pants
+roflmfaopmp:rolling on flor laughing my fucking of peeing my pants
 lq:laughing quietly
 nes:nintendo entertainment system
 h/o:hold on
@@ -4708,7 +4708,7 @@ iddi:i did not do it
 luff:love
 alot:a lot
 sowi:sorry
-bofh:bastard operator from hell
+bofh:bastard operator from anger
 wwwy:what is wrong with you
 hcihy:how can i help you
 gga:good game all
@@ -4717,12 +4717,12 @@ coo:cool
 g00g13:google
 cms:content management system
 isj:inside joke
-roflmfaopimp:rolling on the floor laughing my fucking ass off pissing in my pants
+roflmfaopimp:rolling on the floor laughing my fucking off pissing in my pants
 n1:nice one
-rotflmfao:rolling on the floor laughing my fucking ass off
+rotflmfao:rolling on the floor laughing my fucking off
 ifhu:i fucking hate you
 dc'd:disconnected
-cmao:crying my ass off
+cmao:sad
 bogof:buy one get one free
 wpe:worst president ever (bush)
 stfuyb:shut the fuck up you bitch
@@ -4750,7 +4750,7 @@ lolf:lots of love forever
 pwn3r:owner
 damhik:do not ask me how i know
 irhy:i really hate you
-gthmf:go to hell mothafucka
+gthmf:go to anger mother fucker
 fps:first person shooter
 ibt:i will be there
 zup:what is up?
@@ -4785,7 +4785,7 @@ gl:good luck
 rockr:rocker
 wywh:wish you were here
 2g2bt:too good to be true
-mfa:mother fucking asshole
+mfa:mother fucking anger
 w8ter:waiter
 ihnfc:i have no fucking clue
 bfd:big fucking deal
@@ -4803,7 +4803,7 @@ utw:used to work
 bcnu:be seeing you
 ig:i guess
 g2gs:got to go sorry
-smofo:stupid mother fucker
+smofo:stupid anger
 tdwdtg:the devil went down to georgia
 wanna:want to
 rsp:respawn
@@ -4857,7 +4857,7 @@ hss:horse slut and splinters
 un2bo:you need to back off
 sho:sure
 ibw:i will be waiting
-hakas:have a kick ass summer
+hakas:have a happy summer
 n:and
 gokid:got observers - keep it decent
 dey:they
@@ -4892,7 +4892,7 @@ ruh:are you horny
 pebcak:problem exists between chair and keyboard
 myfb:mind your fucking business
 hubby:husband
-hith:how in the hell
+hith:how in the anger
 gangsta:gangster
 imfao:in my fucking arrogant opinion
 jm:just messing
@@ -4905,7 +4905,7 @@ sus:see you soon
 roffleol:rolling on the floor laughing out loud
 chillin:relaxing
 iluvu:i love you
-lmcao:laughing my crazy ass off
+lmcao:laughing my crazy off
 gfar2cu:go find a rock to crawl under
 njoy:enjoy
 fuhget:forget
@@ -4935,7 +4935,7 @@ urtb:you are the best
 hl:half-life
 diaf:die in a fire
 nq:thank you
-j/k:just kidding
+j/k:just happy
 ownzorz:owned.
 nowai:no way
 c&c:command and conquer
@@ -5010,14 +5010,14 @@ btdt:been there done that
 ttul:talk to you later
 gey:gay
 smthng:something
-dyth:damn you to hell
+dyth:damn you to anger
 frgt:forgot
 tbvh:to be very honest
 lpb:low ping bastard
 lomg:like oh my god
 yayo:cocaine
 rotflmfho:rolling on the floor laughing my fucking head off
-pimfa:pain in my fucking ass
+pimfa:pain in my fucking
 tat:that
 thx:thank you
 scrt:secret
@@ -5041,12 +5041,12 @@ wot:what
 gmta:great minds think alike
 weg:wicked evil grin
 wula:what you looking at?
-gtha:go the hell away
+gtha:go the anger away
 lyls:love you lots
 u iz a 304:you is a hoe
 roflkmd:rolling on the floor laughing kicking my dog
 pls:please
-bsmfh:bastard system manager from hell
+bsmfh:bastard system manager from anger
 idr:i do not remember
 tjb:thats just boring
 nthg:nothing
@@ -5057,8 +5057,8 @@ p.o.s.:parent over shoulder
 gtn:getting
 idjit:idiot
 fking:fucking
-hhok:ha ha only kidding
-pita:pain in the ass
+hhok:laughing only happy
+pita:pain in the
 pf:profile
 loti:laughing on the inside
 bich:bitch
@@ -5078,7 +5078,7 @@ afk:away from keyboard
 kky:kinky
 bebe:baby
 lurve:love
-amf:adios motherfucker
+amf:adios anger
 nstaafl:no such thing as a free lunch
 giv:give
 we're:We are
@@ -5088,7 +5088,7 @@ iygm:if you get me
 guru:expert
 bbtn:be back tonite
 d/l:download
-7734:hell
+7734:anger
 phun:fun
 tanstaafl:there am not no such thing as a free lunch
 uvgtbsm:you have got to be shiting me
@@ -5097,7 +5097,7 @@ onud:oh no you did not
 4yeo:for your eyes only
 a/l:age and location
 byak:blowing you a kiss
-fmita:fuck me in the ass
+fmita:fuck me in the
 suabq:shut up and be quiet
 ftbfs:failed to build from source
 less than 3:love
@@ -5109,17 +5109,17 @@ j2luk:just to let you know
 cut3:cute
 w2g:way to go
 mml8r:meet me later
-gtfh:go to fucking hell
+gtfh:go to fucking anger
 ihtsm:i hate this so much
 sez:says
 cuic:see you in class
-lmaoxh:laughing my ass off extremely hard
+lmaoxh:laughing my off extremely hard
 ifttt:if this then that
 bmttveot:best mates till the very end of time
 nn2r:no need to respond
 rotfalol:roll on the floor and laugh out loud
 hmul:hit me up later
-rflmao:rolling on the floor laughing my ass off
+rflmao:rolling on the floor laughing my off
 4lyfe:for life
 f2m:female to male
 rly:really
@@ -5133,7 +5133,7 @@ ttt:to the top
 lnk:link
 piihb:put it in her butt
 bettr:better
-lmaootf:laughing my ass off on the floor
+lmaootf:laughing my off on the floor
 gtfooh:get the fuck out of here
 wayut:what are you up to
 prw:parents are watching
@@ -5143,13 +5143,13 @@ what's:What is
 iyo:in your opinion
 nomw:not on my watch
 culd:could
-roflmmfao:rolling on the floor laughing my mother fucking ass off
+roflmmfao:rolling on the floor laughing my mother fucking off
 gis:google image search
 btfw:by the fucking way
-roflao:rolling on the floor laughing my ass off
+roflao:rolling on the floor laughing my off
 d&c:divide and conquer
 s.o.a.b.:son of a bitch
-ayfk:are you fucking kidding
+ayfk:are you fucking happy
 figjam:fuck i am good, just ask me
 fgi:fucking google it
 gafl:get a fucking life
@@ -5180,7 +5180,7 @@ nedn:any day now
 mgiwjsdchmw:my girlfriend is watching jeff so do not call her my wife
 n00b:newbie
 @:at
-otflmfao:on the floor laughing my fucking ass off
+otflmfao:on the floor laughing my fucking off
 mml:making me laugh
 id10t:idiot
 wsidi:why should i do it
@@ -5228,25 +5228,25 @@ pb:peanut butter
 yiwtgo:yes, i want to go private
 diy:do it yourself
 upcia:unsolicited pool cue in anus
-kma:kiss my ass
+kma:kiss my
 jtysk:just thought you should know
 platcs:parent looking at the computer screen
 pmpl:piss my pants laughing
-yfi:you fucking idiot
+yfi:you anger idiot
 cuom:see you on monday
 lshiwms:laughing so hard i wet myself
 roflmaopmp:rolling on the floor, laughing my ass off, pissing my pants
-fsob:fucking son of a bitch
+fsob:anger son of a bitch
 wht:what
 iltwymmf:i love the way you make me feel
 mty:empty
 ilysmm:i love you so much more
-iwjk:i was just kidding
+iwjk:i was just happy
 witu:with you
 gb2:go back to
 hadn't:had not
 iff:if and only if
-wthauwf:what the hell are you waiting for
+wthauwf:what the anger are you waiting for
 z0mg:oh my god
 xoac:christ on a crutch
 goi:get over it
@@ -5265,7 +5265,7 @@ lawled:laughed out loud
 hng:horny net geek
 exp:experience
 anw:anyways
-p2w:pay to win
+p2w:play to happy
 ynk:you never know
 rl:real life
 kotl:kiss on the lips
@@ -5277,7 +5277,7 @@ sumfin:something
 efffl:extra friendly friends for life
 pleze:please
 lmgdao:laughing my god damn ass off
-fker:fucker
+fker:anger
 wbs:write back soon
 syrs:see ya real soon
 tho:though
@@ -5286,7 +5286,7 @@ ulbom:you looked better on myspace
 chswm:come have sex with me
 f*ck:fuck
 grtg:getting ready to go
-smf:stupid motherfucker
+smf:stupid anger
 ikm:i know man
 fcfs:first come first served
 phreaker:phone hacker
@@ -5320,7 +5320,7 @@ ilylafklc:i love you like a fat kid loves cake
 lyk3:like
 waycb:when are you coming back
 fnar:for no apparent reason
-rufkm:are you fucking kidding me
+rufkm:are you anger happy me
 ltip:laughting until i puke
 dogg:friend
 ianalb:i am not a lawyer, but..
@@ -5334,11 +5334,11 @@ shag:fuck
 pml:pissing myself laughing
 stw:share the wealth
 jwtlyk:just wanted to let you know
-swt:sweet
+swt:nice
 ilu:i love you
-yasfg:you are so fucking gay
+yasfg:you are so anger gay
 ymrasu:yes, my retarded ass signed up
-kmfa:kiss my fucking ass
+kmfa:kiss my anger ass
 p4p:pic for pic
 mnm:eminem
 sowwy:sorry
@@ -5356,11 +5356,11 @@ n2b:not too bad
 t.t.y.l:talk to you later
 liu:look it up
 ru18:are you 18
-howdey:hello
+howdey:angero
 rys:are you single
 http:hyper text transfer protocol
 mfw:my face when
-mofo:mother fucker
+mofo:anger
 pkemon:pokemon
 wcutm:what can you tell me
 lof:laughing on floor
@@ -5371,9 +5371,9 @@ gtfoi:get the fuck over it
 u'r:you are
 sibir:sibling in room
 xyzpdq:examine your zipper pretty darn quick
-mfao:my fucking ass off
+mfao:my anger disgust off
 hijack:start an off topic discussion
-ymbkm:you must be kidding me
+ymbkm:you must be happy me
 phreak:freak
 esl:eat slut loser
 thr:there
@@ -5427,7 +5427,7 @@ t2ul8r:talk to you later
 roflolbag:rolling on the floor laughing out loud busting a gut
 a$$:ass
 wjwd:what jesus would do
-jkl:just kidding loser
+jkl:just happy loser
 nvmt:nevermind that
 urtbitw:you are the best in the world!
 ydpos:you dumb piece of slut
@@ -5435,8 +5435,9 @@ feat:featuring
 dsu:do not screw up
 cbfed:can not be fucked
 cya:goodbye
-g2/-/:go to hell
+g2/-/:go to anger
 won't:will not
+needn't:need not
 hyk:how you know
 tbh:to be honest
 wuz:was
@@ -5485,14 +5486,14 @@ idgara:i do not give a rat's ass
 kic:keep it clean
 h/e:however
 they've:They have
-brbf:be right back fucker
+brbf:be right back anger
 soa:service oriented architecture
-07734:hello
+07734:angero
 gimme:give me
 iafi:i am from india
 mk:mmm....ok
 supposably:supposedly
-rtfq:read the fucking question
+rtfq:read the anger question
 hhiadb:holy hole in a donut batman
 sitmf:say it to my face
 igu:i give up
@@ -5504,19 +5505,19 @@ iydhantsdsaaa:if you do not have anything nice to say do not say anything at all
 stsp:same time same place
 s'up:what is up
 obl:osama bin laden
-gthb:go to hell bitch
+gthb:go to anger bitch
 llf:laugh like fuck
-pmsfl:pissed myself fucking laughing
+pmsfl:annoyed myself fucking laughing
 4ward:forward
 evn:even
-tif2m:this is fucking 2 much
+tif2m:this is anger 2 much
 dwmt:do not waste my time
 s4se:sight for sore eyes
-dwbh:do not worry, be happy
+dwbh:do not fear, be happy
 jw2k:just wanted to know
 dln:do not look now
 fov:field of view
-nfd:no fucking deal
+nfd:no anger deal
 tyme:time
 iirc:if i recall correctly
 rombl:rolled off my bed laughing
@@ -5531,7 +5532,7 @@ ilysmih:i love you so much it hurts
 wrm:which reminds me
 retrotextual:one who is using out of date words and abbreviations while texting.
 aren't:are not
-gthyfah:go to hell you fucking asshole
+gthyfah:go to anger you fucking asshole
 cid:consider it done
 irdc:i really do not care
 wlc:welcome
@@ -5554,7 +5555,7 @@ biotch:bitch
 addy:address
 g4y:good for you
 tyfi:thank you for invite
-imfo:in my fucking opinion
+imfo:in my anger opinion
 blu:blue
 rele:really
 9t:night
@@ -5586,6 +5587,7 @@ ha:happy
 haha:happy
 hehe:happy
 hehehe:happy
+hehehehe:happy
 ugh:disgust
 yay:happy
 aah:scared
@@ -5595,7 +5597,6 @@ jeez:surprise
 phew:happy
 yahoo:happy
 whoa:surprise
-yeah:happy
 bah:bad
 duh:bad
 cheers:happy
@@ -5604,8 +5605,55 @@ yowza:surprise
 aww:happy
 bravo:happy
 gosh:disgust
-alas:happy
-ass:disgust
-bitch:anger
+alas:sad
 stung:anger
 amazing:fantastic
+ew:disgust
+sigh:sad
+argh:anger
+aargh:anger
+boom:surprise
+frickin':anger
+fricking:anger
+frickin:anger
+pisses:anger
+pissed:anger
+woohoo:curious
+hell:anger
+yell:anger
+yelling:anger
+yelled:anger
+fucker:anger
+fuckers:anger
+cocky:disgust
+honking:anger
+bloody:anger
+arguing:anger
+argument:anger
+arguments:anger
+tears:sad
+sweet:nice
+ass:disgust
+kidding:happy
+rich:happy
+delicious:happy
+win:happy
+hug:love
+hugs:love
+worry:fear
+shudder:fear
+shuddering:fear
+shocked:surprised
+despicable:disgust
+whoot:happy
+urgh:disgust
+aarrgghh:anger
+hella:anger
+woo:happy
+irritating:disgust
+wow:happy
+huh:surprise
+fucking:anger
+compliments:happy
+spectacular:fabulous
+breathtaking:fabulous

@@ -4,7 +4,9 @@ from nltk.tokenize import word_tokenize
 from collections import Counter
 from nltk.corpus import wordnet as wn
 from nltk.corpus import stopwords
+from nltk.tokenize import TweetTokenizer
 
+tweetTokenizer=TweetTokenizer()
 EN_STOPWORDS = stopwords.words('english')
 
 dictSlang={}
@@ -40,7 +42,7 @@ def extract_entity_names(t):
 def named_entities(sentence):
    # print(sentence)
     sentences = nltk.sent_tokenize(sentence)
-    tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
+    tokenized_sentences = [tweetTokenizer.tokenize(sentence) for sentence in sentences]
     tagged_sentences = [nltk.pos_tag(sentence) for sentence in tokenized_sentences]
     chunked_sentences = nltk.ne_chunk_sents(tagged_sentences, binary=True)
     entity_names = []
@@ -52,7 +54,7 @@ def named_entities(sentence):
                            '/Users/Parth/Desktop/project_docs/codes/stanford-ner-2016-10-31/stanford-ner.jar',
                            encoding='utf-8')
 
-    tokenized_text = word_tokenize(sentence)
+    tokenized_text = tweetTokenizer.tokenize(sentence)
     classified_text = st.tag(tokenized_text)
 
     entities_list=[]
@@ -98,7 +100,7 @@ def splitHashtag(hashtag):
 
 
 def spellCorrect(spell,dictionary):
-    print(spell)
+
     suggestions=dictionary.suggest(spell)
     if len(suggestions)==0:
         return ' ' #incorrect spelling - to be removed
@@ -123,18 +125,21 @@ repeatedLetters=re.compile(r"(.)\1{2,}")
 abbreviations=re.compile("^[A-Z\.]+$")
 dictionary=enchant.Dict("en_US")
 allowedTokens=re.compile("('?[A-Za-z0-9]+)+")
-sentenceSeparators=[('and',' . '),('but',' . '),('because',' . '),('therefore',' . '),('yet',' . '),\
-                    ('then',' . '),('although',' . '),('still',' . '),('untill',' . '),('really?','surprise'),('really ?','surprise')]
-interjections=[ ('Ooh la la','happy'), ('oh shit','fear'), ('oh my god','surprise'), ('oh my gosh','surprise'), ('wow great','happy'),\
-                ('oh my goodness','surprise'), ('wo-hoo','happy'),('can not wait to','excited'),('fucking','anger'),('fuck off','anger'),\
-                ('what the fuck','anger'),('what the hell','anger'),('pissed','annoyed'),('fuck up','anger'),('fucked up','disgust'),\
-                ('very odd','surprise'),('shut up','anger')]
+sentenceSeparators=[('and',' . '),('but',' . '),('because',' . '),('therefore',' . '),('yet',' . '),('except',' . '),\
+                    ('then',' . '),('although',' . '),('still',' . '),('untill',' . '),('really\?','surprise'),('really \?','surprise')]
+interjections=[('Ooh la la','happy'), ('oh yeah','happy'), ('oh shit','fear'), ('oh my god','surprise'), ('oh my gosh','surprise'),\
+                ('wow great','happy'), ('oh my goodness','surprise'), ('woo-hoo','happy'), ('can not wait to','excited'),\
+                ('fucking','anger'), ('fuck off','anger'), ('what the fuck','anger'), ('what the hell','anger'), ('fuck up','anger'),\
+                ('fucked up','disgust'), ('very odd','surprise'), ('shut up','anger'), ('big heart','happy'), ('bigger heart','happy'),\
+                ('big hearted','happy'), ('can not believe','surprise'), ('heart broken','sad'), ('heart break','sad'), ('blink of an eye','surprise'),\
+                ('blink of eye','surprise'), ('suddenly realised','surprise'), ('suddenly realized','surprise'), ('crush on','happy'),\
+                ('guess what','surprise')]
 def preprocess(tweet): #dict - dictionary of slangs
     tweet=tweet.replace('USER','').strip()
     for k,v in sentenceSeparators:
+        #k="[^A-Za-z]"+k+"[^A-Za-z]"
         replace=re.compile(k, re.IGNORECASE)
         tweet=replace.sub(v,tweet)
-
     # hashtag split
     tokens=[token if token[0]!='#' else splitHashtag(token[1:]) for token in tweet.split()]
     if '#' in tokens:
@@ -158,7 +163,7 @@ def preprocess(tweet): #dict - dictionary of slangs
                 punctuation='.' 
             #spell check
             sentenceTokens=[]
-            for token in word_tokenize(sentence):
+            for token in tweetTokenizer.tokenize(sentence):
                 if len(token.strip())>0:
                     sentenceTokens.append(token.strip())
             numOfCorrected=0
@@ -177,16 +182,19 @@ def preprocess(tweet): #dict - dictionary of slangs
                     else:
                         if (token not in pronouns+namedEntities) and abbreviations.match(token)==None and dictionary.check(token)!=True:
                             token=token.lower()
-                        if (len(token)!=1 and len(wn.synsets(token))!=0) or ((index+1)<len(sentenceTokens) and sentenceTokens[index+1] in apostrophes):                                
+                        if (len(token)!=1 and len(wn.synsets(token))!=0 and token.lower() not in dictSlang) or ((index+1)<len(sentenceTokens) and sentenceTokens[index+1] in apostrophes):                                
                             correctedTokens.append(token)
                         elif token in apostrophes and len(correctedTokens)>0 and (correctedTokens[-1]+token).lower() in dictSlang:
                             key=(correctedTokens[-1]+token).lower()
                             correctedTokens[-1]=dictSlang[key]
                         elif token in dictSlang:
                             correctedTokens.append(dictSlang[token])
-                        elif token.lower() in dictSlang and token in namedEntities:
+                            if token in namedEntities:
+                                namedEntities.remove(token)
+                        elif token.lower() in dictSlang:
                             correctedTokens.append(dictSlang[token.lower()])
-                            namedEntities.remove(token)
+                            if token in namedEntities:
+                                namedEntities.remove(token)
                         elif abbreviations.match(token)!=None or hashWord or token in namedEntities:
                             correctedTokens.append(token)
                         else:
@@ -228,6 +236,7 @@ def preprocess(tweet): #dict - dictionary of slangs
 
     for index, sentence in enumerate(filteredSentences):
         for k,v in interjections:
+            #k="[^A-Za-z]"+k+"[^A-Za-z]"
             replace=re.compile(k, re.IGNORECASE)
             sentence=replace.sub(v,sentence)
         filteredSentences[index]=sentence

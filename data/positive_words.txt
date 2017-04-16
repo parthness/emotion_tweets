@@ -363,6 +363,7 @@ complemented
 complements
 compliant
 compliment
+compliments
 complimentary
 comprehensive
 conciliate
@@ -867,6 +868,7 @@ godsend
 gold
 golden
 good
+good-looking
 goodly
 goodness
 goodwill
@@ -911,7 +913,6 @@ hallmarks
 hallowed
 handier
 handily
-hands-down
 handsome
 handsomely
 handy
@@ -967,6 +968,7 @@ hotcake
 hotcakes
 hottest
 hug
+hugs
 humane
 humble
 humility
@@ -1079,6 +1081,7 @@ jollify
 jolly
 joke
 jokes
+joking
 jovial
 joy
 joyful
@@ -1095,6 +1098,7 @@ justly
 keen
 keenly
 keenness
+kidding
 kid-friendly
 kindliness
 kindly
@@ -2047,6 +2051,19 @@ zeal
 zenith
 zest
 zippy
+funky
+funnily
+funny
 chill
 chilly
 chilling
+frankly
+giggling
+yummy
+tasty
+cuddle
+cuddling
+cuddled
+cuddles
+clapping
+dancing

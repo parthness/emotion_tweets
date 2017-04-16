@@ -7,7 +7,7 @@ from senti_classifier.senti_classifier import synsets_scores
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from wordSenseDisambiguate import disambiguate
 from preprocessTweet import preprocess
-from lexicon import lexiconDict
+from positive_negative_lexicon import lexiconDict
 
 positive=['happy']
 negative=['sad','anger','disgust','fear']
@@ -45,7 +45,7 @@ adverbs=['RB','RBR','RBS']
 '''
 negators=['neither','not','never','nor','no','none']
 positiveIntensifiers=['especially','exceptionally','excessively','extremely','extraordinarily',\
-                      'definitely','very','perfectly','nicely','surely','more','mostly','most','pretty','really']
+                      'definitely','very','perfectly','nicely','surely','more','mostly','most','pretty','really','much','such']
 negativeIntensifiers=['rarely','barely','moderately','slightly','less','hardly']
 
 def fuzzyUnion(senses):
@@ -105,7 +105,7 @@ def wordnetScore(emotionalPart,namedEntities):
             negativeIntensifierPresent=False
             for token in sentences[index].split():
                 if token in negators:
-                    negatorPresent=True
+                    negatorPresent=not negatorPresent
                 elif token in positiveIntensifiers:
                     positiveIntensifierPresent=True
                 elif token in negativeIntensifiers:
@@ -141,11 +141,13 @@ def wordnetScore(emotionalPart,namedEntities):
                         lemma=senses[token]['sense'].lemmas()[0]
                         antonym=lemma.antonyms()
                         oppositeEmotion=''
+                        print(antonym)
                         if len(antonym)>0:
                             antonymDict={}
                             sense=wn.lemma_from_key(antonym[0].key()).synset()
                             antonymDict['sense']=sense
                             antonymWord=sense.name().split('.')[0]
+                            print(antonymWord, (antonymWord,'z') in lexiconDict)
                             if (antonymWord,'z') in lexiconDict:
                                 senses[token]=calculateSimilarity(antonymWord,antonymDict,synsets_scores[sense.name()]['pos'],synsets_scores[sense.name()]['neg'])
                         else:    

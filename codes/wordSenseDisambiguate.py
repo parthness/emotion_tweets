@@ -10,7 +10,9 @@ from senti_classifier.senti_classifier import synsets_scores
 from nltk.stem.porter import *
 from positive_negative_lexicon import lexiconDict
 from nltk.tag.stanford import StanfordPOSTagger
+from nltk.tokenize import TweetTokenizer
 
+tweetTokenizer=TweetTokenizer()
 path_to_model = '/Users/Parth/Desktop/emotion_tweet/codes/stanford-postagger-full-2016-10-31/models/english-bidirectional-distsim.tagger'
 path_to_jar='/Users/Parth/Desktop/emotion_tweet/codes/stanford-postagger-full-2016-10-31/stanford-postagger-3.7.0.jar'
 posTagger=StanfordPOSTagger(path_to_model, path_to_jar)
@@ -104,7 +106,7 @@ def simple_lesk(emotionalPart, ambiguous_word, pos):
     return best_sense
 
 apostrophes=["n't","'d","'ll","'s","'m","'ve","'re","na"]
-stopwords = stopwords.words('english') + list(string.punctuation) + apostrophes
+stopwords = stopwords.words('english')[:-19] + list(string.punctuation) + apostrophes
 
 def notNeutral(word,sense,pos):
     '''
@@ -123,7 +125,7 @@ def notNeutral(word,sense,pos):
     if morphy is not None:
         if (morphy,pos) in lexiconDict or (morphy,'z') in lexiconDict:
             return True
-            
+
     if (word,pos) in lexiconDict or (word,'z') in lexiconDict or word in disgustingWords:
         return True
     else:
@@ -221,8 +223,10 @@ def disambiguate(emotionalPart, namedEntities):
             formed_sentence+=words[index]+' '
     '''
     pronouns=["I","We","You","They","He","She","It","i","we","you","they","he","she","it"]
-    posTags=posTagger.tag(word_tokenize(emotionalPart))
-    for word,pos in posTags:
+    posTags=posTagger.tag(tweetTokenizer.tokenize(emotionalPart))
+    for index,wordPosTuple in enumerate(posTags):
+        word=wordPosTuple[0]
+        pos=wordPosTuple[1]
         if pos in posToConsider:
             pos=pos[0].lower()
             if pos=='j':
@@ -235,9 +239,9 @@ def disambiguate(emotionalPart, namedEntities):
                         sense=correctSense(wn.synsets(word),word)
                     if type(sense)!=type(None):
                         #sense=sense[0]
-                        if word.lower() in ['like','likes','liked']:
-                            if(len(sentence)>0):
-                                if sentence[-1][0] in (pronouns+namedEntities):
+                        if word.lower() in ['like']:
+                            if(index-1>0):
+                                if posTags[index-1][0] not in ['be','is','am','are','was','were']:
                                     sentence.append((word.lower(),wn.synset('like.v.03')))
                         elif notNeutral(word.lower(),dict(synsets_scores[sense.name()]),pos):
                             sentence.append((word.lower(),sense))
