@@ -11,5 +11,3 @@ with open(datafile,'r') as f:
     for line in f:
         line=line.strip()
         lexiconDict[(line,'z')]='+'
-
-lexiconDict[('well','r')]='+'

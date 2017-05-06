@@ -28,7 +28,7 @@ def findRelatedForms(ss):
 
     return list(set(drfList))
 
-def simple_signature(word,ss, stem=False):
+def simple_signature(word,ss,lexicon):
     """
     Returns a synsets_signatures dictionary that includes signature words of a
     sense from its:
@@ -37,6 +37,7 @@ def simple_signature(word,ss, stem=False):
     (iii) hypernyms and hyponyms
     """
     signature=[wn.morphy(word),word,ss.name().split('.')[0]]+findRelatedForms(ss)
+    print('signature',signature)
    # print("ss: ",ss)
     # Includes definition.
     ss_definition = synset_properties(ss, 'definition')
@@ -83,6 +84,26 @@ def simple_signature(word,ss, stem=False):
     #signature = [porter.stem(i) for i in signature]
     
     ss_sign=set(signature)
+    to_remove=[]
+
+    for word in ss_sign:
+        morphy=wn.morphy(word)
+        if lexicon=='+-':
+            if (word,'z') not in lexiconDict and (morphy,'z') not in lexiconDict:
+                to_remove.append(word)
+        else:
+            if (word,'z') in lexiconDict:
+                if lexiconDict[(word,'z')]!=lexicon:
+                    to_remove.append(word)
+            elif (morphy is not None) and (morphy,'z') in lexiconDict:
+                if lexiconDict[(morphy,'z')]!=lexicon:
+                    to_remove.append(word)
+            else:
+                to_remove.append(word)
+    
+    to_remove=set(to_remove)
+    ss_sign=ss_sign-to_remove
+    signature=list(ss_sign)
     
     sim=[]
     for ss in ss_sign:
@@ -175,6 +196,10 @@ emoDict={}
 emotion=''
 synsets=[]
 
+positive=['happy']
+negative=['sad','anger','disgust','fear']
+surprise=['surprise']
+emotions=positive+negative+surprise
 
 with open('../data/emotion_dict_synsets.txt','r') as f:
         for line in f:
@@ -185,31 +210,36 @@ with open('../data/emotion_dict_synsets.txt','r') as f:
                synsets=[]
                emotion=line[1:]
             else:
-                synsets.append(simple_signature(line,wn.synset(line)))
+                if emotion in positive:
+                    synsets.append(simple_signature(line,wn.synset(line),'+'))
+                elif emotion in negative:
+                    synsets.append(simple_signature(line,wn.synset(line),'-'))
+                else:
+                    synsets.append(simple_signature(line,wn.synset(line),'+-'))
          
 if len(synsets)>0:
     emoDict[emotion]=synsets
 
-positive=['happy']
-negative=['sad','anger','disgust','fear']
-surprise=['surprise']
-emotions=positive+negative+surprise
+
 
 
 def calculateSimilarity(word,senses,pos,neg): 
-    sense=simple_signature(word,senses['sense'])
     maxEmotionScore=0
     morphy=wn.morphy(word,senses['sense'].pos())
     if (word,'z') not in lexiconDict and (morphy is not None):
         word=morphy
     if lexiconDict[(word,'z')]=='+':
         emotionsToMatch=positive+surprise
+        lexicon='+'
         for emotion in negative:
             senses[emotion]=0
     else:
         emotionsToMatch=negative+surprise
+        lexicon='-'
         for emotion in positive:
             senses[emotion]=0
+
+    sense=simple_signature(word,senses['sense'],lexicon)
 
     for emotion in emotionsToMatch:
         score=0
@@ -264,6 +294,7 @@ def calculateSimilarity(word,senses,pos,neg):
             for emotion in emotions:
                 senses[emotion]=round(senses[emotion]/rootMeanSquare,2)
 
+    print("after RMS : " , senses)
     return senses
 #to find similarity between two wordnet senses    
 #print(similarity_lesk(wn.synset('anger.n.01'),wn.synset('angry.a.01')))

@@ -8,6 +8,8 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from wordSenseDisambiguate import disambiguate
 from preprocessTweet import preprocess
 from positive_negative_lexicon import lexiconDict
+import numpy as np
+import matplotlib.pyplot as plt
 
 positive=['happy']
 negative=['sad','anger','disgust','fear']
@@ -19,7 +21,10 @@ def findMaxEmotionList(finalEmotion):
     for emotion in emotions:
         if finalEmotion[emotion]>=0.5:
             maxEmotionList.append(emotion)
-
+    
+    if len(maxEmotionList)==0:
+        maxEmotionList.append('neutral')
+    
     return maxEmotionList
 
 def findMaxEmotion(senses):
@@ -46,7 +51,7 @@ adverbs=['RB','RBR','RBS']
 negators=['neither','not','never','nor','no','none']
 positiveIntensifiers=['especially','exceptionally','excessively','extremely','extraordinarily',\
                       'definitely','very','perfectly','nicely','surely','more','mostly','most','pretty','really','much','such']
-negativeIntensifiers=['rarely','barely','moderately','slightly','less','hardly']
+negativeIntensifiers=['rarely','barely','moderately','slightly','less','hardly','could','would']
 
 def fuzzyUnion(senses):
     finalEmotion={}
@@ -66,6 +71,32 @@ def fuzzyUnion(senses):
     return finalEmotion, maxEmotion
 
 
+def aggregrateSentencesEmotions(fuzzyUnionSentences):
+    aggregrateSentencesEmotion={}
+    for emotion in emotions:
+        sum=0
+        for sentence,scores in fuzzyUnionSentences.items():
+            sum+=fuzzyUnionSentences[sentence][emotion]
+        aggregrateSentencesEmotion[emotion]=sum
+
+    meanSquare=0
+    for emotion,score in aggregrateSentencesEmotion.items():
+        meanSquare+=(score**2)
+    rootMeanSquare=math.sqrt(meanSquare)
+
+    maxScore=-1
+    maxEmotion=''
+    for emotion,score in aggregrateSentencesEmotion.items():
+        aggregrateSentencesEmotion[emotion]=round(aggregrateSentencesEmotion[emotion]/rootMeanSquare,2)
+        if aggregrateSentencesEmotion[emotion]>maxScore:
+            maxScore=aggregrateSentencesEmotion[emotion]
+            maxEmotion=emotion
+
+    if maxScore<=0.4:
+        maxEmotion='neutral'    
+    return aggregrateSentencesEmotion, maxEmotion
+
+
 def wordnetScore(emotionalPart,namedEntities):
     '''
     #removing tokens other than nouns, verbs, adverbs, adjectives
@@ -83,7 +114,8 @@ def wordnetScore(emotionalPart,namedEntities):
     sensesInSentences,sentences=disambiguate(emotionalPart,namedEntities)
     if len(sensesInSentences)==0:
         print(emotionalPart, " - neutral")
-        return 'neutral',['neutral']
+        finalEmotion={'happy':0,'sad':0,'anger':0,'disgust':0,'fear':0,'surprise':0}
+        return 'neutral',finalEmotion
     else:    
         print(sensesInSentences)
         print(sentences)
@@ -99,7 +131,7 @@ def wordnetScore(emotionalPart,namedEntities):
                 senses[word]['sense']=sense
                 calculateSimilarity(word,senses[word],synsets_scores[sense.name()]['pos'],synsets_scores[sense.name()]['neg'])
                 #negators and Intensifiers
-            print(senses)
+            print("before Intensifiers and negators", senses)
             negatorPresent=False
             positiveIntensifierPresent=False
             negativeIntensifierPresent=False
@@ -142,6 +174,7 @@ def wordnetScore(emotionalPart,namedEntities):
                         antonym=lemma.antonyms()
                         oppositeEmotion=''
                         print(antonym)
+                        antonymFound=False
                         if len(antonym)>0:
                             antonymDict={}
                             sense=wn.lemma_from_key(antonym[0].key()).synset()
@@ -149,24 +182,24 @@ def wordnetScore(emotionalPart,namedEntities):
                             antonymWord=sense.name().split('.')[0]
                             print(antonymWord, (antonymWord,'z') in lexiconDict)
                             if (antonymWord,'z') in lexiconDict:
+                                antonymFound=True
                                 senses[token]=calculateSimilarity(antonymWord,antonymDict,synsets_scores[sense.name()]['pos'],synsets_scores[sense.name()]['neg'])
-                        else:    
+                        #else:
+                        if not antonymFound:    
                             for emotion in emotions:
                                 if senses[token][emotion]>0.5:
                                     senses[token][emotion]=round(1-senses[token][emotion],2)
                         negatorPresent=False
 
-            print(senses)    
+            print("after Intensifiers and negators", senses)    
             finalEmotion, maxEmotion=fuzzyUnion(senses)
             fuzzyUnionSentences[sentences[index]]=finalEmotion
 
         finalEmotion, maxEmotion=fuzzyUnion(fuzzyUnionSentences)
-        maxEmotionList=findMaxEmotionList(finalEmotion)
         
-
         print(finalEmotion)
         print(time.time()-t1_,t1_-t0_)
-        return maxEmotion, maxEmotionList
+        return maxEmotion, finalEmotion
 
 def maxSentiment(sentiment):
     if sentiment['neu']>sentiment['pos'] and sentiment['neu']>sentiment['neg']:
@@ -174,51 +207,157 @@ def maxSentiment(sentiment):
     else:
         return 'sentimental'
 
-#tweetsfile="../data/inputKeyword.txt"  
-tweetsfile="../data/notNeutral.txt"
-errorFile=open("../data/errors2.txt",'w')
-accuracy={'happy':{'tp':0,'tn':0,'fp':0,'fn':0},'sad':{'tp':0,'tn':0,'fp':0,'fn':0},'anger':{'tp':0,'tn':0,'fp':0,'fn':0},
-        'disgust':{'tp':0,'tn':0,'fp':0,'fn':0},'surprise':{'tp':0,'tn':0,'fp':0,'fn':0},'fear':{'tp':0,'tn':0,'fp':0,'fn':0},
-        'neutral':{'tp':0,'tn':0,'fp':0,'fn':0}}
-n=1
-t0=time.time()
-score=0
-analyzer = SentimentIntensityAnalyzer()     
-with open(tweetsfile,'r') as f, open('../data/notNeutralEmotions.txt','r') as fo:
-    for tweet,emotion in zip(f,fo):
-        sentences,sentenceType,namedEntities=preprocess(tweet)
-        emotion=emotion.strip()
-        print(n,tweet)
-        print(sentences)
-        print(sentenceType)
-        print(namedEntities)
-        maxEmotion='neutral'
-        n+=1
-        emotionalPart=''
-        for index,sentence in enumerate(sentences):
-            #if sentenceType[index]!='?':# and maxSentiment(analyzer.polarity_scores(sentence+sentenceType[index]))!='neu':
-            emotionalPart+=sentence+sentenceType[index]+' '               
-            #else:
-            #    print(sentence + ' --- neutral')
-            #    maxEmotion='neutral'
-        if emotionalPart!='':
-            maxEmotion, maxEmotionList=wordnetScore(emotionalPart,namedEntities)
-        outputAmans.write(maxEmotion+'\n')
-        if emotion in maxEmotionList:
-            score+=1
-            accuracy[emotion]['tp']+=1
-            for other in emotions+['neutral']:
-                if other!=emotion:
-                    accuracy[other]['tn']+=1
-        else:
-            errorFile.write(str(n-1) + tweet + "   Aman's value : " + emotion + "  Our value : " + maxEmotion+ "\n")
-            accuracy[emotion]['fn']+=1
-            accuracy[maxEmotion]['fp']+=1
-        print("score : " , score)
-print(time.time()-t0)
-n-=1
-print("accuracy : ",score*100/n)
-print(accuracy)
+def test(tweetsfile,errorFile,correctEmotionFile):
+    #tweetsfile="../data/inputKeyword.txt"  
+    errorFile=open(errorFile,'w')
+    scoreFile=open('../data/scoresOurs.txt','w')
+    accuracy={'happy':{'tp':0,'tn':0,'fp':0,'fn':0},'sad':{'tp':0,'tn':0,'fp':0,'fn':0},'anger':{'tp':0,'tn':0,'fp':0,'fn':0},
+            'disgust':{'tp':0,'tn':0,'fp':0,'fn':0},'surprise':{'tp':0,'tn':0,'fp':0,'fn':0},'fear':{'tp':0,'tn':0,'fp':0,'fn':0},
+            'neutral':{'tp':0,'tn':0,'fp':0,'fn':0}}
+    n=1
+    t0=time.time()
+    score=0
+    analyzer = SentimentIntensityAnalyzer()     
+    with open(tweetsfile,'r') as f, open(correctEmotionFile,'r') as fo:
+        for tweet,emotion in zip(f,fo):
+            sentences,sentenceType,namedEntities=preprocess(tweet)
+            emotion=emotion.strip()
+            print(n,tweet)
+            print(sentences)
+            print(sentenceType)
+            print(namedEntities)
+            maxEmotion='neutral'
+            n+=1
+            emotionalPart=''
+            for index,sentence in enumerate(sentences):
+                #if sentenceType[index]!='?':# and maxSentiment(analyzer.polarity_scores(sentence+sentenceType[index]))!='neu':
+                emotionalPart+=sentence+sentenceType[index]+' '               
+                #else:
+                #    print(sentence + ' --- neutral')
+                #    maxEmotion='neutral'
+            if emotionalPart!='':
+                maxEmotion, finalEmotion=wordnetScore(emotionalPart,namedEntities)
+                maxEmotionList=findMaxEmotionList(finalEmotion)
+            outputAmans.write(maxEmotion+'\n')
+            
+            if emotion in maxEmotionList:
+                score+=1
+                accuracy[emotion]['tp']+=1
+                for other in emotions+['neutral']:
+                    if other!=emotion:
+                        accuracy[other]['tn']+=1
+            else:
+                errorFile.write(str(n-1) + tweet + "   Aman's value : " + emotion + "  Our value : " + maxEmotion+ "\n")
+                accuracy[emotion]['fn']+=1
+                accuracy[maxEmotion]['fp']+=1
+            print("score : " , score)
+            scoreFile.write(str(n-1)+" : " + str(score)+"\n")
+    print(time.time()-t0)
+    n-=1
+    print("accuracy : ",score*100/n)
+    print(accuracy)
 
-errorFile.close()
-outputAmans.close()
+    errorFile.close()
+    outputAmans.close()
+
+
+def plotGraph(emotionScores,title):
+    emotionColor={'happy':'#f4f269','sad':'#4286f4','anger':'#ef3e32','disgust':'#ea0edb','fear':'#0eea83','surprise':'#ea8a0e'}
+    numOfEmotions=len(emotions)
+    bars=[emotionScores[emotion]*100 for emotion in emotions]
+    color=[emotionColor[emotion] for emotion in emotions]
+
+    ind = np.arange(numOfEmotions)    # the x locations for the groups
+    width = 0.4       # the width of the bars: can also be len(x) sequence
+
+    p1 = plt.barh(ind, bars, width, color=color)
+
+    plt.ylabel('Emotions')
+    plt.xlabel('Score')
+    plt.title(title)
+    plt.yticks(ind, ('happy', 'sad', 'anger', 'disgust', 'fear', 'surprise'))
+    plt.xticks(np.arange(0, 110, 10))
+
+    plt.show()
+
+
+def run(inputFile,outputFile):
+    n=1
+    emotionalTweets=0
+    numTweets={'happy':0,'sad':0,'anger':0,'disgust':0,'fear':0,'surprise':0}
+    numTweetsEmotions=0
+    with open(inputFile,'r') as f:
+        for tweet in f:
+            sentences,sentenceType,namedEntities=preprocess(tweet)
+            print(n,tweet)
+            print(sentences)
+            print(sentenceType)
+            print(namedEntities)
+            n+=1
+            emotionalPart=''
+
+            for index,sentence in enumerate(sentences):
+                if sentenceType[index]!='?':
+                    emotionalPart+=sentence+sentenceType[index]+' '
+            
+            if emotionalPart!='':
+                maxEmotion, finalEmotion=wordnetScore(emotionalPart,namedEntities)
+                if maxEmotion!='neutral':
+                    maxEmotionList=findMaxEmotionList(finalEmotion)
+                    if 'neutral' in maxEmotionList:
+                        maxEmotion='neutral'
+            else:
+                maxEmotion='neutral'
+                maxEmotionList=['neutral']
+
+            if maxEmotion!='neutral':
+                emotionalTweets+=1
+                for emotion in maxEmotionList:
+                    numTweets[emotion]+=1
+                    numTweetsEmotions+=1
+    if numTweetsEmotions!=0:
+        for emotion,score in numTweets.items():
+            numTweets[emotion]=numTweets[emotion]/numTweetsEmotions
+
+    print(str(emotionalTweets)+" were emotional out of " + str(n-1) + " extracted tweets")
+    print("emotional content in " + str(emotionalTweets) + " tweets")
+    print(numTweets)
+    graphTitle="emotional content in " + str(emotionalTweets)+" out of " + str(n-1) + " extracted tweets"
+    plotGraph(numTweets,graphTitle)
+
+def runSingleTweet(tweet):
+    sentences,sentenceType,namedEntities=preprocess(tweet)
+    emotionalPart=''
+
+    for index,sentence in enumerate(sentences):
+        if sentenceType[index]!='?':
+            emotionalPart+=sentence+sentenceType[index]+' '
+    
+    if emotionalPart!='':
+        maxEmotion, finalEmotion=wordnetScore(emotionalPart,namedEntities)
+    else:
+        finalEmotion={'happy':0,'sad':0,'anger':0,'disgust':0,'fear':0,'surprise':0}
+
+    graphTitle='scores for ' + tweet
+    plotGraph(finalEmotion,graphTitle)
+
+'''
+tweetsfile='../data/NeutralFinal.txt'
+errorFile='../data/errorsNeutralFinal.txt'
+correctEmotionFile='../data/neutralEmotionsFinal.txt'
+test(tweetsfile,errorFile,correctEmotionFile)
+'''
+
+inputFile='../data/sampleTweesData/LielaSeth.txt'
+outputFile='../data/outputtest.txt'
+run(inputFile,outputFile)
+
+'''
+
+
+inp=''
+while inp!='exit':
+    inp=input('enter tweet or exit : ')
+    if inp!='exit':
+        runSingleTweet(inp)
+'''

@@ -2,6 +2,8 @@
    Aman's value : happy  Our value : neutral
 85I've never missed anyone so much as you.
    Aman's value : sad  Our value : neutral
+99That would be so awesome!
+   Aman's value : happy  Our value : neutral
 101I haven't even seen snow in years and to have it in October it too much to wrap around my little head!
    Aman's value : surprise  Our value : neutral
 112The reception was a friggen blast!
@@ -46,12 +48,6 @@
    Aman's value : happy  Our value : neutral
 267more often you find things to bring you down or worry about.
    Aman's value : sad  Our value : fear
-277She started questioning my credentials because she drives a school bus for a living and knows what a safe vehicle is. Bitch.
-   Aman's value : disgust  Our value : neutral
-278Bitch.
-   Aman's value : disgust  Our value : neutral
-279Bitch.
-   Aman's value : disgust  Our value : neutral
 287We live in a society that has encourages us to stuff our emotions and a society that is by the most part feelings illiterate.
    Aman's value : sad  Our value : happy
 323They still are not sure what is going on with the transplanted kidney as it appears to be "peeling like an onion", but his potassium and sugar and such are leveling out and he is feeling better.
@@ -104,6 +100,8 @@
    Aman's value : happy  Our value : neutral
 534Spend 1 year answering calls for the Claims spread- and then be free to go to where-ever your heart desires.
    Aman's value : happy  Our value : neutral
+535I've been staying at Mary's house and she keeps telling me I'd be an awesome mommy.
+   Aman's value : happy  Our value : neutral
 541The thread to this relationship is wearing thin- it's on it's last strand- and though he may think it's cool to not do what he says hes going to- it's not cool to me.
    Aman's value : sad  Our value : happy
 543I love him with every ounce of everything that I am- but try as I might- we just cant' get it together.
@@ -114,6 +112,8 @@
    Aman's value : anger  Our value : fear
 561Three people have been laid off at the office in the past hour.
    Aman's value : anger  Our value : neutral
+590hey I'll be a rich individual.
+   Aman's value : happy  Our value : neutral
 592I'm really in it just for the money ;).
    Aman's value : happy  Our value : neutral
 599To have something inside of you that you cannot control, something foreign that has stolen away your chance of a normal life.
@@ -166,6 +166,8 @@
    Aman's value : fear  Our value : disgust
 915They didn't like me very much.
    Aman's value : disgust  Our value : neutral
+918In Gross Anatomy, our cadavers were solemn - laying on the tables as if in a deep slumber.
+   Aman's value : neutral  Our value : disgust
 926which of course, makes me feel nauseous.
    Aman's value : disgust  Our value : neutral
 933As you can tell, my day has been nothing short of tremendous.
@@ -195,15 +197,13 @@
 988So I'm not doing shit unless absolutely necessary.
    Aman's value : disgust  Our value : neutral
 991Pete Rose knocks Ray Fosse into baseball lore and permanantly knocks his shoulder into a somewhat more precarious place.
-   Aman's value : fear  Our value : neutral
+   Aman's value : fear  Our value : surprise
 996bonus!
    Aman's value : happy  Our value : neutral
 1023freaky.
    Aman's value : fear  Our value : neutral
 1024but wat the HECK  does "delight yourself in the Lord and He will give you the desires of your heart", mean?
    Aman's value : disgust  Our value : happy
-1029Terrorists make me SICK, they ought to all be horrifically detained, I believe it was the first time in my life I have had to resort to extreme racism.
-   Aman's value : disgust  Our value : neutral
 1030Do you people not listen to the news or what?
    Aman's value : anger  Our value : neutral
 1032Imagine, transporting a bomb, fashioned out of a SPORTS DRINK, and triggering it with the simplistic flash of a disposable camera.
@@ -257,7 +257,7 @@
 1198He goes on to describe her in later years as unhappily married, fat, and sullen.
    Aman's value : sad  Our value : disgust
 1200We have all had (or are still having, perhaps for the rest of our lives) our encounters with stupid people, but it's the ones who just won't stop bothering you that are among some of the worst.
-   Aman's value : disgust  Our value : anger
+   Aman's value : disgust  Our value : sad
 1203I'd like to tell Sally to go eat shit.
    Aman's value : anger  Our value : disgust
 1212The next time I actually get you on the phone when you're not a)tired b)not in the mood or c)just plain not wanting to talk to me please don't elect to watch a movie instead of having a conversation with me. It's these types of choices that make it hard for me to justify trying to be your friend.

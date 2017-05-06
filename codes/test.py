@@ -39,11 +39,13 @@ import nltk
 from nltk.tag import StanfordNERTagger
 from nltk.tokenize import word_tokenize
 
-sample="World Banks CEO Praised Modis Decision of Demonetization"
+sample=" Worst app snapchat.. becoz i never install...  #boycottsnapchat"
 
 sentences = nltk.sent_tokenize(sample)
-tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
+tokenized_sentences = [word_tokenize(sentence) for sentence in sentences]
+print(tokenized_sentences)
 tagged_sentences = [nltk.pos_tag(sentence) for sentence in tokenized_sentences]
+print(tagged_sentences)
 chunked_sentences = nltk.ne_chunk_sents(tagged_sentences, binary=True)
 
 def extract_entity_names(t):
@@ -64,7 +66,7 @@ for tree in chunked_sentences:
 
 print(entity_names)
 
-st = StanfordNERTagger('/Users/Parth/Desktop/project_docs/codes/stanford-ner-2016-10-31/classifiers/english.muc.7class.distsim.crf.ser.gz',
+st = StanfordNERTagger('/Users/Parth/Desktop/project_docs/codes/stanford-ner-2016-10-31/classifiers/english.all.3class.distsim.crf.ser.gz',
 					   '/Users/Parth/Desktop/project_docs/codes/stanford-ner-2016-10-31/stanford-ner.jar',
 					   encoding='utf-8')
 

@@ -462,7 +462,6 @@ brazen
 brazenly
 brazenness
 breach
-break
 break-up
 break-ups
 breakdown
@@ -474,7 +473,6 @@ bribery
 brimstone
 bristle
 brittle
-broke
 broken
 broken-hearted
 brood
@@ -774,7 +772,6 @@ crashing
 crass
 craven
 cravenly
-craze
 crazily
 craziness
 crazy
@@ -2522,7 +2519,6 @@ insurmountably
 insurrection
 intefere
 inteferes
-intense
 interfere
 interference
 interferes
@@ -4909,3 +4905,5 @@ shudders
 shuddered
 shuddering
 horribly
+horror
+trepidation

@@ -311,6 +311,7 @@ cheapest
 cheer
 cheerful
 cheery
+cheering
 cherish
 cherished
 cherub
@@ -495,6 +496,7 @@ doubtless
 dreamland
 dumbfounded
 dumbfounding
+dumbstruck
 dummy-proof
 durable
 dynamic
@@ -963,10 +965,6 @@ honoring
 hooray
 hopeful
 hospitable
-hot
-hotcake
-hotcakes
-hottest
 hug
 hugs
 humane
@@ -1590,6 +1588,7 @@ risk-free
 robust
 rock-star
 rock-stars
+rocks
 rockstar
 rockstars
 romantic
@@ -1837,6 +1836,7 @@ tenderly
 terrific
 terrifically
 thank
+thanks
 thankful
 thinner
 thoughtful
@@ -2067,3 +2067,6 @@ cuddled
 cuddles
 clapping
 dancing
+craze
+rocking
+epic

@@ -110,8 +110,8 @@ stopwords = stopwords.words('english')[:-19] + list(string.punctuation) + apostr
 
 def notNeutral(word,sense,pos):
     '''
-    wordsIncorrectInSentiWordNet=["glad","thank"]
-    if word in disgustingWords+wordsIncorrectInSentiWordNet:
+    #wordsIncorrectInSentiWordNet=["glad","thank"]
+    if word in disgustingWords:#+wordsIncorrectInSentiWordNet:
         print(word)
         return True
     pos=sense['pos']
@@ -130,7 +130,7 @@ def notNeutral(word,sense,pos):
         return True
     else:
         return False
-
+    
 def correctSense(synsetsList,lemma):    
     '''
     for synset in synsetsList:
@@ -177,13 +177,14 @@ def disambiguate(emotionalPart, namedEntities):
         if not (str(tag).startswith('#') and str(tag).endswith('#')): #NOT_IN_WN#, #NAMED#
             if str(tag).startswith('#'):
                 if word in ['.','?','!']:
-                    formed_sentences.append(formed_sentence)
+                    if len(sentence)>0:
+                        sentences.append(sentence)
+                        sentence=[]
+                        formed_sentences.append(formed_sentence)
                     formed_sentence=' '
-                    sentences.append(sentence)
-                    sentence=[]
                 else:
                     formed_sentence+=word + ' '
-            elif notNeutral(dict(synsets_scores[tag.name()])): 
+            elif notNeutral(word,dict(synsets_scores[tag.name()]),tag.pos()): 
             #else: 
                 sentence.append((word,tag))
                 formed_sentence+=word + ' '
@@ -222,8 +223,10 @@ def disambiguate(emotionalPart, namedEntities):
         else:
             formed_sentence+=words[index]+' '
     '''
+    #our implementation from here
     pronouns=["I","We","You","They","He","She","It","i","we","you","they","he","she","it"]
     posTags=posTagger.tag(tweetTokenizer.tokenize(emotionalPart))
+    print(posTags)
     for index,wordPosTuple in enumerate(posTags):
         word=wordPosTuple[0]
         pos=wordPosTuple[1]
@@ -240,7 +243,7 @@ def disambiguate(emotionalPart, namedEntities):
                     if type(sense)!=type(None):
                         #sense=sense[0]
                         if word.lower() in ['like']:
-                            if(index-1>0):
+                            if(index-1>=0):
                                 if posTags[index-1][0] not in ['be','is','am','are','was','were']:
                                     sentence.append((word.lower(),wn.synset('like.v.03')))
                         elif notNeutral(word.lower(),dict(synsets_scores[sense.name()]),pos):

@@ -46,6 +46,7 @@ horrified.s.01
 terrify.v.01
 tension.n.01
 panic.n.01
+terror.n.02
 terror-stricken.s.01
 quiver.v.01
 worry.v.01
@@ -60,6 +61,7 @@ dangerous.a.01
 horror.n.01
 hideous.s.01
 atrocious.s.03
+trepidation.n.01
 -anger
 fuck.n.01
 fucked-up.s.01
@@ -122,6 +124,7 @@ amaze.v.01
 weird.s.02
 peculiar.s.03
 strange.a.01
+incredibly.r.01
 -happy
 joy.n.01
 nice.a.01
@@ -197,6 +200,8 @@ honor.v.01
 win.v.01
 incredible.a.01
 brilliant.s.01
+excellent.s.01
+cheerfulness.n.01
 -sad
 misery.n.02
 sorrow.n.02
