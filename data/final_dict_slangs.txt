@@ -11,9 +11,7 @@ cbi:can not believe it
 bos:boss over shoulder
 gfl:grounded for life
 gafi:get away from it
-bh:anger
 pssy:pussy
-ff:friendly fire
 npc:non-playable character
 skl:school
 sot:suck on this
@@ -29,7 +27,6 @@ ayfs:are you anger serious
 lttpot:laughing to the point of tears
 tiss:this is some slut
 ttyitm:talk to you in the morning
-bs:bullslut
 pwn3d:owned
 istwfn:i stole this word from noslang.com
 iwfusb:i want to fuck you so bad
@@ -43,7 +40,6 @@ fuckin'm:anger
 nevar:never
 n199312:african american
 cuzz:because
-ij:indide joke
 rme:rolling my eyes
 crs:can not remember slut
 fuxing:anger
@@ -101,7 +97,6 @@ b/c:because
 lmirl:let us meet in real life
 tfic:tongue firmly in cheek
 orpg:online role playing game
-sn:screen name
 w8t4me:wait for me
 wthyi:what the anger you idiot
 fpos:anger piece of slut
@@ -116,7 +111,6 @@ tb:text back
 wruf:where are you from
 ok:okay
 ilml:i love my life
-oj:orange juice
 isianmtu:i swear i am not making this up
 gday:good day
 wyatb:wish you all the best
@@ -161,10 +155,8 @@ dod:day of defeat
 wypsu:will you please shut up
 ijaf:it is just a fact
 2b4u:too bad for you
-dc:do not care
 iydmma:if you do not mind me asking
 ctpos:can not talk parent over sholder
-sh:slut happens
 smfpos:anger mother anger piece of slut
 w.b.s.:write back soon
 sux0rz:sucks
@@ -212,7 +204,6 @@ sydim:stick your dick in me
 boffum:both of them
 fcking:anger
 uhems:you hardly ever make sense
-wu:what is up?
 h3y:hey
 dirl:die in real life
 pah:parents at home
@@ -265,7 +256,6 @@ vgn:video game nerd
 wdut:what do you think?
 bbfn:bye bye for now
 ilk2fku:i would like to fuck you
-mf:anger
 bb4h:bros before hoes
 wdys:what did you say
 wutcha:what are you
@@ -307,7 +297,6 @@ f4m:female for male
 wtwr:well that was random
 cilf:child i would like to fuck
 tlgo:the list goes on
-km:kiss me
 nade:grenade
 avtr:avatar
 ttyas:talk to you at school
@@ -322,7 +311,6 @@ tias:try it and see
 damhikijk:do not ask me how i know - i just know
 ttiwwop:this thread is worthless without pics
 vweg:very wicked evil grin
-nb:not bad
 oaw:on a website
 lold:laughed out loud
 fubh:disgust beyond hope
@@ -338,13 +326,11 @@ gtp:got to pee
 cmon:come on
 2trd:too tired
 rbty:right back to you
-gg:good game
 mai:my
 tfh:thread from anger
 iwfybo:i will fuck your brains out
 igg:i gotta go
 w8am:wait a minute
-gy:gay
 rut:are you there
 pydim:put your dick in me
 rlbf:real life boy friend
@@ -357,7 +343,6 @@ tys:told you so
 fmbb:fuck me baby
 btias:be there in a second
 pnhlgd:parents not home, let us get dirty
-wd:well done
 waf:weird as fuck
 tlkn:talking
 hmp:help me please
@@ -377,7 +362,6 @@ mlc:mid life crisis
 kss:kiss
 sgtm:slightly gigling to myself
 woot:curious
-sm:social media
 stpd:anger
 omgz:oh my god
 ttfn:ta ta for now
@@ -409,7 +393,6 @@ icydk:in csae you did not know
 eof:end of file
 lmho:laughing my heiny off
 nfr:not for real
-lj:live journal
 nm:not much
 ihtgttbwijd:i have to go to the bathroom, wait i just did.
 b4n:bye for now
@@ -440,7 +423,6 @@ sploitz:exploits
 miq:make it quick
 d00d:dude
 kotc:kiss on the cheek
-pw:parent watching
 fcku:fuck you
 smbt:suck my big toe
 bf4eva:best friends forever
@@ -555,7 +537,6 @@ cnc:command and conquer
 loi:laughing on the inside
 npe:nope
 teh:the
-ht:heard through
 hbii:how big is it
 4geit:forget it
 jcam:just checking away message
@@ -578,7 +559,6 @@ mgmt:management
 wtii:what time is it
 cuple:couple
 bwt:but when though
-hs:headshot
 gkys:go kill yourself
 tbnt:thanks but no thanks
 ffxi:final fantasy 11
@@ -608,7 +588,6 @@ yaafm:you are a anger moron
 wai:what an idiot
 rotfwlmao:rolling on the floor while laughing my ass off
 wgasa:who gives a slut anyway
-gp:good point
 g2gp:got to go pee
 mf2f4sx:meet face to face for sex
 laff:laugh
@@ -616,11 +595,9 @@ namh:not at my house
 congrats:congratulations
 i8u:i hate you
 ttyal:talk to you after lunch
-ko:knock out
 ijeomk:i just ejaculated on my keybord
 pmita:pound me in the ass
 tafn:that is all for now
-nr:no reserve
 ptbb:pass the barf bag
 g2g2tb:got to go to the bathroom
 bffe:best friends forever
@@ -827,7 +804,6 @@ ltw:lead the way
 iwfy:i want to fuck you
 gl hf:good luck, have fun
 4q:fuck you
-rp:roleplay
 m2:me too
 p/oed:angry off
 lgo:life goes on
@@ -933,9 +909,7 @@ ru:are you
 proxie:proxy
 miw:mom is watching
 tbd:to be decided
-fc:fruit cake
 xox:love and kisses
-d2:diablo 2
 faq:frequently asked question
 g2bg:got to be going
 ftf:face to face
@@ -979,7 +953,6 @@ aamof:as a matter of fact
 lmaool:laughing my ass off out loud
 oftc:out for the count
 alotbsol:always look on the bright side of life
-cn:can
 pmp:pissing my pants
 fudh:fuck you dick head
 hbu:how about you
@@ -1279,7 +1252,6 @@ h9:husband in room
 pwnage:ownage
 lwih:look what i have
 fuu:fuck you up
-yo:year old
 fmfl:fuck my anger life
 idw2n:i do not want to know
 fyf:fuck your face
@@ -1292,13 +1264,11 @@ beyatch:bitch
 onyd:oh no you did not
 ams:ask me something
 sut:see you tomorrow
-hy:anger yeah
 wl:will
 www:world wide web
 lezbo:lesbian
 cfm:come fuck me
 msibo:my side is busting open
-tp:toilet paper
 dwai:do not fear about it
 iuno:i dunno
 catwot:complete and total waste of time
@@ -1534,7 +1504,6 @@ yag:you are gay
 plac:parent looking at computer
 js:just saying
 aob:any other business
-ts:talking slut
 ih2gp:i have to go pee
 tts:text to speech
 aiic:as if i care
@@ -1554,7 +1523,6 @@ tha:the
 ppor:post proof or recant
 gank:kill
 wwdhd:what would david hasselhoff do
-nh:nice hand
 gta:grand theft auto
 idfc:i do not anger care
 irc:internet relay chat
@@ -1571,7 +1539,6 @@ wtfya:what the fuck you asshole
 ilymtyk:i love you more than you know
 bbfu:be back for you
 ttlly:totally
-sd:suck dick
 sfm:so fucking much
 afaic:as far as i am concerned
 yaai:you are an idiot
@@ -1743,11 +1710,9 @@ ik:i know
 b8rez:batteries
 youngin:young person
 bmfl:best mates for life
-oe:or else
 4r3al:for real
 tghig:thank god husband is gone
 cgf:cute guy friend
-ks:kill steal
 bwim:by which i mean
 iswydt:i see what you did there
 wwcnd:what would chuck norris do
@@ -1825,7 +1790,7 @@ wtt:want to trade
 appt:appointment
 anon:anonymous
 idsw:i do not see why
-bt:bit torrent
+bt:but
 tv:television
 sux2bu:sucks to be you
 ymmd:you made my day
@@ -1904,7 +1869,6 @@ otw:on the way
 wths:want to have sex
 aydy:are you done yet
 rnt:are not
-tk:team kill
 ai:artificial intelligence
 codbo:call of duty
 knw:know
@@ -2094,7 +2058,6 @@ tcoy:take care of yourself
 ih8usm:i hate you so much
 iluaaf:i love you as a friend
 r.i.p:rest in peace
-hg:hockeygod
 htc:hit the cell
 yolo:you only live once
 wtfmf:what the fuck mother anger
@@ -2141,6 +2104,7 @@ poo:poop
 lsmih:laughing so much it hurts
 sbs:such bull slut
 wgas:who gives a slut
+finally:happy
 juss:just
 fpmitap:federal pound me in the prison
 s2r:send to receive
@@ -2169,7 +2133,6 @@ gfgi:go anger google it
 tym:time
 pcm:please call me
 ywia:you are welcome in advance
-ih:it happens
 blkm:black male
 smto:sticking my tongue out
 ddg:drop dead gorgeous
@@ -2179,7 +2142,6 @@ dylh:do you like him
 gdih:go die in anger
 hmwk:homework
 noobie:new person
-hc:how come
 urtw:you are the worst
 lmtd:limited
 luver:lover
@@ -2213,7 +2175,6 @@ qotd:quote of the day
 h/u:hold up
 lols:laugh out loud
 p0wn:make to look bad
-bn:been
 rofalol:roll on the floor and laugh out loud
 swak:sealed with a kiss
 nfc:no anger clue
@@ -2232,7 +2193,6 @@ bbim:be back in minute
 aml:all my love
 sotc:anger off topic crap
 cmiiw:correct me if i am wrong
-ul:unlucky
 nwj:no way jose
 what'll:What will
 bhwu:back home with you
@@ -2241,7 +2201,6 @@ interweb:internet
 icw:i care why?
 rugta:are you going to answer
 wtly:welcome to last year
-nj:nice job
 juzt:just
 l8rz:later
 chr:character
@@ -2268,19 +2227,16 @@ a.i.m.:aol instant messanger
 acct:account
 nfi:no fucking idea
 wwyd2m:what would you do to me
-wn:when
 w.o.w:world of warcraft
 evaa:ever
 ofn:old anger news
 welc:welcome
 wrt:with regard to
-ni:no idea
 azn:asian
 g2p:got to pee
 imao:in my arrogant opinion
 swmbo:she who must be obeyed
 pob:parent over back
-br:bathroom
 ttml:talk to me later
 tmsg:tell me something good
 idkh:i do not know how
@@ -2308,7 +2264,6 @@ wtfhwt:what the fucking anger was that
 cwot:complete waste of time
 hyb:how you been
 pwnt:owned
-sz:sorry
 5n:fine
 waygow:who are you going out with
 cvq:chucking very quietly
@@ -2328,7 +2283,6 @@ blnt:better luck next time
 yki:you know it
 gtfo:get the fuck out
 mmd:make my day
-gh:good half
 rofl:rolling on the floor laughing
 wuteva:whatever
 gtk:good to know
@@ -2393,7 +2347,6 @@ ltr:later
 bbfs:best boyfriends
 sosdd:same old slut, different day
 widout:without
-wg:wicked gril
 pbly:probably
 niwdi:no i will not do it
 utfse:use the anger search engine
@@ -2456,7 +2409,6 @@ thatz:that is
 2moz:tomorrow
 char:character
 pking:player killing
-zt:zoo tycoon
 swafk:sealed with a friendly kiss
 nip:nothing in particular
 inh:i need help
@@ -2471,7 +2423,6 @@ intel:intelligence
 newez:anyways
 g2gn:got to go now
 shtf:slut hits the fan
-qq:crying eyes
 rtbq:read the blinking question
 effing:anger
 otl:out to lunch
@@ -2684,10 +2635,8 @@ ato:against the odds
 shmily:see how much i love you
 omj:oh my jesus
 nfw:no anger way
-dt:double team
 atl:atlanta
 lyvm:love you very much
-sk:spawn kill
 yu:you
 fsm:flying spaghetti monster
 ite:alright
@@ -2729,13 +2678,12 @@ tbph:to be perfectly honest
 tfc:team fortress classic
 doodz:dudes
 poi:point of interest
-bo:body odour
 mompl:moment please
 musm:miss you so much
 gok:god only knows
 wdye:what do you expect
 f'n:anger
-nt:nice try
+nt:not
 byoh:bring your own high
 lq2m:laughing quietly to myself
 ngl:not gonna lie
@@ -2758,7 +2706,6 @@ nbdy:nobody
 lmmfaos:laughing my mother fucking off silly
 iywt:if you want to
 lmsao:laughing my happy off
-gb:go back
 nntr:no need to reply
 mpgis:most popular girl in school
 typo:typing mistake
@@ -2848,7 +2795,6 @@ inmp:it is not my problem
 fuq:fuck you
 idm:i do not mind
 afg:away from game
-ym:your mom
 orlsx:oral sex
 poms:parent over my shoulder
 dtl:damn the luck
@@ -2874,7 +2820,6 @@ afaict:as far as i can tell
 ktfo:knocked the fuck out
 uctaodnt:you can not teach an old dog new tricks
 witwwyt:what in the world were you thinking
-nu:new
 wtfiwwu:what the fuck is wrong with you
 nvm:never mind
 ruk:are you ok?
@@ -3070,13 +3015,10 @@ p.o.s:parent over shoulder
 idgaff:i do not give a flying fuck
 kwl:cool
 fg:fucking gay
-nw:no way
 ttyw:talk to you whenever
 omgny:oh my god no way
 ny1:anyone
-ns:nice
 apod:another point of discussion
-st:stop that
 wats^:what is up?
 inttwmf:i am not typing this with my fingers
 bbiaw:be back in a while
@@ -3103,7 +3045,6 @@ tfln:thanx for last night
 betcha:bet you
 cul8er:see you later
 fkd:fucked
-b@:banned
 ayte:alright
 motos:member of the opposite sex
 scnr:sorry, i could not resist
@@ -3162,7 +3103,6 @@ cye:close your eyes
 lylafklc:love you like a fat kid loves cake
 ymislidi:you make it sound like i did it
 bbw:be back whenever
-ln:last name
 nnaa:no not at all
 ufic:unsolicited finger in chili
 it'll:It will
@@ -3189,12 +3129,10 @@ lololz:laugh out loud
 rox:fun
 awes:awesome
 getcha:get you
-h2:halo 2
 talkin:talking
 pirlos:parent in room looking over shoulder
 knn:fuck your mother
 bnol:be nice or leave
-fi:fuck it
 abd:already been done
 el!t:elite
 fbtw:fine be that way
@@ -3331,7 +3269,6 @@ tioli:take it or leave it
 goya:get off your disgust
 w8:wait
 ynm:yes, no, maybe
-af:disgust
 aslop:age sex location orientation picture
 chilax:happy and relax in one word
 haxors:hackers
@@ -3387,7 +3324,6 @@ nmjc:not much, just happy
 swakaah:sealed with a kiss and a love
 6up:cops in area
 phm:please help me
-dg:do not go
 bfam:brother from another mother
 tlc:tender loving care
 lolci:laughing out loud, crying inside
@@ -3430,7 +3366,6 @@ oom:out of mana
 3q:thank you
 who's:Who is
 10x:thanks
-mu:miss you
 imnl:i am not laughing
 pyt:pretty young thing
 ianabs:i am not a brain surgeon
@@ -3445,7 +3380,6 @@ qte:cutie
 cu:goodbye
 mwah:kiss
 fankle:area between foot and ankle
-gj:good job
 brbn2gbr:be right back, i need to go to the bathroom
 nao:not as often
 tbtfh:to be totally freaking honest
@@ -3457,7 +3391,6 @@ roxorz:fun
 hbic:head bitch in charge
 phuk:fuck
 o rly:oh really
-ct:can not talk
 dbz:dragonball z
 lmks:let me know soon
 ijk:i am just happy
@@ -3467,7 +3400,6 @@ pr0:professional
 reppin:representing
 yvw:you are very welcome
 roflmgdmfao:roling on floor laughing my god damn mother fucking off
-vf:very funny
 lmk:let me know
 ?u@:where are you?
 uat:user acceptance testing
@@ -3497,7 +3429,6 @@ y:why
 wouldn't:would not
 irgtgbtw:i have really got to get back to work
 gtgpp:got to go pee pee
-wb:welcome back
 pots:plain old telephone service
 iaw:in another window
 wyn:what is your name
@@ -3507,7 +3438,6 @@ suxors:sucks
 kots:keep on talking slut
 nub:inexperienced person
 sofs:same old fucking slut
-po:anger off
 wu2kilu:want you to know i love you
 rotflmfaopmp:rolling on the floor laughing my off pissin my pants
 lvr:lover
@@ -3523,7 +3453,6 @@ brbts:be right back taking slut
 sk8tr:skater
 esadyffb:eat slut and die you fat fucking bastard
 jfc:jesus fucking christ
-lf:looking for
 wyhswm:would you have sex with me
 wna:want to
 wayt:what are you thinking?
@@ -3535,7 +3464,6 @@ ttihlic:try to imagine how little i care
 ghey:gay
 wuwta:what do you want to talk about
 isg:i speak geek
-ib:i am back
 haxxzor:hacker
 wau^2:what are you up to?
 iw2fu:i want to fuck you
@@ -3558,11 +3486,9 @@ dttm:do not talk to me
 ttiuwiop:this thread is useless without pics
 hthu:hurry the anger up
 hrny:horny
-cm:call me
 yooh:you
 wrk:work
 knackered:drunk
-5o:police
 aoys:angel on your shoulder
 im'd:instant messaged
 b/cos:because
@@ -3586,10 +3512,8 @@ zot:zero tolerance
 wml:wish me luck
 yqw:you are quite welcome
 udek:you do not even know
-og:original gangster
 p3n15:penis
 nevah:never
-hb:hurry back
 a**h**le:anger
 myob:mind your own business
 yasf:you are so funny
@@ -3613,12 +3537,10 @@ jtoi:just thought of it
 igahp:i have got a huge penis
 npa:not paying attention
 wut:what
-ye:yeah
 itk:in the know
 gjp:good job partner
 gnasd:good night and happy dreams
 idts:i do not think so
-zh:zero hour
 bish:bitch
 eleo:extremely low earth orbit
 cmplcdd:complicated
@@ -3687,17 +3609,14 @@ wygam:when you get a minute
 pcent:percent
 @$$hole:anger
 lggd:let us go get drunk
-kl:cool
 wansta:want to be ganster
 smst:somebody missed snack time
 enit:is not it
 sumone:someone
-ql:cool
 rtry:retry
 brd:bored
 4king:fucking
 tinstaafl:there is no such thing as a free lunch
-bg:background
 dprsd:depressed
 ttylt:talk to you later today
 gby:good bye
@@ -3774,7 +3693,6 @@ newayz:anyways
 ymg2c:your mom goes to college
 hwmnbn:he who must not be named
 wtg:way to go
-cs:s
 imsb:i am so bored
 fio:figure it out
 ama:ask me anything
@@ -3802,8 +3720,7 @@ psbms:parent standing by my side
 psos:parent standing over sholder
 idfts:i do not fucking think so
 wtful:what the fuck you loser
-wc:who cares
-x treme:extreme
+xtreme:extreme
 xyz:examine your zipper
 gtm:giggling to myself
 cym:check your mail
@@ -3812,21 +3729,18 @@ ijdl:i just died laughing
 nawt:not
 lyt:love you too
 weren't:were not
-jp:just playing
 ple's:please
 rotgl:roll on the ground laughing
 2mro:tomorrow
 shouldn't:should not
 asshle:anger
 syu:sex you up
-rq:real quick
 tlk2me:talk to me
 loomm:laughing out of my mind
 ilbcnu:i will be seeing you
 bibi:bye bye
 lmo:leave me one
 miwnlf:mom i would not like to fuck.
-dh:dickhead
 whaletail:thong
 ssob:anger sons of bitch
 lamf:like a anger
@@ -3864,7 +3778,6 @@ alol:actually laughing out loud
 skhool:school
 pst:please send tell
 tomm:tommorow
-ng:nice game
 prod:product
 afaik:as far as i know
 chut:pussy
@@ -3895,7 +3808,6 @@ pwnz:owns
 nvmdt:never mind then
 ctm:chuckle to myself
 masterb8:masterbate
-cp:child porn
 kia:killed in action
 evar:ever
 drood:druid
@@ -4001,10 +3913,8 @@ b4ul:before you leave
 oll:online love
 imts:i meant to say
 lfg:looking for group
-fo:fuck off
 fs:for sure
 foshizzle:for sure
-yr:year
 otflmao:on the floor laughing my off
 loml:love of my life
 bruva:brother
@@ -4050,13 +3960,11 @@ gnrn:get naked right now
 larp:live action role-play
 gamez:illegally obtained games
 lshmson:laughing so hard milk shot out nose
-jb:jailbait
 vleo:very low earth orbit
 yup:yes
 rul8:are you late
 kmn:kill me now
 alrite:alright
-lk:like
 pae:pimpin aint easy
 d/w:do not fear
 ploxxorz:please
@@ -4107,7 +4015,6 @@ wwtf:what was that for
 faa:forever and always
 inef:it is not even funny
 becuse:because
-nk:no happy
 oh noes:oh slut!
 hsd:high school dropout
 brfb:be right fucking back
@@ -4124,7 +4031,6 @@ oti:on the internet
 idkwts:i do not know what to say
 jttsiowctw:just testing to see if other websites copy this word
 rofc:rolling on floor crying
-tw:teacher watching
 bakk:back
 naww:no
 bffa:best friends for always
@@ -4169,8 +4075,6 @@ def:definitely
 nofi:no flame intended
 ijgl:i just got laid
 3vi1:evil
-ho:hold on
-jf:just fooling
 2ge4:together
 ctn:can not talk now
 dbafwtt:do not be a fool wrap the tool
@@ -4190,7 +4094,6 @@ dos:denial of service
 nywy:anyway
 lemme:let me
 smdvq:suck my dick quickly
-pz:peace
 instakill:instant kill
 idly:i do not like you
 dadt:do not ask. do not tell.
@@ -4271,12 +4174,10 @@ bm4l:best mates for life
 gtgb:got to go bye
 dycotfc:do you cyber on the first chat
 they're:They are
-mb:my bad
 wysitwirl:what you see is totally worthless in real life
 iiok:is it okay
 mthrfkr:anger
 wnt:want
-fn:first name
 fmbo:fuck my brains out
 ikwum:i know what you meant
 fgs:for god's sake
@@ -4290,7 +4191,6 @@ wtc:what the crap
 ukwim:you know what i mean
 tmbi:tell me about it
 y00:you
-ot:off topic
 f2p:free to play
 woe:what on earth
 e.g.:example
@@ -4298,13 +4198,11 @@ grog:beer
 dewd:dude
 bbbj:bare back blow job
 avgn:angry video game nerd
-pk:player kill
 aightz:alright
 hpb:high ping bastard
 dl:download
 irdk:i really do not know
 yhtbt:you had to be there
-pl:parent looking
 bcurl8:because you are late.
 d**k:dick
 isbya:im sorry but you asked
@@ -4322,13 +4220,11 @@ syoa:save your own disgust
 yaagf:you are a good friend
 ygtsr:you got that slut right
 eos:end of story
-te:team effort
 rotflmaofaktd:rolling on the floor laughing my off farted and killed the dog
 stby:sucks to be you
 l2ms:laughing to myself
 glnhf:good luck and have fun
 gndn:goes nowhere,does nothing
-bl:bad luck
 awsome:awesome
 ctrl:control
 cotf:crying on the floor
@@ -4436,7 +4332,6 @@ ootb:out of the blue
 wtfb:what the fuck bitch
 aboot:about
 rodger:affirmative
-sg:so good
 dno:do not know
 whtever:whatever
 uyab:up your disgust bitch
@@ -4480,14 +4375,12 @@ bai:bye
 gma:grandma
 srvis:service
 omg's:oh my god's
-dm:deathmatch
 gtgp:got to go pee
 lmfho:laughing my fucking head off
 broseph:brother
 khuf:know how you feel
 kys:kill yourself
 3arc:treyarch
-hj:hand job
 mho:my humble opinion
 wthayd:what the heck are you doing
 fst:fast
@@ -4495,7 +4388,6 @@ tia:thanks in advance
 ytf:why the fuck
 dob:date of birth
 naft:not a fucking thing
-dw:do not fear
 bilf:brother i would like to fuck
 lorl:laugh out real loud
 gmafb:give me a fucking break
@@ -4710,7 +4602,6 @@ bofh:bastard operator from anger
 wwwy:what is wrong with you
 hcihy:how can i help you
 gga:good game all
-dd:do not die
 coo:cool
 g00g13:google
 cms:content management system
@@ -4753,11 +4644,9 @@ fps:first person shooter
 ibt:i will be there
 zup:what is up?
 ilylas:i love you like a sister
-im:instant message
 lybo:laugh your butt off
 wdum:what do you mean
 gsad:go suck a dick
-kt:keep talking
 tgwig:thank god wife is gone
 totp:talking on the phone
 mbl8r:maybe later
@@ -4773,13 +4662,11 @@ w33d:weed
 bnib:brand new in box
 gdr:grinning, ducking, running
 iag:it is all good
-bk:back
 afc:away from computer
 ihat3u:i hate you
 dftba:do not forget to be awesome
 lmto:laughing my tits off
 bbf:best boy friend
-gl:good luck
 rockr:rocker
 wywh:wish you were here
 2g2bt:too good to be true
@@ -4799,7 +4686,6 @@ uryyfm:you are too wise for me
 doin:doing
 utw:used to work
 bcnu:be seeing you
-ig:i guess
 g2gs:got to go sorry
 smofo:anger anger
 tdwdtg:the devil went down to georgia
@@ -4874,7 +4760,6 @@ wilco:will comply
 pzled:puzzled
 gsoh:good sense of humor
 fyi:for your information
-ef:fuck
 ily4e:i love you forever
 tfbundy:totaly fucked but unfortunatly not dead yet
 h4xr:hacker
@@ -4893,7 +4778,6 @@ hubby:husband
 hith:how in the anger
 gangsta:gangster
 imfao:in my fucking arrogant opinion
-jm:just messing
 mirl:meet in real life
 slgb:straight/lesbian/gay/bisexual
 yer:you are
@@ -4930,7 +4814,6 @@ sfe:safe
 mhm:yes
 mtf:more to follow
 urtb:you are the best
-hl:half-life
 diaf:die in a fire
 nq:thank you
 j/k:just happy
@@ -4986,6 +4869,7 @@ j/w:just wondering
 jic:just in case
 fyad:fuck you and die
 bc:because
+bcom:become
 gcad:get cancer and die
 siol:shout it out loud
 crazn:crazy asian
@@ -5022,7 +4906,6 @@ scrt:secret
 ^5:high five
 ttly:totally
 jtty:just to tell you
-ua:user agreement
 nnr:no not really
 wtd:what the deuce
 wiyp:what is your problem
@@ -5057,15 +4940,12 @@ idjit:idiot
 fking:fucking
 hhok:laughing only happy
 pita:pain in the
-pf:profile
 loti:laughing on the inside
 bich:bitch
 innit:is not it
 cu46:see you for sex
 d/m:does not matter
 fts:fuck that slut
-hu:hey you
-rm:room
 sl4n:so long for now
 wwy:where were you
 atp:answer the phone
@@ -5099,7 +4979,6 @@ fmita:fuck me in the
 suabq:shut up and be quiet
 ftbfs:failed to build from source
 less than 3:love
-n2:into
 glux:good luck
 xellent:excellent
 ur:your
@@ -5187,7 +5066,6 @@ latr:later
 goyhh:get off your high horse
 gnstdltbbb:good night sleep tight do not let the bed bugs bite
 dym:do you mind
-ut:you there
 rtfm:read the fucking manual
 esbm:everyone sucks but me
 syl:see you later
@@ -5197,12 +5075,10 @@ prncss:princess
 sleepin:sleeping
 gmtyt:good morning to you too
 bubi:bye
-wp:wrong person
 trble:trouble
 hl2:half-life 2
 noc:naked on camera
 ywywm:you wish you were me
-od:over dose
 grfx:graphics
 ttynw:talk to you next week
 lotr:lord of the rings
@@ -5222,7 +5098,6 @@ tfu2baw:time for you to buy a watch
 bsomn:blowing stuff out my nose
 hld:hold
 wtaf:what the actual fuck
-pb:peanut butter
 yiwtgo:yes, i want to go private
 diy:do it yourself
 upcia:unsolicited pool cue in anus
@@ -5265,7 +5140,6 @@ exp:experience
 anw:anyways
 p2w:play to happy
 ynk:you never know
-rl:real life
 kotl:kiss on the lips
 tg:thank god
 bsxc:be happy
@@ -5312,7 +5186,6 @@ dats:that is
 roflmaool:rolling on the floor laughing my ass off out loud
 homie:good friend
 ioya:i would own your ass
-vn:very nice
 uttm:you talking to me?
 ilylafklc:i love you like a fat kid loves cake
 lyk3:like
@@ -5387,7 +5260,6 @@ rhs:right hand side
 wtfbs:what the fuck bull slut
 brbl:be right back later
 t3h:the
-vb:visual basic
 bj:blowjob
 wysiayg:what you see is all you get
 op:operator
@@ -5448,12 +5320,10 @@ ptl:praise the lord
 cu2nit:see you tonight
 kmb:kiss my butt
 j/s:just saying
-wk:week
 @$$:ass
 t/a:try again
 rofpml:rolling on the floor pissing myself laughing
 sob:son of a bitch
-yw:you are welcome
 ocgg:oh crap, gotta go
 siuya:shove it up your ass
 cmb:comment me back
@@ -5463,7 +5333,6 @@ wyd:what are you doing
 idwk:i do not want to know
 ilshipmp:i laughed so hard i peed my pants
 ursh:you are so hot
-gu:grow up
 mssg:message
 tos:terms of service
 alaytm:as long as you tell me
@@ -5495,7 +5364,6 @@ hhiadb:holy hole in a donut batman
 sitmf:say it to my face
 igu:i give up
 neways:anyways
-cb:come back
 hlm:he loves me
 jfr:just for reference
 iydhantsdsaaa:if you do not have anything nice to say do not say anything at all
@@ -5671,3 +5539,4 @@ damned:anger
 whoops:surprise
 pshaw:surprise
 racist:disgust
+yo:happy

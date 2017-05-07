@@ -34,6 +34,7 @@ lie.n.01
 awful.s.02
 rubbish.n.01
 bitch.n.01
+curse.v.01
 -fear
 distress.n.01
 fear.n.01

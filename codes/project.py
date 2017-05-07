@@ -1,10 +1,7 @@
 import time, nltk, string, math
 from nltk.tokenize import word_tokenize
-from pywsd.lesk import adapted_lesk
 from nltk.corpus import wordnet as wn
 from lesk import calculateSimilarity
-from senti_classifier.senti_classifier import synsets_scores
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from wordSenseDisambiguate import disambiguate
 from preprocessTweet import preprocess
 from positive_negative_lexicon import lexiconDict
@@ -71,32 +68,6 @@ def fuzzyUnion(senses):
     return finalEmotion, maxEmotion
 
 
-def aggregrateSentencesEmotions(fuzzyUnionSentences):
-    aggregrateSentencesEmotion={}
-    for emotion in emotions:
-        sum=0
-        for sentence,scores in fuzzyUnionSentences.items():
-            sum+=fuzzyUnionSentences[sentence][emotion]
-        aggregrateSentencesEmotion[emotion]=sum
-
-    meanSquare=0
-    for emotion,score in aggregrateSentencesEmotion.items():
-        meanSquare+=(score**2)
-    rootMeanSquare=math.sqrt(meanSquare)
-
-    maxScore=-1
-    maxEmotion=''
-    for emotion,score in aggregrateSentencesEmotion.items():
-        aggregrateSentencesEmotion[emotion]=round(aggregrateSentencesEmotion[emotion]/rootMeanSquare,2)
-        if aggregrateSentencesEmotion[emotion]>maxScore:
-            maxScore=aggregrateSentencesEmotion[emotion]
-            maxEmotion=emotion
-
-    if maxScore<=0.4:
-        maxEmotion='neutral'    
-    return aggregrateSentencesEmotion, maxEmotion
-
-
 def wordnetScore(emotionalPart,namedEntities):
     '''
     #removing tokens other than nouns, verbs, adverbs, adjectives
@@ -129,7 +100,7 @@ def wordnetScore(emotionalPart,namedEntities):
                 sense=wordSenseTuple[1]
                 senses[word]={}
                 senses[word]['sense']=sense
-                calculateSimilarity(word,senses[word],synsets_scores[sense.name()]['pos'],synsets_scores[sense.name()]['neg'])
+                calculateSimilarity(word,senses[word])
                 #negators and Intensifiers
             print("before Intensifiers and negators", senses)
             negatorPresent=False
@@ -180,10 +151,10 @@ def wordnetScore(emotionalPart,namedEntities):
                             sense=wn.lemma_from_key(antonym[0].key()).synset()
                             antonymDict['sense']=sense
                             antonymWord=sense.name().split('.')[0]
-                            print(antonymWord, (antonymWord,'z') in lexiconDict)
-                            if (antonymWord,'z') in lexiconDict:
+                            print(antonymWord, antonymWord in lexiconDict)
+                            if antonymWord in lexiconDict:
                                 antonymFound=True
-                                senses[token]=calculateSimilarity(antonymWord,antonymDict,synsets_scores[sense.name()]['pos'],synsets_scores[sense.name()]['neg'])
+                                senses[token]=calculateSimilarity(antonymWord,antonymDict)
                         #else:
                         if not antonymFound:    
                             for emotion in emotions:
@@ -201,11 +172,6 @@ def wordnetScore(emotionalPart,namedEntities):
         print(time.time()-t1_,t1_-t0_)
         return maxEmotion, finalEmotion
 
-def maxSentiment(sentiment):
-    if sentiment['neu']>sentiment['pos'] and sentiment['neu']>sentiment['neg']:
-        return 'neu'
-    else:
-        return 'sentimental'
 
 def test(tweetsfile,errorFile,correctEmotionFile):
     #tweetsfile="../data/inputKeyword.txt"  
@@ -230,7 +196,7 @@ def test(tweetsfile,errorFile,correctEmotionFile):
             n+=1
             emotionalPart=''
             for index,sentence in enumerate(sentences):
-                #if sentenceType[index]!='?':# and maxSentiment(analyzer.polarity_scores(sentence+sentenceType[index]))!='neu':
+                #if sentenceType[index]!='?':
                 emotionalPart+=sentence+sentenceType[index]+' '               
                 #else:
                 #    print(sentence + ' --- neutral')
@@ -346,9 +312,9 @@ tweetsfile='../data/NeutralFinal.txt'
 errorFile='../data/errorsNeutralFinal.txt'
 correctEmotionFile='../data/neutralEmotionsFinal.txt'
 test(tweetsfile,errorFile,correctEmotionFile)
-'''
 
-inputFile='../data/sampleTweesData/LielaSeth.txt'
+
+inputFile='../data/sampleTweesData/Nirbhaya.txt'
 outputFile='../data/outputtest.txt'
 run(inputFile,outputFile)
 
@@ -360,4 +326,4 @@ while inp!='exit':
     inp=input('enter tweet or exit : ')
     if inp!='exit':
         runSingleTweet(inp)
-'''
+

@@ -169,7 +169,7 @@ def preprocess(tweet): #dict - dictionary of slangs
                     sentenceTokens.append(token.strip())
             numOfCorrected=0
             correctedTokens=[]
-            print(sentenceTokens)
+            #print(sentenceTokens)
             if punctuation!='?':
                 for index,token in enumerate(sentenceTokens):
                     
@@ -232,7 +232,7 @@ def preprocess(tweet): #dict - dictionary of slangs
                                     numOfCorrected+=1
                 if ' ' in correctedTokens:
                     correctedTokens=list(filter(lambda a: a != ' ', correctedTokens)) 
-                print(numOfCorrected,correctedTokens)
+                #print(numOfCorrected,correctedTokens)
                 if numOfCorrected<=(0.5*len(correctedTokens)):
                     filteredSentences.append(' '.join(correctedTokens))
                     sentenceType.append(punctuation)

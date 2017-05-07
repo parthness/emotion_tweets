@@ -1,20 +1,12 @@
-#!/usr/bin/env python -*- coding: utf-8 -*-
-#
-# Python Word Sense Disambiguation (pyWSD)
-#
-# Copyright (C) 2014-2017 alvations
-# URL:
-# For license information, see LICENSE.md
 import math
 from itertools import chain
 import string
 from nltk.corpus import wordnet as wn
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-from senti_classifier.senti_classifier import synsets_scores
-from pywsd.utils import lemmatize, porter, synset_properties
 from positive_negative_lexicon import lexiconDict
 from wordSenseDisambiguate import disgustingWords
+from pywsd.utils import synset_properties, lemmatize
 
 EN_STOPWORDS = stopwords.words('english')+list(string.punctuation)
 
@@ -37,18 +29,12 @@ def simple_signature(word,ss,lexicon):
     (iii) hypernyms and hyponyms
     """
     signature=[wn.morphy(word),word,ss.name().split('.')[0]]+findRelatedForms(ss)
-    print('signature',signature)
-   # print("ss: ",ss)
-    # Includes definition.
+
     ss_definition = synset_properties(ss, 'definition')
     signature+=word_tokenize(ss_definition)
-    # Includes examples
-    #ss_examples = synset_properties(ss, 'examples')
-    #signature+=list(chain(*[i.split() for i in ss_examples]))
-    # Includes lemma_names.
+
     ss_lemma_names = synset_properties(ss, 'lemma_names')
     signature+= ss_lemma_names
-    # Optional: includes lemma_names of hypernyms and hyponyms.
     
     ss_hyponyms = synset_properties(ss, 'hyponyms')
     #ss_hypernyms = synset_properties(ss, 'hypernyms')
@@ -89,14 +75,14 @@ def simple_signature(word,ss,lexicon):
     for word in ss_sign:
         morphy=wn.morphy(word)
         if lexicon=='+-':
-            if (word,'z') not in lexiconDict and (morphy,'z') not in lexiconDict:
+            if word not in lexiconDict and morphy not in lexiconDict:
                 to_remove.append(word)
         else:
-            if (word,'z') in lexiconDict:
-                if lexiconDict[(word,'z')]!=lexicon:
+            if word in lexiconDict:
+                if lexiconDict[word]!=lexicon:
                     to_remove.append(word)
-            elif (morphy is not None) and (morphy,'z') in lexiconDict:
-                if lexiconDict[(morphy,'z')]!=lexicon:
+            elif (morphy is not None) and morphy in lexiconDict:
+                if lexiconDict[morphy]!=lexicon:
                     to_remove.append(word)
             else:
                 to_remove.append(word)
@@ -111,55 +97,20 @@ def simple_signature(word,ss,lexicon):
         if len(synsets)>0:
             if synsets[0] not in sim:
                 synset=synsets[0]   
-                '''
-                pos=synsets_scores[synset.name()]['pos']
-                neg=synsets_scores[synset.name()]['neg']
-                if(pos>0.125 or neg>0.125):     
-                    sim.append(synset)
-                else:
-                    signature.remove(ss)
-                '''
                 pos=synset.pos()
                 morphy=wn.morphy(ss,pos)
-                if (ss,pos) in lexiconDict or (ss,'z') in lexiconDict or ss in disgustingWords:
+                if ss in lexiconDict or ss in lexiconDict or ss in disgustingWords:
                     sim.append(synset)
-                elif (morphy is not None) and ((morphy,'z') in lexiconDict or (morphy,pos) in lexiconDict):
+                elif (morphy is not None) and (morphy in lexiconDict or morphy in lexiconDict):
                     sim.append(synset)
                 else:
                     signature.remove(ss)
         else:
             signature.remove(ss)
     return [signature,sim]
-    '''
-    sim=[]
-    for ss in ss_sign:
-        synsets=wn.synsets(ss)
-        if len(synsets)>0:
-            if synsets[0] not in sim:
-                synset=synsets[0]   
-                pos=synsets_scores[synset.name()]['pos']
-                neg=synsets_scores[synset.name()]['neg']
-                if(pos>neg or neg>pos):     
-                    sim.append(synset)
-    
-    return set(signature+sim)
-    '''
+
 
 def similarity_lesk(ss_sign1, ss_sign2):
-    """
-    This function is the implementation of the Adapted Lesk algorithm,
-    described in Banerjee and Pederson (2002). It makes use of the lexical
-    items from semantically related senses within the wordnet
-    hierarchies and to generate more lexical items for each sense.
-    see www.d.umn.edu/~tpederse/Pubs/cicling2002-b.pdf‎
-    
-
-    # Get the signatures for each synset.
-    ss_sign1 = simple_signature(sense1,stem)
-    ss_sign2 = simple_signature(sense2,stem)
-    #print(ss_sign1)
-    #print(ss_sign2)
-    """
     score=0
     overlap=(set(ss_sign1[0])).intersection(ss_sign2[0])
     overlapped=list(filter(lambda a: (a in overlap) and (a not in list(string.punctuation)), ss_sign1[0]))
@@ -184,13 +135,8 @@ def similarity_lesk(ss_sign1, ss_sign2):
                     if path_score>=0.4:
                         #print(ss1.name(),ss2.name(),path_score)
                         sim_score+=path_score
-                    
-            
-    #print(score,sim_score) 
             
     return score+sim_score
-    
-    #return len(ss_sign1.intersection(ss_sign2))
 
 emoDict={}
 emotion=''
@@ -221,14 +167,12 @@ if len(synsets)>0:
     emoDict[emotion]=synsets
 
 
-
-
-def calculateSimilarity(word,senses,pos,neg): 
+def calculateSimilarity(word,senses): 
     maxEmotionScore=0
     morphy=wn.morphy(word,senses['sense'].pos())
-    if (word,'z') not in lexiconDict and (morphy is not None):
+    if word not in lexiconDict and (morphy is not None):
         word=morphy
-    if lexiconDict[(word,'z')]=='+':
+    if lexiconDict[word]=='+':
         emotionsToMatch=positive+surprise
         lexicon='+'
         for emotion in negative:
@@ -255,46 +199,21 @@ def calculateSimilarity(word,senses,pos,neg):
         senses[emotion]=max
     
     sense=senses['sense']
-    #word=sense.name().split('.')[0]
-    posTag=sense.pos()
-    if posTag=='s':
-        posTag='a'
-    if (word,posTag) in lexiconDict:
-        polarity=lexiconDict[(word,posTag)]
-        if(polarity=='+'):
-            pos=1
-            neg=0
-        else:
-            pos=0
-            neg=1
-    elif (word,'z') in lexiconDict:
-        polarity=lexiconDict[(word,'z')]
-        if(polarity=='+'):
-            pos=1
-            neg=0
-        else:
-            pos=0
-            neg=1
-    #normalizing score between 0 and 1
-    #polarity correction
+
     print("before RMS : " , senses,maxEmotionScore)
     if(maxEmotionScore!=0):
         maxEmotionScore+=1
         meanSquare=0
         for emotion in emotions:
             senses[emotion]=round(senses[emotion]/maxEmotionScore,2)
-            if(senses[emotion]>0.5 and pos>neg and emotion in negative) or (senses[emotion]>0.5 and neg>pos and emotion in positive):
-                senses[emotion]=1-senses[emotion]
             meanSquare+=(senses[emotion]**2)
 
         rootMeanSquare=math.sqrt(meanSquare)
         rootMeanSquare+=(0.25*rootMeanSquare)
-        print("after polarity correction : ",senses,rootMeanSquare)
+        print("RMS : ",senses,rootMeanSquare)
         if(rootMeanSquare>1):
             for emotion in emotions:
                 senses[emotion]=round(senses[emotion]/rootMeanSquare,2)
 
     print("after RMS : " , senses)
     return senses
-#to find similarity between two wordnet senses    
-#print(similarity_lesk(wn.synset('anger.n.01'),wn.synset('angry.a.01')))

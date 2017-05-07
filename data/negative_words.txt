@@ -832,6 +832,8 @@ cumbersome
 cunt
 cunts
 cuplrit
+curse
+cursed
 curt
 cuss
 cussed
@@ -873,7 +875,6 @@ deadly
 deadweight
 deaf
 dearth
-death
 debacle
 debase
 debasement
@@ -1600,7 +1601,6 @@ faint
 fainthearted
 faithless
 fake
-fall
 fallacies
 fallacious
 fallaciously
