@@ -7,8 +7,8 @@ from nltk.tag.stanford import StanfordPOSTagger
 from nltk.tokenize import TweetTokenizer
 
 tweetTokenizer=TweetTokenizer()
-path_to_model = '/Users/Parth/Desktop/emotion_tweet/codes/stanford-postagger-full-2016-10-31/models/english-bidirectional-distsim.tagger'
-path_to_jar='/Users/Parth/Desktop/emotion_tweet/codes/stanford-postagger-full-2016-10-31/stanford-postagger-3.7.0.jar'
+path_to_model = '/Users/Parth/Desktop/Analysing_tweets_for_emotion_detection/python_codes/stanford-postagger-full-2016-10-31/models/english-bidirectional-distsim.tagger'
+path_to_jar='/Users/Parth/Desktop/Analysing_tweets_for_emotion_detection/python_codes/stanford-postagger-full-2016-10-31/stanford-postagger-3.7.0.jar'
 posTagger=StanfordPOSTagger(path_to_model, path_to_jar)
 
 EN_STOPWORDS = stopwords.words('english')

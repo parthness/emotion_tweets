@@ -312,16 +312,17 @@ tweetsfile='../data/Neutral.txt'
 errorFile='../data/errorsNeutralFinal.txt'
 correctEmotionFile='../data/neutralEmotions.txt'
 test(tweetsfile,errorFile,correctEmotionFile)
-
+'''
 
 inputFile='../data/sampleTweesData/Nirbhaya.txt'
 outputFile='../data/outputtest.txt'
 run(inputFile,outputFile)
-'''
 
+'''
 inp=''
 while inp!='exit':
     inp=input('enter tweet or exit : ')
     if inp!='exit':
         runSingleTweet(inp)
 
+'''
