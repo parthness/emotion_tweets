@@ -399,9 +399,6 @@ cool
 coolest
 cooperative
 cooperatively
-cornerstone
-correct
-correctly
 cost-effective
 cost-saving
 counter-attack
@@ -506,16 +503,6 @@ eagerness
 earnest
 earnestly
 earnestness
-ease
-eased
-eases
-easier
-easiest
-easiness
-easing
-easy
-easy-to-use
-easygoing
 ebullience
 ebullient
 ebulliently

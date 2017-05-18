@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/media/nishu/New Volume1/project_research_papers/twitter/wn.jar"/>
+	<classpathentry kind="lib" path="/media/nishu/New Volume1/project_research_papers/twitter/lib/twitter4j-core-4.0.4.jar"/>
+	<classpathentry kind="lib" path="/media/nishu/New Volume1/project_research_papers/twitter/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="/media/nishu/New Volume1/project_research_papers/twitter/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/media/nishu/New Volume1/project_research_papers/twitter/httpcore-4.3-alpha1.jar"/>
+	<classpathentry kind="lib" path="/media/nishu/New Volume1/project_research_papers/twitter/httpcore-4.3.jar"/>
+	<classpathentry kind="lib" path="/media/nishu/New Volume1/project_research_papers/twitter/httpclient-4.3.3.jar"/>
+	<classpathentry kind="lib" path="/media/nishu/New Volume1/project_research_papers/twitter/httpclient.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

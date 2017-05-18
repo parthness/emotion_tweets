@@ -2705,14 +2705,6 @@ lawbreaker
 lawbreaking
 lawless
 lawlessness
-layoff
-layoff-happy
-lazy
-leak
-leakage
-leakages
-leaking
-leaks
 leaky
 lech
 lecher
@@ -3407,7 +3399,6 @@ prik
 primitive
 prison
 prisoner
-problem
 problematic
 problems
 procrastinate
